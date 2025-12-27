@@ -8,6 +8,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Add project root to path
+sys.path.append(os.getcwd())
+
 import src.config as config
 import src.ai.model as model_module
 import src.ai.agent as agent_module
