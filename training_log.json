@@ -1,0 +1,7002 @@
+[
+    {
+        "generation": 1,
+        "best": 75.8,
+        "average": 42.9,
+        "worst": 9.1,
+        "std_dev": 16.7
+    },
+    {
+        "generation": 2,
+        "best": 69.5,
+        "average": 42.1,
+        "worst": -14.5,
+        "std_dev": 27.8
+    },
+    {
+        "generation": 3,
+        "best": 70.2,
+        "average": 47.6,
+        "worst": 15.0,
+        "std_dev": 23.6
+    },
+    {
+        "generation": 4,
+        "best": 135.1,
+        "average": 46.2,
+        "worst": -7.5,
+        "std_dev": 30.0
+    },
+    {
+        "generation": 5,
+        "best": 75.3,
+        "average": 42.2,
+        "worst": 11.4,
+        "std_dev": 22.1
+    },
+    {
+        "generation": 6,
+        "best": 90.6,
+        "average": 50.9,
+        "worst": 9.6,
+        "std_dev": 23.3
+    },
+    {
+        "generation": 7,
+        "best": 76.2,
+        "average": 49.6,
+        "worst": 9.2,
+        "std_dev": 29.8
+    },
+    {
+        "generation": 8,
+        "best": 77.6,
+        "average": 44.5,
+        "worst": 13.0,
+        "std_dev": 19.6
+    },
+    {
+        "generation": 9,
+        "best": 79.1,
+        "average": 46.3,
+        "worst": -9.5,
+        "std_dev": 17.1
+    },
+    {
+        "generation": 10,
+        "best": 80.0,
+        "average": 46.6,
+        "worst": -4.0,
+        "std_dev": 16.2
+    },
+    {
+        "generation": 11,
+        "best": 87.4,
+        "average": 50.7,
+        "worst": -0.0,
+        "std_dev": 16.2
+    },
+    {
+        "generation": 12,
+        "best": 84.8,
+        "average": 53.2,
+        "worst": 5.2,
+        "std_dev": 22.4
+    },
+    {
+        "generation": 13,
+        "best": 72.8,
+        "average": 44.6,
+        "worst": 10.5,
+        "std_dev": 16.4
+    },
+    {
+        "generation": 14,
+        "best": 69.8,
+        "average": 49.2,
+        "worst": -10.3,
+        "std_dev": 16.8
+    },
+    {
+        "generation": 15,
+        "best": 90.3,
+        "average": 51.3,
+        "worst": 18.5,
+        "std_dev": 18.6
+    },
+    {
+        "generation": 16,
+        "best": 74.0,
+        "average": 51.7,
+        "worst": -4.7,
+        "std_dev": 22.7
+    },
+    {
+        "generation": 17,
+        "best": 79.8,
+        "average": 53.0,
+        "worst": 22.7,
+        "std_dev": 21.1
+    },
+    {
+        "generation": 18,
+        "best": 76.5,
+        "average": 50.2,
+        "worst": 3.8,
+        "std_dev": 22.0
+    },
+    {
+        "generation": 19,
+        "best": 87.0,
+        "average": 53.6,
+        "worst": -4.4,
+        "std_dev": 25.5
+    },
+    {
+        "generation": 20,
+        "best": 86.0,
+        "average": 52.7,
+        "worst": 20.7,
+        "std_dev": 22.3
+    },
+    {
+        "generation": 21,
+        "best": 71.8,
+        "average": 47.4,
+        "worst": 9.8,
+        "std_dev": 26.2
+    },
+    {
+        "generation": 22,
+        "best": 70.8,
+        "average": 49.2,
+        "worst": -9.0,
+        "std_dev": 24.0
+    },
+    {
+        "generation": 23,
+        "best": 80.2,
+        "average": 54.0,
+        "worst": -3.3,
+        "std_dev": 21.0
+    },
+    {
+        "generation": 24,
+        "best": 79.3,
+        "average": 52.0,
+        "worst": 8.3,
+        "std_dev": 29.5
+    },
+    {
+        "generation": 25,
+        "best": 94.4,
+        "average": 58.4,
+        "worst": 15.5,
+        "std_dev": 28.5
+    },
+    {
+        "generation": 26,
+        "best": 85.6,
+        "average": 55.5,
+        "worst": 4.5,
+        "std_dev": 18.7
+    },
+    {
+        "generation": 27,
+        "best": 84.1,
+        "average": 50.8,
+        "worst": 8.8,
+        "std_dev": 23.0
+    },
+    {
+        "generation": 28,
+        "best": 94.0,
+        "average": 55.1,
+        "worst": 5.7,
+        "std_dev": 27.8
+    },
+    {
+        "generation": 29,
+        "best": 93.8,
+        "average": 56.4,
+        "worst": 7.3,
+        "std_dev": 27.0
+    },
+    {
+        "generation": 30,
+        "best": 94.2,
+        "average": 59.9,
+        "worst": 26.6,
+        "std_dev": 24.3
+    },
+    {
+        "generation": 31,
+        "best": 89.4,
+        "average": 51.1,
+        "worst": 18.5,
+        "std_dev": 17.8
+    },
+    {
+        "generation": 32,
+        "best": 80.0,
+        "average": 51.2,
+        "worst": -1.6,
+        "std_dev": 16.3
+    },
+    {
+        "generation": 33,
+        "best": 75.6,
+        "average": 52.1,
+        "worst": 7.3,
+        "std_dev": 22.9
+    },
+    {
+        "generation": 34,
+        "best": 137.1,
+        "average": 60.0,
+        "worst": 1.7,
+        "std_dev": 18.1
+    },
+    {
+        "generation": 35,
+        "best": 96.8,
+        "average": 61.1,
+        "worst": 27.8,
+        "std_dev": 21.6
+    },
+    {
+        "generation": 36,
+        "best": 90.6,
+        "average": 52.8,
+        "worst": -0.8,
+        "std_dev": 16.3
+    },
+    {
+        "generation": 37,
+        "best": 132.1,
+        "average": 61.1,
+        "worst": 12.4,
+        "std_dev": 16.9
+    },
+    {
+        "generation": 38,
+        "best": 93.4,
+        "average": 56.4,
+        "worst": 5.9,
+        "std_dev": 22.4
+    },
+    {
+        "generation": 39,
+        "best": 81.5,
+        "average": 57.4,
+        "worst": 2.2,
+        "std_dev": 27.7
+    },
+    {
+        "generation": 40,
+        "best": 90.6,
+        "average": 57.0,
+        "worst": 10.3,
+        "std_dev": 24.0
+    },
+    {
+        "generation": 41,
+        "best": 95.8,
+        "average": 58.1,
+        "worst": 13.3,
+        "std_dev": 23.3
+    },
+    {
+        "generation": 42,
+        "best": 87.8,
+        "average": 59.8,
+        "worst": 14.2,
+        "std_dev": 27.0
+    },
+    {
+        "generation": 43,
+        "best": 96.4,
+        "average": 62.1,
+        "worst": 25.5,
+        "std_dev": 23.4
+    },
+    {
+        "generation": 44,
+        "best": 85.7,
+        "average": 58.4,
+        "worst": 9.1,
+        "std_dev": 15.5
+    },
+    {
+        "generation": 45,
+        "best": 93.5,
+        "average": 56.3,
+        "worst": 18.6,
+        "std_dev": 19.8
+    },
+    {
+        "generation": 46,
+        "best": 79.6,
+        "average": 59.1,
+        "worst": 5.2,
+        "std_dev": 19.8
+    },
+    {
+        "generation": 47,
+        "best": 83.7,
+        "average": 59.7,
+        "worst": 24.1,
+        "std_dev": 20.0
+    },
+    {
+        "generation": 48,
+        "best": 91.7,
+        "average": 60.0,
+        "worst": 1.5,
+        "std_dev": 27.7
+    },
+    {
+        "generation": 49,
+        "best": 134.4,
+        "average": 57.0,
+        "worst": 18.4,
+        "std_dev": 22.1
+    },
+    {
+        "generation": 50,
+        "best": 81.8,
+        "average": 57.6,
+        "worst": 21.3,
+        "std_dev": 19.1
+    },
+    {
+        "generation": 51,
+        "best": 94.5,
+        "average": 65.3,
+        "worst": 9.3,
+        "std_dev": 26.5
+    },
+    {
+        "generation": 52,
+        "best": 95.4,
+        "average": 57.4,
+        "worst": 26.7,
+        "std_dev": 24.3
+    },
+    {
+        "generation": 53,
+        "best": 81.9,
+        "average": 58.9,
+        "worst": 3.4,
+        "std_dev": 17.5
+    },
+    {
+        "generation": 54,
+        "best": 87.1,
+        "average": 63.3,
+        "worst": 20.9,
+        "std_dev": 15.7
+    },
+    {
+        "generation": 55,
+        "best": 98.7,
+        "average": 65.5,
+        "worst": 34.4,
+        "std_dev": 28.0
+    },
+    {
+        "generation": 56,
+        "best": 149.6,
+        "average": 63.0,
+        "worst": 29.9,
+        "std_dev": 24.6
+    },
+    {
+        "generation": 57,
+        "best": 89.5,
+        "average": 60.8,
+        "worst": 18.1,
+        "std_dev": 27.6
+    },
+    {
+        "generation": 58,
+        "best": 92.3,
+        "average": 59.4,
+        "worst": 0.4,
+        "std_dev": 21.3
+    },
+    {
+        "generation": 59,
+        "best": 92.1,
+        "average": 65.4,
+        "worst": 26.9,
+        "std_dev": 20.1
+    },
+    {
+        "generation": 60,
+        "best": 93.1,
+        "average": 64.3,
+        "worst": 24.6,
+        "std_dev": 29.6
+    },
+    {
+        "generation": 61,
+        "best": 100.5,
+        "average": 62.8,
+        "worst": 27.5,
+        "std_dev": 27.7
+    },
+    {
+        "generation": 62,
+        "best": 88.7,
+        "average": 61.5,
+        "worst": 11.6,
+        "std_dev": 23.4
+    },
+    {
+        "generation": 63,
+        "best": 86.4,
+        "average": 65.5,
+        "worst": 9.9,
+        "std_dev": 22.2
+    },
+    {
+        "generation": 64,
+        "best": 106.6,
+        "average": 67.8,
+        "worst": 17.8,
+        "std_dev": 15.2
+    },
+    {
+        "generation": 65,
+        "best": 145.8,
+        "average": 63.4,
+        "worst": 12.0,
+        "std_dev": 16.9
+    },
+    {
+        "generation": 66,
+        "best": 93.8,
+        "average": 66.1,
+        "worst": 30.8,
+        "std_dev": 25.9
+    },
+    {
+        "generation": 67,
+        "best": 101.8,
+        "average": 71.0,
+        "worst": 37.3,
+        "std_dev": 27.0
+    },
+    {
+        "generation": 68,
+        "best": 87.5,
+        "average": 66.3,
+        "worst": 17.8,
+        "std_dev": 23.1
+    },
+    {
+        "generation": 69,
+        "best": 101.3,
+        "average": 67.1,
+        "worst": 26.8,
+        "std_dev": 26.5
+    },
+    {
+        "generation": 70,
+        "best": 101.9,
+        "average": 62.7,
+        "worst": 18.6,
+        "std_dev": 22.2
+    },
+    {
+        "generation": 71,
+        "best": 90.7,
+        "average": 64.8,
+        "worst": 15.0,
+        "std_dev": 15.7
+    },
+    {
+        "generation": 72,
+        "best": 93.5,
+        "average": 68.9,
+        "worst": 29.4,
+        "std_dev": 19.5
+    },
+    {
+        "generation": 73,
+        "best": 105.7,
+        "average": 71.4,
+        "worst": 25.7,
+        "std_dev": 17.1
+    },
+    {
+        "generation": 74,
+        "best": 94.7,
+        "average": 68.3,
+        "worst": 37.7,
+        "std_dev": 19.0
+    },
+    {
+        "generation": 75,
+        "best": 95.0,
+        "average": 71.8,
+        "worst": 31.3,
+        "std_dev": 25.0
+    },
+    {
+        "generation": 76,
+        "best": 106.8,
+        "average": 72.0,
+        "worst": 15.0,
+        "std_dev": 27.6
+    },
+    {
+        "generation": 77,
+        "best": 90.1,
+        "average": 68.9,
+        "worst": 28.5,
+        "std_dev": 29.2
+    },
+    {
+        "generation": 78,
+        "best": 91.1,
+        "average": 67.7,
+        "worst": 29.4,
+        "std_dev": 29.3
+    },
+    {
+        "generation": 79,
+        "best": 99.4,
+        "average": 65.2,
+        "worst": 6.5,
+        "std_dev": 15.1
+    },
+    {
+        "generation": 80,
+        "best": 92.7,
+        "average": 67.4,
+        "worst": 7.4,
+        "std_dev": 29.2
+    },
+    {
+        "generation": 81,
+        "best": 100.6,
+        "average": 72.0,
+        "worst": 36.5,
+        "std_dev": 17.2
+    },
+    {
+        "generation": 82,
+        "best": 101.3,
+        "average": 74.1,
+        "worst": 22.7,
+        "std_dev": 18.8
+    },
+    {
+        "generation": 83,
+        "best": 89.0,
+        "average": 67.0,
+        "worst": 21.4,
+        "std_dev": 26.8
+    },
+    {
+        "generation": 84,
+        "best": 92.8,
+        "average": 70.1,
+        "worst": 38.7,
+        "std_dev": 27.4
+    },
+    {
+        "generation": 85,
+        "best": 107.2,
+        "average": 67.7,
+        "worst": 32.9,
+        "std_dev": 17.9
+    },
+    {
+        "generation": 86,
+        "best": 105.2,
+        "average": 73.8,
+        "worst": 31.3,
+        "std_dev": 20.1
+    },
+    {
+        "generation": 87,
+        "best": 99.1,
+        "average": 72.7,
+        "worst": 22.9,
+        "std_dev": 23.3
+    },
+    {
+        "generation": 88,
+        "best": 106.9,
+        "average": 74.3,
+        "worst": 24.8,
+        "std_dev": 29.4
+    },
+    {
+        "generation": 89,
+        "best": 99.8,
+        "average": 71.9,
+        "worst": 12.1,
+        "std_dev": 24.1
+    },
+    {
+        "generation": 90,
+        "best": 113.5,
+        "average": 74.7,
+        "worst": 15.9,
+        "std_dev": 29.1
+    },
+    {
+        "generation": 91,
+        "best": 93.8,
+        "average": 68.2,
+        "worst": 11.6,
+        "std_dev": 19.0
+    },
+    {
+        "generation": 92,
+        "best": 107.4,
+        "average": 77.1,
+        "worst": 43.4,
+        "std_dev": 28.9
+    },
+    {
+        "generation": 93,
+        "best": 96.8,
+        "average": 73.6,
+        "worst": 36.4,
+        "std_dev": 17.2
+    },
+    {
+        "generation": 94,
+        "best": 101.6,
+        "average": 72.6,
+        "worst": 39.6,
+        "std_dev": 24.7
+    },
+    {
+        "generation": 95,
+        "best": 97.9,
+        "average": 69.3,
+        "worst": 27.6,
+        "std_dev": 27.3
+    },
+    {
+        "generation": 96,
+        "best": 102.7,
+        "average": 68.9,
+        "worst": 17.9,
+        "std_dev": 21.9
+    },
+    {
+        "generation": 97,
+        "best": 112.3,
+        "average": 75.1,
+        "worst": 43.2,
+        "std_dev": 28.6
+    },
+    {
+        "generation": 98,
+        "best": 102.1,
+        "average": 74.4,
+        "worst": 41.3,
+        "std_dev": 19.0
+    },
+    {
+        "generation": 99,
+        "best": 98.6,
+        "average": 77.5,
+        "worst": 41.4,
+        "std_dev": 20.3
+    },
+    {
+        "generation": 100,
+        "best": 111.9,
+        "average": 72.7,
+        "worst": 40.3,
+        "std_dev": 27.0
+    },
+    {
+        "generation": 101,
+        "best": 101.0,
+        "average": 75.0,
+        "worst": 41.9,
+        "std_dev": 29.8
+    },
+    {
+        "generation": 102,
+        "best": 112.7,
+        "average": 77.1,
+        "worst": 40.4,
+        "std_dev": 22.2
+    },
+    {
+        "generation": 103,
+        "best": 109.3,
+        "average": 71.4,
+        "worst": 20.8,
+        "std_dev": 23.2
+    },
+    {
+        "generation": 104,
+        "best": 100.1,
+        "average": 74.4,
+        "worst": 25.4,
+        "std_dev": 30.0
+    },
+    {
+        "generation": 105,
+        "best": 113.4,
+        "average": 78.2,
+        "worst": 28.7,
+        "std_dev": 16.5
+    },
+    {
+        "generation": 106,
+        "best": 111.6,
+        "average": 73.5,
+        "worst": 36.4,
+        "std_dev": 28.8
+    },
+    {
+        "generation": 107,
+        "best": 97.2,
+        "average": 72.0,
+        "worst": 25.8,
+        "std_dev": 18.4
+    },
+    {
+        "generation": 108,
+        "best": 110.0,
+        "average": 74.4,
+        "worst": 25.3,
+        "std_dev": 28.7
+    },
+    {
+        "generation": 109,
+        "best": 109.4,
+        "average": 81.3,
+        "worst": 31.1,
+        "std_dev": 23.6
+    },
+    {
+        "generation": 110,
+        "best": 110.5,
+        "average": 73.0,
+        "worst": 32.9,
+        "std_dev": 28.9
+    },
+    {
+        "generation": 111,
+        "best": 108.8,
+        "average": 79.4,
+        "worst": 26.7,
+        "std_dev": 24.9
+    },
+    {
+        "generation": 112,
+        "best": 105.9,
+        "average": 80.2,
+        "worst": 47.7,
+        "std_dev": 16.5
+    },
+    {
+        "generation": 113,
+        "best": 109.4,
+        "average": 78.1,
+        "worst": 41.0,
+        "std_dev": 19.5
+    },
+    {
+        "generation": 114,
+        "best": 112.7,
+        "average": 74.3,
+        "worst": 36.3,
+        "std_dev": 16.7
+    },
+    {
+        "generation": 115,
+        "best": 113.9,
+        "average": 79.6,
+        "worst": 34.1,
+        "std_dev": 21.1
+    },
+    {
+        "generation": 116,
+        "best": 96.2,
+        "average": 75.6,
+        "worst": 36.1,
+        "std_dev": 17.1
+    },
+    {
+        "generation": 117,
+        "best": 113.4,
+        "average": 77.7,
+        "worst": 34.5,
+        "std_dev": 20.6
+    },
+    {
+        "generation": 118,
+        "best": 100.5,
+        "average": 75.8,
+        "worst": 45.2,
+        "std_dev": 23.5
+    },
+    {
+        "generation": 119,
+        "best": 112.5,
+        "average": 80.5,
+        "worst": 45.1,
+        "std_dev": 20.9
+    },
+    {
+        "generation": 120,
+        "best": 113.2,
+        "average": 74.4,
+        "worst": 39.9,
+        "std_dev": 15.7
+    },
+    {
+        "generation": 121,
+        "best": 111.4,
+        "average": 82.3,
+        "worst": 26.1,
+        "std_dev": 18.5
+    },
+    {
+        "generation": 122,
+        "best": 106.7,
+        "average": 82.4,
+        "worst": 30.3,
+        "std_dev": 17.2
+    },
+    {
+        "generation": 123,
+        "best": 107.3,
+        "average": 77.0,
+        "worst": 36.0,
+        "std_dev": 28.1
+    },
+    {
+        "generation": 124,
+        "best": 106.8,
+        "average": 83.0,
+        "worst": 39.9,
+        "std_dev": 26.2
+    },
+    {
+        "generation": 125,
+        "best": 112.8,
+        "average": 81.1,
+        "worst": 31.6,
+        "std_dev": 19.4
+    },
+    {
+        "generation": 126,
+        "best": 110.3,
+        "average": 80.1,
+        "worst": 25.6,
+        "std_dev": 25.3
+    },
+    {
+        "generation": 127,
+        "best": 103.6,
+        "average": 79.4,
+        "worst": 33.0,
+        "std_dev": 19.4
+    },
+    {
+        "generation": 128,
+        "best": 101.2,
+        "average": 77.0,
+        "worst": 41.9,
+        "std_dev": 27.8
+    },
+    {
+        "generation": 129,
+        "best": 102.3,
+        "average": 77.3,
+        "worst": 21.6,
+        "std_dev": 21.9
+    },
+    {
+        "generation": 130,
+        "best": 122.4,
+        "average": 86.4,
+        "worst": 51.8,
+        "std_dev": 17.3
+    },
+    {
+        "generation": 131,
+        "best": 111.3,
+        "average": 82.2,
+        "worst": 24.4,
+        "std_dev": 27.0
+    },
+    {
+        "generation": 132,
+        "best": 105.6,
+        "average": 77.3,
+        "worst": 45.7,
+        "std_dev": 25.4
+    },
+    {
+        "generation": 133,
+        "best": 120.3,
+        "average": 86.6,
+        "worst": 49.8,
+        "std_dev": 26.6
+    },
+    {
+        "generation": 134,
+        "best": 121.6,
+        "average": 83.6,
+        "worst": 26.7,
+        "std_dev": 27.1
+    },
+    {
+        "generation": 135,
+        "best": 112.3,
+        "average": 82.3,
+        "worst": 32.5,
+        "std_dev": 28.5
+    },
+    {
+        "generation": 136,
+        "best": 172.2,
+        "average": 86.7,
+        "worst": 39.2,
+        "std_dev": 16.8
+    },
+    {
+        "generation": 137,
+        "best": 102.6,
+        "average": 78.8,
+        "worst": 43.7,
+        "std_dev": 27.7
+    },
+    {
+        "generation": 138,
+        "best": 112.2,
+        "average": 80.1,
+        "worst": 30.9,
+        "std_dev": 21.3
+    },
+    {
+        "generation": 139,
+        "best": 109.5,
+        "average": 80.3,
+        "worst": 25.6,
+        "std_dev": 18.9
+    },
+    {
+        "generation": 140,
+        "best": 104.2,
+        "average": 78.6,
+        "worst": 32.3,
+        "std_dev": 20.9
+    },
+    {
+        "generation": 141,
+        "best": 101.9,
+        "average": 81.6,
+        "worst": 34.6,
+        "std_dev": 15.4
+    },
+    {
+        "generation": 142,
+        "best": 117.2,
+        "average": 87.4,
+        "worst": 38.7,
+        "std_dev": 20.6
+    },
+    {
+        "generation": 143,
+        "best": 121.9,
+        "average": 88.0,
+        "worst": 38.3,
+        "std_dev": 16.3
+    },
+    {
+        "generation": 144,
+        "best": 103.1,
+        "average": 80.0,
+        "worst": 30.7,
+        "std_dev": 16.1
+    },
+    {
+        "generation": 145,
+        "best": 116.8,
+        "average": 80.9,
+        "worst": 48.1,
+        "std_dev": 26.3
+    },
+    {
+        "generation": 146,
+        "best": 115.9,
+        "average": 89.2,
+        "worst": 53.5,
+        "std_dev": 24.2
+    },
+    {
+        "generation": 147,
+        "best": 121.5,
+        "average": 84.5,
+        "worst": 50.9,
+        "std_dev": 18.7
+    },
+    {
+        "generation": 148,
+        "best": 110.9,
+        "average": 87.5,
+        "worst": 41.4,
+        "std_dev": 17.9
+    },
+    {
+        "generation": 149,
+        "best": 109.1,
+        "average": 81.2,
+        "worst": 26.3,
+        "std_dev": 29.3
+    },
+    {
+        "generation": 150,
+        "best": 113.6,
+        "average": 82.5,
+        "worst": 43.6,
+        "std_dev": 20.5
+    },
+    {
+        "generation": 151,
+        "best": 112.7,
+        "average": 90.6,
+        "worst": 57.0,
+        "std_dev": 19.3
+    },
+    {
+        "generation": 152,
+        "best": 114.6,
+        "average": 82.2,
+        "worst": 22.3,
+        "std_dev": 20.6
+    },
+    {
+        "generation": 153,
+        "best": 129.5,
+        "average": 90.6,
+        "worst": 57.9,
+        "std_dev": 15.6
+    },
+    {
+        "generation": 154,
+        "best": 116.1,
+        "average": 88.0,
+        "worst": 30.8,
+        "std_dev": 17.7
+    },
+    {
+        "generation": 155,
+        "best": 116.2,
+        "average": 89.7,
+        "worst": 47.8,
+        "std_dev": 16.5
+    },
+    {
+        "generation": 156,
+        "best": 119.7,
+        "average": 86.2,
+        "worst": 34.8,
+        "std_dev": 19.4
+    },
+    {
+        "generation": 157,
+        "best": 122.3,
+        "average": 91.6,
+        "worst": 38.6,
+        "std_dev": 17.1
+    },
+    {
+        "generation": 158,
+        "best": 125.8,
+        "average": 90.7,
+        "worst": 36.5,
+        "std_dev": 16.9
+    },
+    {
+        "generation": 159,
+        "best": 116.3,
+        "average": 83.6,
+        "worst": 41.9,
+        "std_dev": 15.6
+    },
+    {
+        "generation": 160,
+        "best": 162.6,
+        "average": 87.1,
+        "worst": 49.1,
+        "std_dev": 17.8
+    },
+    {
+        "generation": 161,
+        "best": 105.8,
+        "average": 85.1,
+        "worst": 35.5,
+        "std_dev": 21.5
+    },
+    {
+        "generation": 162,
+        "best": 117.7,
+        "average": 88.3,
+        "worst": 36.1,
+        "std_dev": 24.9
+    },
+    {
+        "generation": 163,
+        "best": 116.2,
+        "average": 91.9,
+        "worst": 60.0,
+        "std_dev": 23.1
+    },
+    {
+        "generation": 164,
+        "best": 158.8,
+        "average": 87.5,
+        "worst": 54.2,
+        "std_dev": 26.9
+    },
+    {
+        "generation": 165,
+        "best": 109.7,
+        "average": 85.3,
+        "worst": 28.6,
+        "std_dev": 25.5
+    },
+    {
+        "generation": 166,
+        "best": 129.7,
+        "average": 90.7,
+        "worst": 42.4,
+        "std_dev": 23.0
+    },
+    {
+        "generation": 167,
+        "best": 121.3,
+        "average": 90.6,
+        "worst": 56.4,
+        "std_dev": 18.7
+    },
+    {
+        "generation": 168,
+        "best": 116.5,
+        "average": 89.3,
+        "worst": 33.1,
+        "std_dev": 16.7
+    },
+    {
+        "generation": 169,
+        "best": 116.2,
+        "average": 84.6,
+        "worst": 52.0,
+        "std_dev": 15.9
+    },
+    {
+        "generation": 170,
+        "best": 126.2,
+        "average": 92.3,
+        "worst": 42.0,
+        "std_dev": 25.1
+    },
+    {
+        "generation": 171,
+        "best": 118.1,
+        "average": 89.1,
+        "worst": 34.3,
+        "std_dev": 19.3
+    },
+    {
+        "generation": 172,
+        "best": 127.8,
+        "average": 89.0,
+        "worst": 57.4,
+        "std_dev": 17.2
+    },
+    {
+        "generation": 173,
+        "best": 127.7,
+        "average": 88.3,
+        "worst": 40.4,
+        "std_dev": 18.6
+    },
+    {
+        "generation": 174,
+        "best": 115.2,
+        "average": 86.3,
+        "worst": 30.1,
+        "std_dev": 25.3
+    },
+    {
+        "generation": 175,
+        "best": 117.0,
+        "average": 87.7,
+        "worst": 48.6,
+        "std_dev": 21.6
+    },
+    {
+        "generation": 176,
+        "best": 115.5,
+        "average": 92.3,
+        "worst": 46.5,
+        "std_dev": 18.1
+    },
+    {
+        "generation": 177,
+        "best": 118.0,
+        "average": 87.5,
+        "worst": 36.3,
+        "std_dev": 19.5
+    },
+    {
+        "generation": 178,
+        "best": 127.7,
+        "average": 90.4,
+        "worst": 41.5,
+        "std_dev": 28.2
+    },
+    {
+        "generation": 179,
+        "best": 118.4,
+        "average": 87.1,
+        "worst": 50.8,
+        "std_dev": 29.5
+    },
+    {
+        "generation": 180,
+        "best": 128.3,
+        "average": 94.1,
+        "worst": 44.8,
+        "std_dev": 23.4
+    },
+    {
+        "generation": 181,
+        "best": 128.3,
+        "average": 89.6,
+        "worst": 48.8,
+        "std_dev": 20.8
+    },
+    {
+        "generation": 182,
+        "best": 111.7,
+        "average": 88.2,
+        "worst": 52.1,
+        "std_dev": 26.6
+    },
+    {
+        "generation": 183,
+        "best": 127.6,
+        "average": 95.5,
+        "worst": 50.3,
+        "std_dev": 17.6
+    },
+    {
+        "generation": 184,
+        "best": 124.9,
+        "average": 87.6,
+        "worst": 35.2,
+        "std_dev": 29.6
+    },
+    {
+        "generation": 185,
+        "best": 124.1,
+        "average": 91.5,
+        "worst": 43.7,
+        "std_dev": 19.7
+    },
+    {
+        "generation": 186,
+        "best": 122.9,
+        "average": 88.1,
+        "worst": 34.7,
+        "std_dev": 29.4
+    },
+    {
+        "generation": 187,
+        "best": 112.0,
+        "average": 89.9,
+        "worst": 38.5,
+        "std_dev": 22.9
+    },
+    {
+        "generation": 188,
+        "best": 117.2,
+        "average": 96.4,
+        "worst": 39.9,
+        "std_dev": 19.0
+    },
+    {
+        "generation": 189,
+        "best": 177.5,
+        "average": 95.5,
+        "worst": 41.7,
+        "std_dev": 29.0
+    },
+    {
+        "generation": 190,
+        "best": 121.2,
+        "average": 96.1,
+        "worst": 48.6,
+        "std_dev": 27.5
+    },
+    {
+        "generation": 191,
+        "best": 118.6,
+        "average": 96.1,
+        "worst": 46.8,
+        "std_dev": 20.4
+    },
+    {
+        "generation": 192,
+        "best": 128.3,
+        "average": 90.8,
+        "worst": 58.8,
+        "std_dev": 20.8
+    },
+    {
+        "generation": 193,
+        "best": 131.7,
+        "average": 95.6,
+        "worst": 58.2,
+        "std_dev": 19.9
+    },
+    {
+        "generation": 194,
+        "best": 122.2,
+        "average": 91.5,
+        "worst": 54.0,
+        "std_dev": 16.7
+    },
+    {
+        "generation": 195,
+        "best": 121.8,
+        "average": 91.8,
+        "worst": 60.2,
+        "std_dev": 27.9
+    },
+    {
+        "generation": 196,
+        "best": 127.2,
+        "average": 89.7,
+        "worst": 53.1,
+        "std_dev": 23.2
+    },
+    {
+        "generation": 197,
+        "best": 121.4,
+        "average": 95.6,
+        "worst": 47.0,
+        "std_dev": 27.4
+    },
+    {
+        "generation": 198,
+        "best": 121.2,
+        "average": 94.1,
+        "worst": 56.7,
+        "std_dev": 29.0
+    },
+    {
+        "generation": 199,
+        "best": 124.2,
+        "average": 96.7,
+        "worst": 40.4,
+        "std_dev": 26.2
+    },
+    {
+        "generation": 200,
+        "best": 138.2,
+        "average": 98.5,
+        "worst": 58.8,
+        "std_dev": 26.9
+    },
+    {
+        "generation": 201,
+        "best": 131.1,
+        "average": 93.6,
+        "worst": 33.6,
+        "std_dev": 28.4
+    },
+    {
+        "generation": 202,
+        "best": 125.6,
+        "average": 98.8,
+        "worst": 50.5,
+        "std_dev": 27.1
+    },
+    {
+        "generation": 203,
+        "best": 127.6,
+        "average": 90.5,
+        "worst": 42.4,
+        "std_dev": 23.2
+    },
+    {
+        "generation": 204,
+        "best": 127.7,
+        "average": 98.9,
+        "worst": 62.0,
+        "std_dev": 16.1
+    },
+    {
+        "generation": 205,
+        "best": 130.4,
+        "average": 91.7,
+        "worst": 49.3,
+        "std_dev": 19.0
+    },
+    {
+        "generation": 206,
+        "best": 113.2,
+        "average": 92.7,
+        "worst": 46.4,
+        "std_dev": 15.5
+    },
+    {
+        "generation": 207,
+        "best": 116.2,
+        "average": 95.3,
+        "worst": 36.0,
+        "std_dev": 19.9
+    },
+    {
+        "generation": 208,
+        "best": 117.2,
+        "average": 94.4,
+        "worst": 50.2,
+        "std_dev": 25.5
+    },
+    {
+        "generation": 209,
+        "best": 122.9,
+        "average": 93.0,
+        "worst": 50.0,
+        "std_dev": 27.2
+    },
+    {
+        "generation": 210,
+        "best": 131.9,
+        "average": 92.0,
+        "worst": 37.1,
+        "std_dev": 15.4
+    },
+    {
+        "generation": 211,
+        "best": 123.5,
+        "average": 97.4,
+        "worst": 46.6,
+        "std_dev": 29.1
+    },
+    {
+        "generation": 212,
+        "best": 127.8,
+        "average": 100.4,
+        "worst": 61.0,
+        "std_dev": 28.4
+    },
+    {
+        "generation": 213,
+        "best": 121.0,
+        "average": 97.9,
+        "worst": 42.8,
+        "std_dev": 28.1
+    },
+    {
+        "generation": 214,
+        "best": 135.2,
+        "average": 99.1,
+        "worst": 47.8,
+        "std_dev": 21.5
+    },
+    {
+        "generation": 215,
+        "best": 132.0,
+        "average": 96.8,
+        "worst": 46.1,
+        "std_dev": 25.8
+    },
+    {
+        "generation": 216,
+        "best": 114.1,
+        "average": 92.6,
+        "worst": 41.8,
+        "std_dev": 19.4
+    },
+    {
+        "generation": 217,
+        "best": 128.1,
+        "average": 99.6,
+        "worst": 56.4,
+        "std_dev": 24.1
+    },
+    {
+        "generation": 218,
+        "best": 129.5,
+        "average": 97.3,
+        "worst": 47.1,
+        "std_dev": 19.7
+    },
+    {
+        "generation": 219,
+        "best": 122.1,
+        "average": 93.4,
+        "worst": 42.0,
+        "std_dev": 25.7
+    },
+    {
+        "generation": 220,
+        "best": 120.6,
+        "average": 95.6,
+        "worst": 48.2,
+        "std_dev": 23.7
+    },
+    {
+        "generation": 221,
+        "best": 132.9,
+        "average": 97.3,
+        "worst": 45.3,
+        "std_dev": 18.2
+    },
+    {
+        "generation": 222,
+        "best": 130.9,
+        "average": 93.1,
+        "worst": 41.1,
+        "std_dev": 25.5
+    },
+    {
+        "generation": 223,
+        "best": 123.1,
+        "average": 97.9,
+        "worst": 56.0,
+        "std_dev": 26.3
+    },
+    {
+        "generation": 224,
+        "best": 134.0,
+        "average": 97.6,
+        "worst": 55.1,
+        "std_dev": 28.7
+    },
+    {
+        "generation": 225,
+        "best": 126.3,
+        "average": 101.2,
+        "worst": 53.4,
+        "std_dev": 25.2
+    },
+    {
+        "generation": 226,
+        "best": 127.3,
+        "average": 96.2,
+        "worst": 57.3,
+        "std_dev": 29.1
+    },
+    {
+        "generation": 227,
+        "best": 130.2,
+        "average": 100.1,
+        "worst": 52.4,
+        "std_dev": 24.0
+    },
+    {
+        "generation": 228,
+        "best": 137.8,
+        "average": 102.2,
+        "worst": 71.9,
+        "std_dev": 29.3
+    },
+    {
+        "generation": 229,
+        "best": 137.2,
+        "average": 100.3,
+        "worst": 54.4,
+        "std_dev": 22.2
+    },
+    {
+        "generation": 230,
+        "best": 139.2,
+        "average": 103.8,
+        "worst": 68.6,
+        "std_dev": 19.3
+    },
+    {
+        "generation": 231,
+        "best": 140.4,
+        "average": 102.1,
+        "worst": 63.1,
+        "std_dev": 28.0
+    },
+    {
+        "generation": 232,
+        "best": 132.1,
+        "average": 104.0,
+        "worst": 62.5,
+        "std_dev": 25.5
+    },
+    {
+        "generation": 233,
+        "best": 137.8,
+        "average": 102.7,
+        "worst": 67.1,
+        "std_dev": 18.2
+    },
+    {
+        "generation": 234,
+        "best": 136.8,
+        "average": 98.6,
+        "worst": 68.1,
+        "std_dev": 18.9
+    },
+    {
+        "generation": 235,
+        "best": 129.6,
+        "average": 104.0,
+        "worst": 50.8,
+        "std_dev": 23.4
+    },
+    {
+        "generation": 236,
+        "best": 128.2,
+        "average": 96.7,
+        "worst": 39.4,
+        "std_dev": 16.9
+    },
+    {
+        "generation": 237,
+        "best": 137.9,
+        "average": 98.8,
+        "worst": 58.9,
+        "std_dev": 21.2
+    },
+    {
+        "generation": 238,
+        "best": 132.8,
+        "average": 97.4,
+        "worst": 41.9,
+        "std_dev": 25.7
+    },
+    {
+        "generation": 239,
+        "best": 126.4,
+        "average": 96.1,
+        "worst": 52.6,
+        "std_dev": 16.9
+    },
+    {
+        "generation": 240,
+        "best": 119.5,
+        "average": 98.3,
+        "worst": 39.6,
+        "std_dev": 19.8
+    },
+    {
+        "generation": 241,
+        "best": 137.8,
+        "average": 100.5,
+        "worst": 67.9,
+        "std_dev": 23.4
+    },
+    {
+        "generation": 242,
+        "best": 129.1,
+        "average": 98.1,
+        "worst": 52.3,
+        "std_dev": 25.3
+    },
+    {
+        "generation": 243,
+        "best": 137.0,
+        "average": 98.3,
+        "worst": 41.2,
+        "std_dev": 17.7
+    },
+    {
+        "generation": 244,
+        "best": 129.0,
+        "average": 97.9,
+        "worst": 38.0,
+        "std_dev": 24.0
+    },
+    {
+        "generation": 245,
+        "best": 140.7,
+        "average": 106.0,
+        "worst": 46.4,
+        "std_dev": 28.1
+    },
+    {
+        "generation": 246,
+        "best": 144.7,
+        "average": 106.0,
+        "worst": 48.2,
+        "std_dev": 25.2
+    },
+    {
+        "generation": 247,
+        "best": 123.7,
+        "average": 103.3,
+        "worst": 66.5,
+        "std_dev": 24.6
+    },
+    {
+        "generation": 248,
+        "best": 173.5,
+        "average": 99.3,
+        "worst": 55.7,
+        "std_dev": 19.4
+    },
+    {
+        "generation": 249,
+        "best": 135.2,
+        "average": 100.9,
+        "worst": 67.2,
+        "std_dev": 20.8
+    },
+    {
+        "generation": 250,
+        "best": 129.0,
+        "average": 105.6,
+        "worst": 75.2,
+        "std_dev": 20.0
+    },
+    {
+        "generation": 251,
+        "best": 124.5,
+        "average": 100.1,
+        "worst": 40.5,
+        "std_dev": 27.1
+    },
+    {
+        "generation": 252,
+        "best": 176.0,
+        "average": 99.9,
+        "worst": 55.3,
+        "std_dev": 21.6
+    },
+    {
+        "generation": 253,
+        "best": 128.8,
+        "average": 101.9,
+        "worst": 42.7,
+        "std_dev": 17.6
+    },
+    {
+        "generation": 254,
+        "best": 127.8,
+        "average": 107.0,
+        "worst": 56.0,
+        "std_dev": 24.0
+    },
+    {
+        "generation": 255,
+        "best": 133.8,
+        "average": 106.6,
+        "worst": 73.0,
+        "std_dev": 19.6
+    },
+    {
+        "generation": 256,
+        "best": 131.2,
+        "average": 105.3,
+        "worst": 68.9,
+        "std_dev": 25.6
+    },
+    {
+        "generation": 257,
+        "best": 133.2,
+        "average": 100.9,
+        "worst": 45.6,
+        "std_dev": 24.6
+    },
+    {
+        "generation": 258,
+        "best": 133.5,
+        "average": 102.3,
+        "worst": 57.1,
+        "std_dev": 19.2
+    },
+    {
+        "generation": 259,
+        "best": 123.2,
+        "average": 98.5,
+        "worst": 51.0,
+        "std_dev": 17.7
+    },
+    {
+        "generation": 260,
+        "best": 140.7,
+        "average": 102.0,
+        "worst": 53.1,
+        "std_dev": 15.2
+    },
+    {
+        "generation": 261,
+        "best": 122.7,
+        "average": 100.2,
+        "worst": 43.6,
+        "std_dev": 25.2
+    },
+    {
+        "generation": 262,
+        "best": 132.3,
+        "average": 104.5,
+        "worst": 49.6,
+        "std_dev": 23.8
+    },
+    {
+        "generation": 263,
+        "best": 127.4,
+        "average": 101.5,
+        "worst": 69.7,
+        "std_dev": 29.2
+    },
+    {
+        "generation": 264,
+        "best": 144.2,
+        "average": 105.1,
+        "worst": 69.1,
+        "std_dev": 29.4
+    },
+    {
+        "generation": 265,
+        "best": 177.4,
+        "average": 99.1,
+        "worst": 64.6,
+        "std_dev": 18.5
+    },
+    {
+        "generation": 266,
+        "best": 133.0,
+        "average": 101.6,
+        "worst": 55.9,
+        "std_dev": 24.5
+    },
+    {
+        "generation": 267,
+        "best": 125.7,
+        "average": 99.2,
+        "worst": 48.6,
+        "std_dev": 16.1
+    },
+    {
+        "generation": 268,
+        "best": 142.0,
+        "average": 108.9,
+        "worst": 76.1,
+        "std_dev": 28.3
+    },
+    {
+        "generation": 269,
+        "best": 125.5,
+        "average": 101.1,
+        "worst": 46.5,
+        "std_dev": 23.3
+    },
+    {
+        "generation": 270,
+        "best": 129.0,
+        "average": 101.9,
+        "worst": 71.5,
+        "std_dev": 18.0
+    },
+    {
+        "generation": 271,
+        "best": 129.8,
+        "average": 105.3,
+        "worst": 65.0,
+        "std_dev": 19.4
+    },
+    {
+        "generation": 272,
+        "best": 141.7,
+        "average": 107.4,
+        "worst": 53.4,
+        "std_dev": 18.9
+    },
+    {
+        "generation": 273,
+        "best": 128.4,
+        "average": 104.3,
+        "worst": 46.1,
+        "std_dev": 19.0
+    },
+    {
+        "generation": 274,
+        "best": 135.0,
+        "average": 108.1,
+        "worst": 67.8,
+        "std_dev": 19.0
+    },
+    {
+        "generation": 275,
+        "best": 143.1,
+        "average": 107.4,
+        "worst": 50.3,
+        "std_dev": 28.4
+    },
+    {
+        "generation": 276,
+        "best": 125.6,
+        "average": 105.4,
+        "worst": 75.3,
+        "std_dev": 25.7
+    },
+    {
+        "generation": 277,
+        "best": 129.2,
+        "average": 107.6,
+        "worst": 61.4,
+        "std_dev": 16.6
+    },
+    {
+        "generation": 278,
+        "best": 125.7,
+        "average": 102.1,
+        "worst": 63.6,
+        "std_dev": 15.3
+    },
+    {
+        "generation": 279,
+        "best": 138.4,
+        "average": 100.9,
+        "worst": 46.8,
+        "std_dev": 18.9
+    },
+    {
+        "generation": 280,
+        "best": 134.3,
+        "average": 107.8,
+        "worst": 51.3,
+        "std_dev": 17.4
+    },
+    {
+        "generation": 281,
+        "best": 132.9,
+        "average": 101.9,
+        "worst": 65.4,
+        "std_dev": 25.9
+    },
+    {
+        "generation": 282,
+        "best": 147.6,
+        "average": 109.8,
+        "worst": 70.3,
+        "std_dev": 27.6
+    },
+    {
+        "generation": 283,
+        "best": 150.1,
+        "average": 110.4,
+        "worst": 60.7,
+        "std_dev": 27.7
+    },
+    {
+        "generation": 284,
+        "best": 124.0,
+        "average": 102.1,
+        "worst": 61.8,
+        "std_dev": 24.9
+    },
+    {
+        "generation": 285,
+        "best": 132.5,
+        "average": 107.9,
+        "worst": 65.9,
+        "std_dev": 20.1
+    },
+    {
+        "generation": 286,
+        "best": 134.4,
+        "average": 111.1,
+        "worst": 65.1,
+        "std_dev": 15.7
+    },
+    {
+        "generation": 287,
+        "best": 146.3,
+        "average": 108.6,
+        "worst": 57.5,
+        "std_dev": 27.3
+    },
+    {
+        "generation": 288,
+        "best": 134.2,
+        "average": 103.3,
+        "worst": 48.1,
+        "std_dev": 21.3
+    },
+    {
+        "generation": 289,
+        "best": 137.0,
+        "average": 110.0,
+        "worst": 51.0,
+        "std_dev": 25.7
+    },
+    {
+        "generation": 290,
+        "best": 134.9,
+        "average": 101.9,
+        "worst": 52.9,
+        "std_dev": 19.1
+    },
+    {
+        "generation": 291,
+        "best": 136.2,
+        "average": 110.0,
+        "worst": 69.4,
+        "std_dev": 18.5
+    },
+    {
+        "generation": 292,
+        "best": 138.2,
+        "average": 106.4,
+        "worst": 74.5,
+        "std_dev": 22.5
+    },
+    {
+        "generation": 293,
+        "best": 139.5,
+        "average": 103.9,
+        "worst": 52.6,
+        "std_dev": 20.6
+    },
+    {
+        "generation": 294,
+        "best": 143.2,
+        "average": 110.4,
+        "worst": 67.9,
+        "std_dev": 24.2
+    },
+    {
+        "generation": 295,
+        "best": 132.5,
+        "average": 103.0,
+        "worst": 47.3,
+        "std_dev": 26.2
+    },
+    {
+        "generation": 296,
+        "best": 143.5,
+        "average": 105.3,
+        "worst": 71.2,
+        "std_dev": 23.8
+    },
+    {
+        "generation": 297,
+        "best": 134.0,
+        "average": 105.0,
+        "worst": 56.0,
+        "std_dev": 25.8
+    },
+    {
+        "generation": 298,
+        "best": 139.9,
+        "average": 110.8,
+        "worst": 72.3,
+        "std_dev": 28.2
+    },
+    {
+        "generation": 299,
+        "best": 135.9,
+        "average": 104.8,
+        "worst": 64.0,
+        "std_dev": 16.8
+    },
+    {
+        "generation": 300,
+        "best": 145.2,
+        "average": 112.7,
+        "worst": 80.7,
+        "std_dev": 17.5
+    },
+    {
+        "generation": 301,
+        "best": 145.9,
+        "average": 110.5,
+        "worst": 58.8,
+        "std_dev": 25.7
+    },
+    {
+        "generation": 302,
+        "best": 149.3,
+        "average": 110.1,
+        "worst": 69.8,
+        "std_dev": 20.0
+    },
+    {
+        "generation": 303,
+        "best": 145.6,
+        "average": 110.2,
+        "worst": 61.6,
+        "std_dev": 29.0
+    },
+    {
+        "generation": 304,
+        "best": 132.4,
+        "average": 110.5,
+        "worst": 52.2,
+        "std_dev": 25.6
+    },
+    {
+        "generation": 305,
+        "best": 139.2,
+        "average": 105.0,
+        "worst": 51.8,
+        "std_dev": 17.1
+    },
+    {
+        "generation": 306,
+        "best": 135.3,
+        "average": 110.7,
+        "worst": 72.7,
+        "std_dev": 21.0
+    },
+    {
+        "generation": 307,
+        "best": 139.1,
+        "average": 108.7,
+        "worst": 61.9,
+        "std_dev": 18.8
+    },
+    {
+        "generation": 308,
+        "best": 136.4,
+        "average": 104.1,
+        "worst": 72.0,
+        "std_dev": 20.2
+    },
+    {
+        "generation": 309,
+        "best": 139.9,
+        "average": 112.7,
+        "worst": 60.7,
+        "std_dev": 20.6
+    },
+    {
+        "generation": 310,
+        "best": 129.6,
+        "average": 106.9,
+        "worst": 53.7,
+        "std_dev": 21.9
+    },
+    {
+        "generation": 311,
+        "best": 138.2,
+        "average": 107.2,
+        "worst": 70.6,
+        "std_dev": 19.7
+    },
+    {
+        "generation": 312,
+        "best": 137.9,
+        "average": 113.7,
+        "worst": 55.7,
+        "std_dev": 20.1
+    },
+    {
+        "generation": 313,
+        "best": 138.4,
+        "average": 108.9,
+        "worst": 75.8,
+        "std_dev": 29.9
+    },
+    {
+        "generation": 314,
+        "best": 149.8,
+        "average": 110.1,
+        "worst": 63.3,
+        "std_dev": 21.3
+    },
+    {
+        "generation": 315,
+        "best": 180.4,
+        "average": 108.5,
+        "worst": 62.6,
+        "std_dev": 24.7
+    },
+    {
+        "generation": 316,
+        "best": 138.8,
+        "average": 114.5,
+        "worst": 58.4,
+        "std_dev": 29.3
+    },
+    {
+        "generation": 317,
+        "best": 144.0,
+        "average": 111.2,
+        "worst": 59.7,
+        "std_dev": 20.7
+    },
+    {
+        "generation": 318,
+        "best": 147.4,
+        "average": 112.3,
+        "worst": 53.8,
+        "std_dev": 25.7
+    },
+    {
+        "generation": 319,
+        "best": 140.4,
+        "average": 110.9,
+        "worst": 71.2,
+        "std_dev": 17.3
+    },
+    {
+        "generation": 320,
+        "best": 150.9,
+        "average": 111.2,
+        "worst": 55.5,
+        "std_dev": 21.1
+    },
+    {
+        "generation": 321,
+        "best": 133.7,
+        "average": 110.1,
+        "worst": 52.8,
+        "std_dev": 15.6
+    },
+    {
+        "generation": 322,
+        "best": 147.2,
+        "average": 109.5,
+        "worst": 60.4,
+        "std_dev": 16.1
+    },
+    {
+        "generation": 323,
+        "best": 146.4,
+        "average": 113.0,
+        "worst": 74.9,
+        "std_dev": 22.6
+    },
+    {
+        "generation": 324,
+        "best": 136.5,
+        "average": 106.0,
+        "worst": 54.6,
+        "std_dev": 16.5
+    },
+    {
+        "generation": 325,
+        "best": 144.3,
+        "average": 111.2,
+        "worst": 75.1,
+        "std_dev": 24.9
+    },
+    {
+        "generation": 326,
+        "best": 140.6,
+        "average": 106.3,
+        "worst": 66.1,
+        "std_dev": 17.4
+    },
+    {
+        "generation": 327,
+        "best": 137.8,
+        "average": 107.6,
+        "worst": 58.5,
+        "std_dev": 28.6
+    },
+    {
+        "generation": 328,
+        "best": 135.3,
+        "average": 112.7,
+        "worst": 60.5,
+        "std_dev": 15.0
+    },
+    {
+        "generation": 329,
+        "best": 137.0,
+        "average": 107.0,
+        "worst": 70.7,
+        "std_dev": 29.9
+    },
+    {
+        "generation": 330,
+        "best": 146.0,
+        "average": 114.3,
+        "worst": 64.0,
+        "std_dev": 17.1
+    },
+    {
+        "generation": 331,
+        "best": 142.5,
+        "average": 109.6,
+        "worst": 62.4,
+        "std_dev": 29.4
+    },
+    {
+        "generation": 332,
+        "best": 148.6,
+        "average": 111.9,
+        "worst": 68.3,
+        "std_dev": 25.3
+    },
+    {
+        "generation": 333,
+        "best": 141.3,
+        "average": 116.1,
+        "worst": 71.1,
+        "std_dev": 21.4
+    },
+    {
+        "generation": 334,
+        "best": 138.4,
+        "average": 113.3,
+        "worst": 77.2,
+        "std_dev": 24.2
+    },
+    {
+        "generation": 335,
+        "best": 134.9,
+        "average": 109.1,
+        "worst": 51.4,
+        "std_dev": 18.8
+    },
+    {
+        "generation": 336,
+        "best": 137.3,
+        "average": 109.7,
+        "worst": 75.5,
+        "std_dev": 28.9
+    },
+    {
+        "generation": 337,
+        "best": 141.6,
+        "average": 111.7,
+        "worst": 80.1,
+        "std_dev": 23.0
+    },
+    {
+        "generation": 338,
+        "best": 141.4,
+        "average": 112.6,
+        "worst": 64.2,
+        "std_dev": 27.2
+    },
+    {
+        "generation": 339,
+        "best": 141.4,
+        "average": 107.8,
+        "worst": 58.7,
+        "std_dev": 19.9
+    },
+    {
+        "generation": 340,
+        "best": 151.8,
+        "average": 111.9,
+        "worst": 54.9,
+        "std_dev": 24.3
+    },
+    {
+        "generation": 341,
+        "best": 143.0,
+        "average": 109.3,
+        "worst": 61.5,
+        "std_dev": 26.0
+    },
+    {
+        "generation": 342,
+        "best": 138.2,
+        "average": 111.2,
+        "worst": 66.5,
+        "std_dev": 24.5
+    },
+    {
+        "generation": 343,
+        "best": 139.9,
+        "average": 112.0,
+        "worst": 60.7,
+        "std_dev": 20.6
+    },
+    {
+        "generation": 344,
+        "best": 141.2,
+        "average": 113.5,
+        "worst": 67.5,
+        "std_dev": 29.0
+    },
+    {
+        "generation": 345,
+        "best": 138.0,
+        "average": 110.5,
+        "worst": 59.9,
+        "std_dev": 16.4
+    },
+    {
+        "generation": 346,
+        "best": 140.6,
+        "average": 117.4,
+        "worst": 67.3,
+        "std_dev": 27.0
+    },
+    {
+        "generation": 347,
+        "best": 153.5,
+        "average": 113.9,
+        "worst": 66.4,
+        "std_dev": 29.1
+    },
+    {
+        "generation": 348,
+        "best": 135.6,
+        "average": 114.2,
+        "worst": 70.0,
+        "std_dev": 20.3
+    },
+    {
+        "generation": 349,
+        "best": 135.4,
+        "average": 110.3,
+        "worst": 56.6,
+        "std_dev": 22.8
+    },
+    {
+        "generation": 350,
+        "best": 154.8,
+        "average": 116.0,
+        "worst": 58.2,
+        "std_dev": 19.9
+    },
+    {
+        "generation": 351,
+        "best": 139.1,
+        "average": 108.0,
+        "worst": 77.6,
+        "std_dev": 18.0
+    },
+    {
+        "generation": 352,
+        "best": 137.0,
+        "average": 113.0,
+        "worst": 75.5,
+        "std_dev": 22.5
+    },
+    {
+        "generation": 353,
+        "best": 137.3,
+        "average": 114.1,
+        "worst": 58.9,
+        "std_dev": 26.5
+    },
+    {
+        "generation": 354,
+        "best": 191.0,
+        "average": 109.0,
+        "worst": 73.1,
+        "std_dev": 25.1
+    },
+    {
+        "generation": 355,
+        "best": 147.4,
+        "average": 113.9,
+        "worst": 75.5,
+        "std_dev": 29.0
+    },
+    {
+        "generation": 356,
+        "best": 151.8,
+        "average": 117.9,
+        "worst": 69.2,
+        "std_dev": 27.6
+    },
+    {
+        "generation": 357,
+        "best": 137.5,
+        "average": 110.0,
+        "worst": 77.9,
+        "std_dev": 15.0
+    },
+    {
+        "generation": 358,
+        "best": 144.5,
+        "average": 115.3,
+        "worst": 77.5,
+        "std_dev": 24.6
+    },
+    {
+        "generation": 359,
+        "best": 183.0,
+        "average": 112.3,
+        "worst": 70.6,
+        "std_dev": 17.5
+    },
+    {
+        "generation": 360,
+        "best": 155.8,
+        "average": 118.4,
+        "worst": 58.9,
+        "std_dev": 21.3
+    },
+    {
+        "generation": 361,
+        "best": 146.6,
+        "average": 116.0,
+        "worst": 80.4,
+        "std_dev": 15.6
+    },
+    {
+        "generation": 362,
+        "best": 148.8,
+        "average": 110.6,
+        "worst": 78.1,
+        "std_dev": 19.9
+    },
+    {
+        "generation": 363,
+        "best": 140.7,
+        "average": 112.6,
+        "worst": 58.7,
+        "std_dev": 26.3
+    },
+    {
+        "generation": 364,
+        "best": 139.5,
+        "average": 110.4,
+        "worst": 76.0,
+        "std_dev": 16.8
+    },
+    {
+        "generation": 365,
+        "best": 142.6,
+        "average": 110.6,
+        "worst": 69.4,
+        "std_dev": 19.7
+    },
+    {
+        "generation": 366,
+        "best": 151.1,
+        "average": 116.8,
+        "worst": 71.6,
+        "std_dev": 24.0
+    },
+    {
+        "generation": 367,
+        "best": 146.5,
+        "average": 112.9,
+        "worst": 62.5,
+        "std_dev": 24.9
+    },
+    {
+        "generation": 368,
+        "best": 142.9,
+        "average": 111.9,
+        "worst": 63.5,
+        "std_dev": 26.0
+    },
+    {
+        "generation": 369,
+        "best": 142.0,
+        "average": 118.1,
+        "worst": 71.2,
+        "std_dev": 15.1
+    },
+    {
+        "generation": 370,
+        "best": 146.8,
+        "average": 116.5,
+        "worst": 78.4,
+        "std_dev": 22.8
+    },
+    {
+        "generation": 371,
+        "best": 146.9,
+        "average": 110.9,
+        "worst": 80.2,
+        "std_dev": 25.8
+    },
+    {
+        "generation": 372,
+        "best": 141.9,
+        "average": 112.0,
+        "worst": 55.0,
+        "std_dev": 17.6
+    },
+    {
+        "generation": 373,
+        "best": 153.4,
+        "average": 119.5,
+        "worst": 67.4,
+        "std_dev": 16.3
+    },
+    {
+        "generation": 374,
+        "best": 143.4,
+        "average": 113.6,
+        "worst": 82.8,
+        "std_dev": 26.6
+    },
+    {
+        "generation": 375,
+        "best": 153.6,
+        "average": 116.2,
+        "worst": 56.2,
+        "std_dev": 25.2
+    },
+    {
+        "generation": 376,
+        "best": 137.8,
+        "average": 116.1,
+        "worst": 79.8,
+        "std_dev": 29.4
+    },
+    {
+        "generation": 377,
+        "best": 154.5,
+        "average": 114.8,
+        "worst": 74.2,
+        "std_dev": 20.9
+    },
+    {
+        "generation": 378,
+        "best": 134.2,
+        "average": 112.9,
+        "worst": 58.9,
+        "std_dev": 24.9
+    },
+    {
+        "generation": 379,
+        "best": 144.4,
+        "average": 119.6,
+        "worst": 69.4,
+        "std_dev": 17.0
+    },
+    {
+        "generation": 380,
+        "best": 159.1,
+        "average": 120.1,
+        "worst": 72.9,
+        "std_dev": 17.5
+    },
+    {
+        "generation": 381,
+        "best": 141.1,
+        "average": 111.5,
+        "worst": 57.4,
+        "std_dev": 27.9
+    },
+    {
+        "generation": 382,
+        "best": 153.8,
+        "average": 115.0,
+        "worst": 74.3,
+        "std_dev": 24.1
+    },
+    {
+        "generation": 383,
+        "best": 139.0,
+        "average": 112.6,
+        "worst": 77.5,
+        "std_dev": 17.4
+    },
+    {
+        "generation": 384,
+        "best": 139.5,
+        "average": 111.0,
+        "worst": 64.8,
+        "std_dev": 29.7
+    },
+    {
+        "generation": 385,
+        "best": 139.5,
+        "average": 115.8,
+        "worst": 82.1,
+        "std_dev": 16.9
+    },
+    {
+        "generation": 386,
+        "best": 151.6,
+        "average": 114.1,
+        "worst": 57.5,
+        "std_dev": 21.2
+    },
+    {
+        "generation": 387,
+        "best": 143.0,
+        "average": 117.4,
+        "worst": 76.4,
+        "std_dev": 22.1
+    },
+    {
+        "generation": 388,
+        "best": 135.5,
+        "average": 113.4,
+        "worst": 74.1,
+        "std_dev": 26.6
+    },
+    {
+        "generation": 389,
+        "best": 140.3,
+        "average": 113.5,
+        "worst": 66.6,
+        "std_dev": 20.0
+    },
+    {
+        "generation": 390,
+        "best": 151.8,
+        "average": 120.1,
+        "worst": 63.7,
+        "std_dev": 15.4
+    },
+    {
+        "generation": 391,
+        "best": 154.5,
+        "average": 118.7,
+        "worst": 67.2,
+        "std_dev": 16.6
+    },
+    {
+        "generation": 392,
+        "best": 150.5,
+        "average": 112.7,
+        "worst": 64.3,
+        "std_dev": 18.6
+    },
+    {
+        "generation": 393,
+        "best": 140.1,
+        "average": 112.5,
+        "worst": 53.6,
+        "std_dev": 29.0
+    },
+    {
+        "generation": 394,
+        "best": 154.1,
+        "average": 114.3,
+        "worst": 67.1,
+        "std_dev": 26.8
+    },
+    {
+        "generation": 395,
+        "best": 151.1,
+        "average": 120.3,
+        "worst": 72.5,
+        "std_dev": 25.5
+    },
+    {
+        "generation": 396,
+        "best": 152.0,
+        "average": 116.5,
+        "worst": 81.7,
+        "std_dev": 24.0
+    },
+    {
+        "generation": 397,
+        "best": 149.6,
+        "average": 112.0,
+        "worst": 80.2,
+        "std_dev": 27.9
+    },
+    {
+        "generation": 398,
+        "best": 159.2,
+        "average": 121.1,
+        "worst": 88.2,
+        "std_dev": 22.9
+    },
+    {
+        "generation": 399,
+        "best": 149.3,
+        "average": 114.6,
+        "worst": 70.3,
+        "std_dev": 23.3
+    },
+    {
+        "generation": 400,
+        "best": 153.2,
+        "average": 121.0,
+        "worst": 88.9,
+        "std_dev": 26.4
+    },
+    {
+        "generation": 401,
+        "best": 155.5,
+        "average": 117.2,
+        "worst": 78.0,
+        "std_dev": 28.5
+    },
+    {
+        "generation": 402,
+        "best": 139.4,
+        "average": 112.6,
+        "worst": 75.7,
+        "std_dev": 25.5
+    },
+    {
+        "generation": 403,
+        "best": 150.7,
+        "average": 112.3,
+        "worst": 64.8,
+        "std_dev": 28.6
+    },
+    {
+        "generation": 404,
+        "best": 160.7,
+        "average": 121.5,
+        "worst": 73.0,
+        "std_dev": 28.8
+    },
+    {
+        "generation": 405,
+        "best": 143.2,
+        "average": 116.6,
+        "worst": 73.2,
+        "std_dev": 22.0
+    },
+    {
+        "generation": 406,
+        "best": 155.0,
+        "average": 117.3,
+        "worst": 75.4,
+        "std_dev": 23.4
+    },
+    {
+        "generation": 407,
+        "best": 154.9,
+        "average": 116.4,
+        "worst": 75.4,
+        "std_dev": 18.6
+    },
+    {
+        "generation": 408,
+        "best": 151.4,
+        "average": 121.7,
+        "worst": 69.1,
+        "std_dev": 16.0
+    },
+    {
+        "generation": 409,
+        "best": 136.5,
+        "average": 113.0,
+        "worst": 75.9,
+        "std_dev": 17.3
+    },
+    {
+        "generation": 410,
+        "best": 143.9,
+        "average": 115.8,
+        "worst": 59.4,
+        "std_dev": 25.7
+    },
+    {
+        "generation": 411,
+        "best": 143.7,
+        "average": 113.8,
+        "worst": 63.1,
+        "std_dev": 20.5
+    },
+    {
+        "generation": 412,
+        "best": 135.0,
+        "average": 113.1,
+        "worst": 79.4,
+        "std_dev": 23.5
+    },
+    {
+        "generation": 413,
+        "best": 153.6,
+        "average": 117.3,
+        "worst": 70.2,
+        "std_dev": 24.5
+    },
+    {
+        "generation": 414,
+        "best": 141.8,
+        "average": 115.0,
+        "worst": 70.2,
+        "std_dev": 15.1
+    },
+    {
+        "generation": 415,
+        "best": 146.1,
+        "average": 113.9,
+        "worst": 61.3,
+        "std_dev": 26.1
+    },
+    {
+        "generation": 416,
+        "best": 151.6,
+        "average": 114.4,
+        "worst": 68.9,
+        "std_dev": 19.4
+    },
+    {
+        "generation": 417,
+        "best": 143.3,
+        "average": 119.1,
+        "worst": 83.1,
+        "std_dev": 24.4
+    },
+    {
+        "generation": 418,
+        "best": 145.8,
+        "average": 114.3,
+        "worst": 83.4,
+        "std_dev": 16.5
+    },
+    {
+        "generation": 419,
+        "best": 144.0,
+        "average": 114.5,
+        "worst": 66.7,
+        "std_dev": 25.4
+    },
+    {
+        "generation": 420,
+        "best": 143.1,
+        "average": 114.6,
+        "worst": 74.3,
+        "std_dev": 26.4
+    },
+    {
+        "generation": 421,
+        "best": 144.9,
+        "average": 121.2,
+        "worst": 72.6,
+        "std_dev": 26.8
+    },
+    {
+        "generation": 422,
+        "best": 150.3,
+        "average": 117.9,
+        "worst": 59.4,
+        "std_dev": 20.9
+    },
+    {
+        "generation": 423,
+        "best": 154.9,
+        "average": 118.0,
+        "worst": 60.8,
+        "std_dev": 22.2
+    },
+    {
+        "generation": 424,
+        "best": 156.5,
+        "average": 116.6,
+        "worst": 85.7,
+        "std_dev": 29.8
+    },
+    {
+        "generation": 425,
+        "best": 157.9,
+        "average": 118.6,
+        "worst": 62.9,
+        "std_dev": 28.0
+    },
+    {
+        "generation": 426,
+        "best": 149.5,
+        "average": 115.9,
+        "worst": 77.5,
+        "std_dev": 22.2
+    },
+    {
+        "generation": 427,
+        "best": 152.9,
+        "average": 121.1,
+        "worst": 80.8,
+        "std_dev": 29.0
+    },
+    {
+        "generation": 428,
+        "best": 187.9,
+        "average": 114.1,
+        "worst": 82.3,
+        "std_dev": 24.5
+    },
+    {
+        "generation": 429,
+        "best": 143.7,
+        "average": 121.2,
+        "worst": 74.2,
+        "std_dev": 16.6
+    },
+    {
+        "generation": 430,
+        "best": 134.6,
+        "average": 114.3,
+        "worst": 63.0,
+        "std_dev": 27.1
+    },
+    {
+        "generation": 431,
+        "best": 150.8,
+        "average": 118.6,
+        "worst": 63.2,
+        "std_dev": 28.3
+    },
+    {
+        "generation": 432,
+        "best": 157.3,
+        "average": 122.4,
+        "worst": 72.2,
+        "std_dev": 27.2
+    },
+    {
+        "generation": 433,
+        "best": 144.5,
+        "average": 117.1,
+        "worst": 73.6,
+        "std_dev": 24.1
+    },
+    {
+        "generation": 434,
+        "best": 148.7,
+        "average": 116.1,
+        "worst": 60.5,
+        "std_dev": 23.8
+    },
+    {
+        "generation": 435,
+        "best": 149.7,
+        "average": 123.4,
+        "worst": 91.0,
+        "std_dev": 23.6
+    },
+    {
+        "generation": 436,
+        "best": 144.2,
+        "average": 123.3,
+        "worst": 71.9,
+        "std_dev": 29.2
+    },
+    {
+        "generation": 437,
+        "best": 200.0,
+        "average": 119.2,
+        "worst": 62.0,
+        "std_dev": 27.3
+    },
+    {
+        "generation": 438,
+        "best": 141.4,
+        "average": 116.5,
+        "worst": 77.3,
+        "std_dev": 20.3
+    },
+    {
+        "generation": 439,
+        "best": 151.6,
+        "average": 116.9,
+        "worst": 73.0,
+        "std_dev": 15.4
+    },
+    {
+        "generation": 440,
+        "best": 141.3,
+        "average": 120.2,
+        "worst": 80.3,
+        "std_dev": 22.1
+    },
+    {
+        "generation": 441,
+        "best": 152.3,
+        "average": 118.0,
+        "worst": 82.8,
+        "std_dev": 22.5
+    },
+    {
+        "generation": 442,
+        "best": 145.5,
+        "average": 122.0,
+        "worst": 81.5,
+        "std_dev": 29.6
+    },
+    {
+        "generation": 443,
+        "best": 150.6,
+        "average": 121.8,
+        "worst": 71.7,
+        "std_dev": 18.9
+    },
+    {
+        "generation": 444,
+        "best": 152.5,
+        "average": 124.1,
+        "worst": 94.0,
+        "std_dev": 22.2
+    },
+    {
+        "generation": 445,
+        "best": 156.5,
+        "average": 123.1,
+        "worst": 67.6,
+        "std_dev": 26.3
+    },
+    {
+        "generation": 446,
+        "best": 155.7,
+        "average": 122.0,
+        "worst": 72.7,
+        "std_dev": 30.0
+    },
+    {
+        "generation": 447,
+        "best": 152.9,
+        "average": 122.7,
+        "worst": 69.0,
+        "std_dev": 20.2
+    },
+    {
+        "generation": 448,
+        "best": 155.9,
+        "average": 121.0,
+        "worst": 89.5,
+        "std_dev": 23.6
+    },
+    {
+        "generation": 449,
+        "best": 151.1,
+        "average": 121.7,
+        "worst": 83.8,
+        "std_dev": 17.9
+    },
+    {
+        "generation": 450,
+        "best": 207.7,
+        "average": 124.1,
+        "worst": 91.0,
+        "std_dev": 23.1
+    },
+    {
+        "generation": 451,
+        "best": 147.5,
+        "average": 119.7,
+        "worst": 85.2,
+        "std_dev": 27.9
+    },
+    {
+        "generation": 452,
+        "best": 155.4,
+        "average": 117.8,
+        "worst": 71.8,
+        "std_dev": 26.9
+    },
+    {
+        "generation": 453,
+        "best": 136.4,
+        "average": 115.9,
+        "worst": 70.8,
+        "std_dev": 23.5
+    },
+    {
+        "generation": 454,
+        "best": 158.5,
+        "average": 120.5,
+        "worst": 76.2,
+        "std_dev": 23.1
+    },
+    {
+        "generation": 455,
+        "best": 157.6,
+        "average": 124.5,
+        "worst": 70.8,
+        "std_dev": 22.9
+    },
+    {
+        "generation": 456,
+        "best": 154.8,
+        "average": 122.3,
+        "worst": 76.6,
+        "std_dev": 26.3
+    },
+    {
+        "generation": 457,
+        "best": 145.7,
+        "average": 125.3,
+        "worst": 83.7,
+        "std_dev": 15.4
+    },
+    {
+        "generation": 458,
+        "best": 146.1,
+        "average": 117.1,
+        "worst": 85.7,
+        "std_dev": 27.9
+    },
+    {
+        "generation": 459,
+        "best": 157.6,
+        "average": 120.6,
+        "worst": 75.4,
+        "std_dev": 20.9
+    },
+    {
+        "generation": 460,
+        "best": 150.6,
+        "average": 116.5,
+        "worst": 69.9,
+        "std_dev": 23.1
+    },
+    {
+        "generation": 461,
+        "best": 157.3,
+        "average": 121.7,
+        "worst": 84.1,
+        "std_dev": 26.8
+    },
+    {
+        "generation": 462,
+        "best": 157.3,
+        "average": 125.4,
+        "worst": 86.0,
+        "std_dev": 16.6
+    },
+    {
+        "generation": 463,
+        "best": 152.0,
+        "average": 125.0,
+        "worst": 77.6,
+        "std_dev": 24.4
+    },
+    {
+        "generation": 464,
+        "best": 139.4,
+        "average": 116.9,
+        "worst": 86.3,
+        "std_dev": 19.4
+    },
+    {
+        "generation": 465,
+        "best": 154.9,
+        "average": 116.3,
+        "worst": 75.6,
+        "std_dev": 15.6
+    },
+    {
+        "generation": 466,
+        "best": 204.5,
+        "average": 119.2,
+        "worst": 86.0,
+        "std_dev": 24.4
+    },
+    {
+        "generation": 467,
+        "best": 152.6,
+        "average": 117.5,
+        "worst": 79.4,
+        "std_dev": 25.8
+    },
+    {
+        "generation": 468,
+        "best": 145.1,
+        "average": 118.8,
+        "worst": 77.5,
+        "std_dev": 20.4
+    },
+    {
+        "generation": 469,
+        "best": 162.6,
+        "average": 126.2,
+        "worst": 92.8,
+        "std_dev": 21.9
+    },
+    {
+        "generation": 470,
+        "best": 155.9,
+        "average": 123.0,
+        "worst": 72.0,
+        "std_dev": 19.6
+    },
+    {
+        "generation": 471,
+        "best": 157.5,
+        "average": 124.7,
+        "worst": 89.0,
+        "std_dev": 24.1
+    },
+    {
+        "generation": 472,
+        "best": 198.1,
+        "average": 118.4,
+        "worst": 79.2,
+        "std_dev": 24.9
+    },
+    {
+        "generation": 473,
+        "best": 159.0,
+        "average": 126.0,
+        "worst": 70.3,
+        "std_dev": 24.8
+    },
+    {
+        "generation": 474,
+        "best": 197.0,
+        "average": 117.3,
+        "worst": 81.0,
+        "std_dev": 24.9
+    },
+    {
+        "generation": 475,
+        "best": 158.0,
+        "average": 125.3,
+        "worst": 69.0,
+        "std_dev": 21.5
+    },
+    {
+        "generation": 476,
+        "best": 154.5,
+        "average": 120.7,
+        "worst": 70.2,
+        "std_dev": 16.9
+    },
+    {
+        "generation": 477,
+        "best": 209.6,
+        "average": 120.0,
+        "worst": 84.8,
+        "std_dev": 15.6
+    },
+    {
+        "generation": 478,
+        "best": 155.1,
+        "average": 125.8,
+        "worst": 76.5,
+        "std_dev": 25.1
+    },
+    {
+        "generation": 479,
+        "best": 146.5,
+        "average": 123.1,
+        "worst": 68.0,
+        "std_dev": 19.9
+    },
+    {
+        "generation": 480,
+        "best": 158.8,
+        "average": 120.2,
+        "worst": 70.5,
+        "std_dev": 24.8
+    },
+    {
+        "generation": 481,
+        "best": 156.5,
+        "average": 117.6,
+        "worst": 75.9,
+        "std_dev": 18.1
+    },
+    {
+        "generation": 482,
+        "best": 151.5,
+        "average": 126.5,
+        "worst": 82.2,
+        "std_dev": 23.3
+    },
+    {
+        "generation": 483,
+        "best": 155.4,
+        "average": 122.2,
+        "worst": 87.1,
+        "std_dev": 21.8
+    },
+    {
+        "generation": 484,
+        "best": 150.6,
+        "average": 122.8,
+        "worst": 77.9,
+        "std_dev": 25.1
+    },
+    {
+        "generation": 485,
+        "best": 152.1,
+        "average": 121.8,
+        "worst": 71.1,
+        "std_dev": 25.1
+    },
+    {
+        "generation": 486,
+        "best": 141.9,
+        "average": 120.4,
+        "worst": 62.3,
+        "std_dev": 23.4
+    },
+    {
+        "generation": 487,
+        "best": 140.5,
+        "average": 119.9,
+        "worst": 63.0,
+        "std_dev": 27.4
+    },
+    {
+        "generation": 488,
+        "best": 161.4,
+        "average": 124.5,
+        "worst": 82.1,
+        "std_dev": 16.4
+    },
+    {
+        "generation": 489,
+        "best": 141.6,
+        "average": 119.3,
+        "worst": 70.8,
+        "std_dev": 17.1
+    },
+    {
+        "generation": 490,
+        "best": 148.3,
+        "average": 124.4,
+        "worst": 92.1,
+        "std_dev": 23.0
+    },
+    {
+        "generation": 491,
+        "best": 160.1,
+        "average": 123.5,
+        "worst": 81.2,
+        "std_dev": 23.0
+    },
+    {
+        "generation": 492,
+        "best": 141.0,
+        "average": 119.9,
+        "worst": 71.5,
+        "std_dev": 19.5
+    },
+    {
+        "generation": 493,
+        "best": 140.9,
+        "average": 119.6,
+        "worst": 76.3,
+        "std_dev": 29.4
+    },
+    {
+        "generation": 494,
+        "best": 156.6,
+        "average": 126.1,
+        "worst": 89.9,
+        "std_dev": 23.9
+    },
+    {
+        "generation": 495,
+        "best": 147.0,
+        "average": 124.9,
+        "worst": 93.4,
+        "std_dev": 27.5
+    },
+    {
+        "generation": 496,
+        "best": 158.2,
+        "average": 126.4,
+        "worst": 95.8,
+        "std_dev": 26.2
+    },
+    {
+        "generation": 497,
+        "best": 147.1,
+        "average": 127.0,
+        "worst": 94.6,
+        "std_dev": 18.8
+    },
+    {
+        "generation": 498,
+        "best": 158.4,
+        "average": 121.5,
+        "worst": 81.0,
+        "std_dev": 19.9
+    },
+    {
+        "generation": 499,
+        "best": 155.5,
+        "average": 121.8,
+        "worst": 78.5,
+        "std_dev": 21.5
+    },
+    {
+        "generation": 500,
+        "best": 144.7,
+        "average": 120.9,
+        "worst": 89.8,
+        "std_dev": 18.9
+    },
+    {
+        "generation": 501,
+        "best": 203.7,
+        "average": 119.6,
+        "worst": 71.5,
+        "std_dev": 24.2
+    },
+    {
+        "generation": 502,
+        "best": 149.1,
+        "average": 126.5,
+        "worst": 68.0,
+        "std_dev": 16.6
+    },
+    {
+        "generation": 503,
+        "best": 145.0,
+        "average": 120.6,
+        "worst": 72.2,
+        "std_dev": 27.7
+    },
+    {
+        "generation": 504,
+        "best": 146.8,
+        "average": 126.5,
+        "worst": 73.0,
+        "std_dev": 15.9
+    },
+    {
+        "generation": 505,
+        "best": 139.4,
+        "average": 118.9,
+        "worst": 87.2,
+        "std_dev": 21.4
+    },
+    {
+        "generation": 506,
+        "best": 149.8,
+        "average": 119.2,
+        "worst": 78.6,
+        "std_dev": 28.6
+    },
+    {
+        "generation": 507,
+        "best": 146.6,
+        "average": 123.6,
+        "worst": 80.1,
+        "std_dev": 27.7
+    },
+    {
+        "generation": 508,
+        "best": 148.6,
+        "average": 122.6,
+        "worst": 75.2,
+        "std_dev": 15.5
+    },
+    {
+        "generation": 509,
+        "best": 157.2,
+        "average": 122.6,
+        "worst": 90.3,
+        "std_dev": 18.5
+    },
+    {
+        "generation": 510,
+        "best": 155.9,
+        "average": 120.7,
+        "worst": 65.3,
+        "std_dev": 24.9
+    },
+    {
+        "generation": 511,
+        "best": 140.9,
+        "average": 118.7,
+        "worst": 67.4,
+        "std_dev": 28.5
+    },
+    {
+        "generation": 512,
+        "best": 164.6,
+        "average": 124.8,
+        "worst": 76.8,
+        "std_dev": 22.6
+    },
+    {
+        "generation": 513,
+        "best": 150.3,
+        "average": 126.5,
+        "worst": 75.5,
+        "std_dev": 19.9
+    },
+    {
+        "generation": 514,
+        "best": 141.5,
+        "average": 120.7,
+        "worst": 71.5,
+        "std_dev": 19.2
+    },
+    {
+        "generation": 515,
+        "best": 153.7,
+        "average": 128.1,
+        "worst": 70.3,
+        "std_dev": 24.9
+    },
+    {
+        "generation": 516,
+        "best": 150.1,
+        "average": 127.7,
+        "worst": 90.6,
+        "std_dev": 21.8
+    },
+    {
+        "generation": 517,
+        "best": 161.8,
+        "average": 122.2,
+        "worst": 80.6,
+        "std_dev": 25.7
+    },
+    {
+        "generation": 518,
+        "best": 161.2,
+        "average": 123.5,
+        "worst": 79.4,
+        "std_dev": 26.3
+    },
+    {
+        "generation": 519,
+        "best": 209.9,
+        "average": 126.8,
+        "worst": 77.7,
+        "std_dev": 26.1
+    },
+    {
+        "generation": 520,
+        "best": 155.0,
+        "average": 123.4,
+        "worst": 92.3,
+        "std_dev": 29.1
+    },
+    {
+        "generation": 521,
+        "best": 147.8,
+        "average": 124.3,
+        "worst": 78.1,
+        "std_dev": 25.4
+    },
+    {
+        "generation": 522,
+        "best": 147.0,
+        "average": 120.7,
+        "worst": 76.1,
+        "std_dev": 22.5
+    },
+    {
+        "generation": 523,
+        "best": 148.3,
+        "average": 123.4,
+        "worst": 90.5,
+        "std_dev": 18.9
+    },
+    {
+        "generation": 524,
+        "best": 155.8,
+        "average": 122.9,
+        "worst": 66.3,
+        "std_dev": 23.9
+    },
+    {
+        "generation": 525,
+        "best": 150.9,
+        "average": 123.3,
+        "worst": 70.5,
+        "std_dev": 27.0
+    },
+    {
+        "generation": 526,
+        "best": 140.1,
+        "average": 120.1,
+        "worst": 74.0,
+        "std_dev": 21.0
+    },
+    {
+        "generation": 527,
+        "best": 145.9,
+        "average": 123.8,
+        "worst": 73.5,
+        "std_dev": 21.1
+    },
+    {
+        "generation": 528,
+        "best": 162.2,
+        "average": 128.4,
+        "worst": 79.9,
+        "std_dev": 18.1
+    },
+    {
+        "generation": 529,
+        "best": 151.2,
+        "average": 120.2,
+        "worst": 68.1,
+        "std_dev": 22.8
+    },
+    {
+        "generation": 530,
+        "best": 160.0,
+        "average": 121.0,
+        "worst": 81.7,
+        "std_dev": 18.6
+    },
+    {
+        "generation": 531,
+        "best": 143.0,
+        "average": 122.3,
+        "worst": 79.3,
+        "std_dev": 24.8
+    },
+    {
+        "generation": 532,
+        "best": 157.0,
+        "average": 123.0,
+        "worst": 70.8,
+        "std_dev": 20.7
+    },
+    {
+        "generation": 533,
+        "best": 157.0,
+        "average": 128.4,
+        "worst": 78.7,
+        "std_dev": 26.0
+    },
+    {
+        "generation": 534,
+        "best": 148.3,
+        "average": 122.4,
+        "worst": 63.6,
+        "std_dev": 15.8
+    },
+    {
+        "generation": 535,
+        "best": 158.5,
+        "average": 126.9,
+        "worst": 69.8,
+        "std_dev": 20.3
+    },
+    {
+        "generation": 536,
+        "best": 154.7,
+        "average": 119.9,
+        "worst": 67.2,
+        "std_dev": 19.4
+    },
+    {
+        "generation": 537,
+        "best": 152.2,
+        "average": 128.9,
+        "worst": 73.6,
+        "std_dev": 27.6
+    },
+    {
+        "generation": 538,
+        "best": 143.4,
+        "average": 120.3,
+        "worst": 66.3,
+        "std_dev": 25.6
+    },
+    {
+        "generation": 539,
+        "best": 159.4,
+        "average": 129.5,
+        "worst": 90.3,
+        "std_dev": 19.0
+    },
+    {
+        "generation": 540,
+        "best": 158.2,
+        "average": 120.5,
+        "worst": 82.1,
+        "std_dev": 29.6
+    },
+    {
+        "generation": 541,
+        "best": 158.0,
+        "average": 125.9,
+        "worst": 73.2,
+        "std_dev": 16.0
+    },
+    {
+        "generation": 542,
+        "best": 149.8,
+        "average": 120.6,
+        "worst": 60.8,
+        "std_dev": 23.8
+    },
+    {
+        "generation": 543,
+        "best": 141.5,
+        "average": 121.4,
+        "worst": 74.9,
+        "std_dev": 28.7
+    },
+    {
+        "generation": 544,
+        "best": 162.8,
+        "average": 124.2,
+        "worst": 89.4,
+        "std_dev": 21.4
+    },
+    {
+        "generation": 545,
+        "best": 150.8,
+        "average": 124.3,
+        "worst": 73.2,
+        "std_dev": 27.8
+    },
+    {
+        "generation": 546,
+        "best": 156.9,
+        "average": 128.1,
+        "worst": 82.5,
+        "std_dev": 28.9
+    },
+    {
+        "generation": 547,
+        "best": 154.2,
+        "average": 123.6,
+        "worst": 80.1,
+        "std_dev": 18.7
+    },
+    {
+        "generation": 548,
+        "best": 157.5,
+        "average": 129.5,
+        "worst": 82.7,
+        "std_dev": 29.7
+    },
+    {
+        "generation": 549,
+        "best": 143.0,
+        "average": 120.1,
+        "worst": 63.3,
+        "std_dev": 21.6
+    },
+    {
+        "generation": 550,
+        "best": 163.2,
+        "average": 127.9,
+        "worst": 94.5,
+        "std_dev": 27.4
+    },
+    {
+        "generation": 551,
+        "best": 152.0,
+        "average": 120.3,
+        "worst": 65.4,
+        "std_dev": 17.2
+    },
+    {
+        "generation": 552,
+        "best": 157.5,
+        "average": 128.7,
+        "worst": 80.7,
+        "std_dev": 28.8
+    },
+    {
+        "generation": 553,
+        "best": 153.6,
+        "average": 125.4,
+        "worst": 77.9,
+        "std_dev": 30.0
+    },
+    {
+        "generation": 554,
+        "best": 156.8,
+        "average": 122.0,
+        "worst": 87.1,
+        "std_dev": 17.5
+    },
+    {
+        "generation": 555,
+        "best": 152.3,
+        "average": 122.6,
+        "worst": 81.5,
+        "std_dev": 16.4
+    },
+    {
+        "generation": 556,
+        "best": 160.3,
+        "average": 122.8,
+        "worst": 85.0,
+        "std_dev": 19.1
+    },
+    {
+        "generation": 557,
+        "best": 149.3,
+        "average": 123.9,
+        "worst": 78.8,
+        "std_dev": 24.9
+    },
+    {
+        "generation": 558,
+        "best": 160.0,
+        "average": 124.3,
+        "worst": 75.3,
+        "std_dev": 19.6
+    },
+    {
+        "generation": 559,
+        "best": 160.2,
+        "average": 130.1,
+        "worst": 74.0,
+        "std_dev": 15.4
+    },
+    {
+        "generation": 560,
+        "best": 154.3,
+        "average": 128.8,
+        "worst": 86.4,
+        "std_dev": 20.5
+    },
+    {
+        "generation": 561,
+        "best": 146.9,
+        "average": 126.6,
+        "worst": 86.8,
+        "std_dev": 17.8
+    },
+    {
+        "generation": 562,
+        "best": 145.1,
+        "average": 120.5,
+        "worst": 68.8,
+        "std_dev": 23.6
+    },
+    {
+        "generation": 563,
+        "best": 150.1,
+        "average": 122.7,
+        "worst": 73.1,
+        "std_dev": 20.7
+    },
+    {
+        "generation": 564,
+        "best": 166.7,
+        "average": 129.6,
+        "worst": 92.4,
+        "std_dev": 24.2
+    },
+    {
+        "generation": 565,
+        "best": 158.5,
+        "average": 125.7,
+        "worst": 75.2,
+        "std_dev": 25.4
+    },
+    {
+        "generation": 566,
+        "best": 158.8,
+        "average": 123.0,
+        "worst": 79.0,
+        "std_dev": 19.6
+    },
+    {
+        "generation": 567,
+        "best": 143.3,
+        "average": 123.0,
+        "worst": 86.8,
+        "std_dev": 21.8
+    },
+    {
+        "generation": 568,
+        "best": 164.1,
+        "average": 126.3,
+        "worst": 90.7,
+        "std_dev": 17.6
+    },
+    {
+        "generation": 569,
+        "best": 210.3,
+        "average": 121.9,
+        "worst": 91.2,
+        "std_dev": 25.5
+    },
+    {
+        "generation": 570,
+        "best": 153.8,
+        "average": 124.3,
+        "worst": 76.7,
+        "std_dev": 28.7
+    },
+    {
+        "generation": 571,
+        "best": 159.8,
+        "average": 124.3,
+        "worst": 85.5,
+        "std_dev": 21.9
+    },
+    {
+        "generation": 572,
+        "best": 157.1,
+        "average": 125.6,
+        "worst": 69.6,
+        "std_dev": 26.4
+    },
+    {
+        "generation": 573,
+        "best": 159.4,
+        "average": 129.6,
+        "worst": 84.0,
+        "std_dev": 29.7
+    },
+    {
+        "generation": 574,
+        "best": 158.3,
+        "average": 122.8,
+        "worst": 87.9,
+        "std_dev": 23.6
+    },
+    {
+        "generation": 575,
+        "best": 162.0,
+        "average": 126.5,
+        "worst": 84.2,
+        "std_dev": 29.9
+    },
+    {
+        "generation": 576,
+        "best": 164.8,
+        "average": 125.5,
+        "worst": 77.4,
+        "std_dev": 17.6
+    },
+    {
+        "generation": 577,
+        "best": 151.3,
+        "average": 126.2,
+        "worst": 85.9,
+        "std_dev": 16.8
+    },
+    {
+        "generation": 578,
+        "best": 168.0,
+        "average": 128.9,
+        "worst": 73.5,
+        "std_dev": 21.0
+    },
+    {
+        "generation": 579,
+        "best": 155.1,
+        "average": 128.0,
+        "worst": 68.8,
+        "std_dev": 24.0
+    },
+    {
+        "generation": 580,
+        "best": 155.6,
+        "average": 122.3,
+        "worst": 67.7,
+        "std_dev": 27.6
+    },
+    {
+        "generation": 581,
+        "best": 154.7,
+        "average": 128.9,
+        "worst": 96.1,
+        "std_dev": 16.3
+    },
+    {
+        "generation": 582,
+        "best": 163.8,
+        "average": 130.3,
+        "worst": 87.9,
+        "std_dev": 18.6
+    },
+    {
+        "generation": 583,
+        "best": 197.6,
+        "average": 121.7,
+        "worst": 69.4,
+        "std_dev": 26.1
+    },
+    {
+        "generation": 584,
+        "best": 160.4,
+        "average": 130.1,
+        "worst": 73.2,
+        "std_dev": 28.3
+    },
+    {
+        "generation": 585,
+        "best": 156.0,
+        "average": 123.1,
+        "worst": 67.3,
+        "std_dev": 28.6
+    },
+    {
+        "generation": 586,
+        "best": 150.1,
+        "average": 122.2,
+        "worst": 87.6,
+        "std_dev": 17.8
+    },
+    {
+        "generation": 587,
+        "best": 156.1,
+        "average": 121.5,
+        "worst": 85.6,
+        "std_dev": 28.6
+    },
+    {
+        "generation": 588,
+        "best": 147.5,
+        "average": 123.0,
+        "worst": 73.2,
+        "std_dev": 20.3
+    },
+    {
+        "generation": 589,
+        "best": 166.1,
+        "average": 126.2,
+        "worst": 75.4,
+        "std_dev": 28.5
+    },
+    {
+        "generation": 590,
+        "best": 152.9,
+        "average": 123.9,
+        "worst": 75.2,
+        "std_dev": 17.6
+    },
+    {
+        "generation": 591,
+        "best": 143.3,
+        "average": 122.7,
+        "worst": 66.9,
+        "std_dev": 29.5
+    },
+    {
+        "generation": 592,
+        "best": 158.8,
+        "average": 130.8,
+        "worst": 100.2,
+        "std_dev": 27.5
+    },
+    {
+        "generation": 593,
+        "best": 154.2,
+        "average": 128.4,
+        "worst": 92.1,
+        "std_dev": 29.5
+    },
+    {
+        "generation": 594,
+        "best": 155.7,
+        "average": 122.8,
+        "worst": 80.5,
+        "std_dev": 21.4
+    },
+    {
+        "generation": 595,
+        "best": 163.4,
+        "average": 129.5,
+        "worst": 70.1,
+        "std_dev": 29.9
+    },
+    {
+        "generation": 596,
+        "best": 150.0,
+        "average": 128.7,
+        "worst": 75.1,
+        "std_dev": 21.4
+    },
+    {
+        "generation": 597,
+        "best": 170.1,
+        "average": 131.5,
+        "worst": 80.5,
+        "std_dev": 20.3
+    },
+    {
+        "generation": 598,
+        "best": 150.4,
+        "average": 125.3,
+        "worst": 90.9,
+        "std_dev": 28.4
+    },
+    {
+        "generation": 599,
+        "best": 206.4,
+        "average": 131.0,
+        "worst": 79.3,
+        "std_dev": 16.3
+    },
+    {
+        "generation": 600,
+        "best": 162.9,
+        "average": 131.7,
+        "worst": 94.7,
+        "std_dev": 18.2
+    },
+    {
+        "generation": 601,
+        "best": 148.4,
+        "average": 125.3,
+        "worst": 93.8,
+        "std_dev": 23.6
+    },
+    {
+        "generation": 602,
+        "best": 161.6,
+        "average": 128.1,
+        "worst": 86.6,
+        "std_dev": 24.1
+    },
+    {
+        "generation": 603,
+        "best": 151.0,
+        "average": 124.6,
+        "worst": 74.8,
+        "std_dev": 24.7
+    },
+    {
+        "generation": 604,
+        "best": 159.9,
+        "average": 129.1,
+        "worst": 90.6,
+        "std_dev": 25.4
+    },
+    {
+        "generation": 605,
+        "best": 148.6,
+        "average": 124.1,
+        "worst": 84.4,
+        "std_dev": 28.2
+    },
+    {
+        "generation": 606,
+        "best": 153.0,
+        "average": 126.1,
+        "worst": 72.3,
+        "std_dev": 26.4
+    },
+    {
+        "generation": 607,
+        "best": 153.1,
+        "average": 124.5,
+        "worst": 65.2,
+        "std_dev": 29.5
+    },
+    {
+        "generation": 608,
+        "best": 146.1,
+        "average": 124.6,
+        "worst": 75.0,
+        "std_dev": 29.9
+    },
+    {
+        "generation": 609,
+        "best": 163.3,
+        "average": 130.7,
+        "worst": 89.3,
+        "std_dev": 26.5
+    },
+    {
+        "generation": 610,
+        "best": 151.2,
+        "average": 127.9,
+        "worst": 95.4,
+        "std_dev": 20.5
+    },
+    {
+        "generation": 611,
+        "best": 211.4,
+        "average": 130.6,
+        "worst": 77.2,
+        "std_dev": 27.2
+    },
+    {
+        "generation": 612,
+        "best": 154.6,
+        "average": 123.2,
+        "worst": 81.3,
+        "std_dev": 23.7
+    },
+    {
+        "generation": 613,
+        "best": 158.7,
+        "average": 127.7,
+        "worst": 67.8,
+        "std_dev": 26.9
+    },
+    {
+        "generation": 614,
+        "best": 157.1,
+        "average": 122.5,
+        "worst": 74.3,
+        "std_dev": 19.8
+    },
+    {
+        "generation": 615,
+        "best": 154.6,
+        "average": 132.3,
+        "worst": 81.2,
+        "std_dev": 26.9
+    },
+    {
+        "generation": 616,
+        "best": 160.9,
+        "average": 127.0,
+        "worst": 89.4,
+        "std_dev": 23.8
+    },
+    {
+        "generation": 617,
+        "best": 155.7,
+        "average": 129.2,
+        "worst": 94.0,
+        "std_dev": 27.5
+    },
+    {
+        "generation": 618,
+        "best": 157.0,
+        "average": 132.4,
+        "worst": 73.9,
+        "std_dev": 23.4
+    },
+    {
+        "generation": 619,
+        "best": 148.3,
+        "average": 122.9,
+        "worst": 82.6,
+        "std_dev": 26.4
+    },
+    {
+        "generation": 620,
+        "best": 160.2,
+        "average": 125.6,
+        "worst": 95.2,
+        "std_dev": 17.0
+    },
+    {
+        "generation": 621,
+        "best": 150.6,
+        "average": 129.1,
+        "worst": 90.6,
+        "std_dev": 19.2
+    },
+    {
+        "generation": 622,
+        "best": 161.2,
+        "average": 130.1,
+        "worst": 80.2,
+        "std_dev": 29.5
+    },
+    {
+        "generation": 623,
+        "best": 144.4,
+        "average": 123.5,
+        "worst": 78.8,
+        "std_dev": 15.9
+    },
+    {
+        "generation": 624,
+        "best": 156.1,
+        "average": 127.2,
+        "worst": 83.2,
+        "std_dev": 19.2
+    },
+    {
+        "generation": 625,
+        "best": 157.1,
+        "average": 123.3,
+        "worst": 66.9,
+        "std_dev": 26.8
+    },
+    {
+        "generation": 626,
+        "best": 161.5,
+        "average": 124.4,
+        "worst": 68.1,
+        "std_dev": 16.2
+    },
+    {
+        "generation": 627,
+        "best": 151.9,
+        "average": 127.7,
+        "worst": 80.0,
+        "std_dev": 25.9
+    },
+    {
+        "generation": 628,
+        "best": 160.6,
+        "average": 128.3,
+        "worst": 75.1,
+        "std_dev": 26.7
+    },
+    {
+        "generation": 629,
+        "best": 156.5,
+        "average": 125.9,
+        "worst": 92.5,
+        "std_dev": 20.4
+    },
+    {
+        "generation": 630,
+        "best": 147.5,
+        "average": 123.6,
+        "worst": 79.5,
+        "std_dev": 17.3
+    },
+    {
+        "generation": 631,
+        "best": 148.5,
+        "average": 125.5,
+        "worst": 65.7,
+        "std_dev": 23.8
+    },
+    {
+        "generation": 632,
+        "best": 153.1,
+        "average": 126.3,
+        "worst": 91.2,
+        "std_dev": 18.9
+    },
+    {
+        "generation": 633,
+        "best": 148.0,
+        "average": 123.0,
+        "worst": 88.6,
+        "std_dev": 19.2
+    },
+    {
+        "generation": 634,
+        "best": 160.5,
+        "average": 128.5,
+        "worst": 91.1,
+        "std_dev": 16.8
+    },
+    {
+        "generation": 635,
+        "best": 153.1,
+        "average": 125.7,
+        "worst": 79.3,
+        "std_dev": 19.3
+    },
+    {
+        "generation": 636,
+        "best": 197.7,
+        "average": 123.4,
+        "worst": 74.2,
+        "std_dev": 29.0
+    },
+    {
+        "generation": 637,
+        "best": 166.1,
+        "average": 129.0,
+        "worst": 79.7,
+        "std_dev": 18.2
+    },
+    {
+        "generation": 638,
+        "best": 149.8,
+        "average": 127.6,
+        "worst": 94.7,
+        "std_dev": 16.7
+    },
+    {
+        "generation": 639,
+        "best": 158.8,
+        "average": 123.7,
+        "worst": 86.3,
+        "std_dev": 23.9
+    },
+    {
+        "generation": 640,
+        "best": 164.7,
+        "average": 132.6,
+        "worst": 76.6,
+        "std_dev": 22.7
+    },
+    {
+        "generation": 641,
+        "best": 157.9,
+        "average": 131.0,
+        "worst": 81.8,
+        "std_dev": 27.2
+    },
+    {
+        "generation": 642,
+        "best": 156.2,
+        "average": 127.0,
+        "worst": 90.2,
+        "std_dev": 15.7
+    },
+    {
+        "generation": 643,
+        "best": 161.9,
+        "average": 132.1,
+        "worst": 101.9,
+        "std_dev": 20.6
+    },
+    {
+        "generation": 644,
+        "best": 160.1,
+        "average": 131.5,
+        "worst": 93.6,
+        "std_dev": 18.9
+    },
+    {
+        "generation": 645,
+        "best": 156.2,
+        "average": 129.7,
+        "worst": 89.5,
+        "std_dev": 16.7
+    },
+    {
+        "generation": 646,
+        "best": 170.6,
+        "average": 131.2,
+        "worst": 81.7,
+        "std_dev": 20.5
+    },
+    {
+        "generation": 647,
+        "best": 159.9,
+        "average": 129.2,
+        "worst": 89.3,
+        "std_dev": 20.5
+    },
+    {
+        "generation": 648,
+        "best": 164.1,
+        "average": 131.0,
+        "worst": 76.8,
+        "std_dev": 21.9
+    },
+    {
+        "generation": 649,
+        "best": 156.0,
+        "average": 128.1,
+        "worst": 72.5,
+        "std_dev": 21.9
+    },
+    {
+        "generation": 650,
+        "best": 164.9,
+        "average": 131.5,
+        "worst": 91.7,
+        "std_dev": 20.9
+    },
+    {
+        "generation": 651,
+        "best": 154.5,
+        "average": 132.9,
+        "worst": 84.4,
+        "std_dev": 22.4
+    },
+    {
+        "generation": 652,
+        "best": 151.5,
+        "average": 130.1,
+        "worst": 89.4,
+        "std_dev": 15.8
+    },
+    {
+        "generation": 653,
+        "best": 153.3,
+        "average": 132.3,
+        "worst": 95.0,
+        "std_dev": 22.8
+    },
+    {
+        "generation": 654,
+        "best": 159.4,
+        "average": 126.2,
+        "worst": 88.9,
+        "std_dev": 29.7
+    },
+    {
+        "generation": 655,
+        "best": 168.7,
+        "average": 133.0,
+        "worst": 78.8,
+        "std_dev": 17.2
+    },
+    {
+        "generation": 656,
+        "best": 146.4,
+        "average": 123.9,
+        "worst": 80.1,
+        "std_dev": 29.9
+    },
+    {
+        "generation": 657,
+        "best": 147.9,
+        "average": 127.6,
+        "worst": 84.1,
+        "std_dev": 20.0
+    },
+    {
+        "generation": 658,
+        "best": 150.9,
+        "average": 128.2,
+        "worst": 93.6,
+        "std_dev": 24.5
+    },
+    {
+        "generation": 659,
+        "best": 153.5,
+        "average": 129.7,
+        "worst": 98.2,
+        "std_dev": 25.0
+    },
+    {
+        "generation": 660,
+        "best": 163.8,
+        "average": 132.2,
+        "worst": 80.4,
+        "std_dev": 28.9
+    },
+    {
+        "generation": 661,
+        "best": 154.7,
+        "average": 130.5,
+        "worst": 95.2,
+        "std_dev": 19.8
+    },
+    {
+        "generation": 662,
+        "best": 218.8,
+        "average": 133.6,
+        "worst": 93.7,
+        "std_dev": 22.0
+    },
+    {
+        "generation": 663,
+        "best": 162.9,
+        "average": 124.4,
+        "worst": 84.7,
+        "std_dev": 21.3
+    },
+    {
+        "generation": 664,
+        "best": 151.6,
+        "average": 130.4,
+        "worst": 70.6,
+        "std_dev": 28.0
+    },
+    {
+        "generation": 665,
+        "best": 146.2,
+        "average": 125.1,
+        "worst": 77.0,
+        "std_dev": 21.6
+    },
+    {
+        "generation": 666,
+        "best": 161.3,
+        "average": 125.7,
+        "worst": 93.2,
+        "std_dev": 17.0
+    },
+    {
+        "generation": 667,
+        "best": 154.7,
+        "average": 129.4,
+        "worst": 93.2,
+        "std_dev": 20.9
+    },
+    {
+        "generation": 668,
+        "best": 161.6,
+        "average": 126.2,
+        "worst": 70.1,
+        "std_dev": 24.3
+    },
+    {
+        "generation": 669,
+        "best": 161.2,
+        "average": 131.0,
+        "worst": 82.9,
+        "std_dev": 16.2
+    },
+    {
+        "generation": 670,
+        "best": 161.3,
+        "average": 128.9,
+        "worst": 70.4,
+        "std_dev": 19.9
+    },
+    {
+        "generation": 671,
+        "best": 163.7,
+        "average": 130.0,
+        "worst": 72.4,
+        "std_dev": 18.6
+    },
+    {
+        "generation": 672,
+        "best": 154.1,
+        "average": 124.5,
+        "worst": 75.5,
+        "std_dev": 21.1
+    },
+    {
+        "generation": 673,
+        "best": 158.9,
+        "average": 126.6,
+        "worst": 74.7,
+        "std_dev": 17.7
+    },
+    {
+        "generation": 674,
+        "best": 159.1,
+        "average": 131.9,
+        "worst": 76.4,
+        "std_dev": 16.8
+    },
+    {
+        "generation": 675,
+        "best": 166.2,
+        "average": 131.2,
+        "worst": 74.0,
+        "std_dev": 23.2
+    },
+    {
+        "generation": 676,
+        "best": 153.8,
+        "average": 129.7,
+        "worst": 93.7,
+        "std_dev": 27.1
+    },
+    {
+        "generation": 677,
+        "best": 172.2,
+        "average": 132.3,
+        "worst": 88.8,
+        "std_dev": 22.1
+    },
+    {
+        "generation": 678,
+        "best": 198.5,
+        "average": 126.8,
+        "worst": 79.0,
+        "std_dev": 24.8
+    },
+    {
+        "generation": 679,
+        "best": 151.2,
+        "average": 130.0,
+        "worst": 97.9,
+        "std_dev": 28.6
+    },
+    {
+        "generation": 680,
+        "best": 163.7,
+        "average": 130.7,
+        "worst": 78.1,
+        "std_dev": 25.7
+    },
+    {
+        "generation": 681,
+        "best": 154.5,
+        "average": 127.6,
+        "worst": 71.4,
+        "std_dev": 28.1
+    },
+    {
+        "generation": 682,
+        "best": 216.5,
+        "average": 131.1,
+        "worst": 86.1,
+        "std_dev": 29.3
+    },
+    {
+        "generation": 683,
+        "best": 157.6,
+        "average": 125.0,
+        "worst": 75.1,
+        "std_dev": 29.4
+    },
+    {
+        "generation": 684,
+        "best": 153.6,
+        "average": 132.0,
+        "worst": 96.8,
+        "std_dev": 27.1
+    },
+    {
+        "generation": 685,
+        "best": 160.5,
+        "average": 126.0,
+        "worst": 75.4,
+        "std_dev": 15.1
+    },
+    {
+        "generation": 686,
+        "best": 154.3,
+        "average": 125.3,
+        "worst": 88.4,
+        "std_dev": 24.1
+    },
+    {
+        "generation": 687,
+        "best": 154.2,
+        "average": 132.8,
+        "worst": 74.6,
+        "std_dev": 18.8
+    },
+    {
+        "generation": 688,
+        "best": 158.0,
+        "average": 124.8,
+        "worst": 71.0,
+        "std_dev": 20.7
+    },
+    {
+        "generation": 689,
+        "best": 165.6,
+        "average": 126.7,
+        "worst": 84.6,
+        "std_dev": 19.5
+    },
+    {
+        "generation": 690,
+        "best": 154.4,
+        "average": 126.2,
+        "worst": 70.1,
+        "std_dev": 29.7
+    },
+    {
+        "generation": 691,
+        "best": 157.2,
+        "average": 128.5,
+        "worst": 87.3,
+        "std_dev": 26.4
+    },
+    {
+        "generation": 692,
+        "best": 157.2,
+        "average": 125.3,
+        "worst": 76.7,
+        "std_dev": 23.1
+    },
+    {
+        "generation": 693,
+        "best": 161.8,
+        "average": 133.8,
+        "worst": 75.9,
+        "std_dev": 16.0
+    },
+    {
+        "generation": 694,
+        "best": 148.9,
+        "average": 124.9,
+        "worst": 69.3,
+        "std_dev": 16.1
+    },
+    {
+        "generation": 695,
+        "best": 157.6,
+        "average": 131.5,
+        "worst": 94.9,
+        "std_dev": 29.2
+    },
+    {
+        "generation": 696,
+        "best": 167.5,
+        "average": 134.3,
+        "worst": 74.4,
+        "std_dev": 18.3
+    },
+    {
+        "generation": 697,
+        "best": 159.1,
+        "average": 133.5,
+        "worst": 81.1,
+        "std_dev": 25.0
+    },
+    {
+        "generation": 698,
+        "best": 162.2,
+        "average": 128.3,
+        "worst": 71.8,
+        "std_dev": 22.5
+    },
+    {
+        "generation": 699,
+        "best": 155.2,
+        "average": 128.9,
+        "worst": 75.2,
+        "std_dev": 15.9
+    },
+    {
+        "generation": 700,
+        "best": 148.1,
+        "average": 126.2,
+        "worst": 72.0,
+        "std_dev": 22.1
+    },
+    {
+        "generation": 701,
+        "best": 158.9,
+        "average": 125.4,
+        "worst": 82.8,
+        "std_dev": 23.2
+    },
+    {
+        "generation": 702,
+        "best": 154.2,
+        "average": 131.6,
+        "worst": 86.6,
+        "std_dev": 19.2
+    },
+    {
+        "generation": 703,
+        "best": 152.6,
+        "average": 130.8,
+        "worst": 76.2,
+        "std_dev": 24.9
+    },
+    {
+        "generation": 704,
+        "best": 159.2,
+        "average": 134.1,
+        "worst": 83.5,
+        "std_dev": 17.0
+    },
+    {
+        "generation": 705,
+        "best": 165.2,
+        "average": 128.1,
+        "worst": 80.7,
+        "std_dev": 16.2
+    },
+    {
+        "generation": 706,
+        "best": 151.8,
+        "average": 128.5,
+        "worst": 78.8,
+        "std_dev": 27.7
+    },
+    {
+        "generation": 707,
+        "best": 172.6,
+        "average": 134.4,
+        "worst": 100.4,
+        "std_dev": 20.7
+    },
+    {
+        "generation": 708,
+        "best": 163.7,
+        "average": 128.8,
+        "worst": 69.4,
+        "std_dev": 29.7
+    },
+    {
+        "generation": 709,
+        "best": 160.5,
+        "average": 125.1,
+        "worst": 69.5,
+        "std_dev": 19.4
+    },
+    {
+        "generation": 710,
+        "best": 158.4,
+        "average": 133.4,
+        "worst": 73.7,
+        "std_dev": 23.8
+    },
+    {
+        "generation": 711,
+        "best": 161.7,
+        "average": 128.7,
+        "worst": 74.0,
+        "std_dev": 27.8
+    },
+    {
+        "generation": 712,
+        "best": 155.8,
+        "average": 125.0,
+        "worst": 75.9,
+        "std_dev": 17.1
+    },
+    {
+        "generation": 713,
+        "best": 148.4,
+        "average": 126.7,
+        "worst": 75.4,
+        "std_dev": 29.2
+    },
+    {
+        "generation": 714,
+        "best": 213.1,
+        "average": 132.1,
+        "worst": 73.1,
+        "std_dev": 15.6
+    },
+    {
+        "generation": 715,
+        "best": 148.4,
+        "average": 127.5,
+        "worst": 89.6,
+        "std_dev": 15.3
+    },
+    {
+        "generation": 716,
+        "best": 165.7,
+        "average": 130.6,
+        "worst": 92.3,
+        "std_dev": 23.1
+    },
+    {
+        "generation": 717,
+        "best": 156.0,
+        "average": 127.0,
+        "worst": 76.4,
+        "std_dev": 23.1
+    },
+    {
+        "generation": 718,
+        "best": 151.8,
+        "average": 131.3,
+        "worst": 97.1,
+        "std_dev": 25.7
+    },
+    {
+        "generation": 719,
+        "best": 163.2,
+        "average": 126.3,
+        "worst": 89.1,
+        "std_dev": 26.4
+    },
+    {
+        "generation": 720,
+        "best": 165.3,
+        "average": 130.9,
+        "worst": 95.2,
+        "std_dev": 27.4
+    },
+    {
+        "generation": 721,
+        "best": 154.2,
+        "average": 130.3,
+        "worst": 93.0,
+        "std_dev": 16.6
+    },
+    {
+        "generation": 722,
+        "best": 155.6,
+        "average": 126.9,
+        "worst": 72.1,
+        "std_dev": 16.3
+    },
+    {
+        "generation": 723,
+        "best": 146.8,
+        "average": 126.5,
+        "worst": 67.4,
+        "std_dev": 15.2
+    },
+    {
+        "generation": 724,
+        "best": 164.3,
+        "average": 130.8,
+        "worst": 90.8,
+        "std_dev": 15.5
+    },
+    {
+        "generation": 725,
+        "best": 159.2,
+        "average": 131.3,
+        "worst": 95.9,
+        "std_dev": 17.2
+    },
+    {
+        "generation": 726,
+        "best": 165.7,
+        "average": 127.8,
+        "worst": 78.2,
+        "std_dev": 29.5
+    },
+    {
+        "generation": 727,
+        "best": 162.6,
+        "average": 128.1,
+        "worst": 91.5,
+        "std_dev": 24.3
+    },
+    {
+        "generation": 728,
+        "best": 148.9,
+        "average": 127.3,
+        "worst": 80.5,
+        "std_dev": 21.5
+    },
+    {
+        "generation": 729,
+        "best": 167.3,
+        "average": 129.7,
+        "worst": 73.4,
+        "std_dev": 27.0
+    },
+    {
+        "generation": 730,
+        "best": 158.9,
+        "average": 132.4,
+        "worst": 77.7,
+        "std_dev": 22.2
+    },
+    {
+        "generation": 731,
+        "best": 159.9,
+        "average": 132.9,
+        "worst": 87.8,
+        "std_dev": 20.3
+    },
+    {
+        "generation": 732,
+        "best": 219.1,
+        "average": 133.6,
+        "worst": 75.0,
+        "std_dev": 19.1
+    },
+    {
+        "generation": 733,
+        "best": 161.9,
+        "average": 127.5,
+        "worst": 78.5,
+        "std_dev": 21.3
+    },
+    {
+        "generation": 734,
+        "best": 153.3,
+        "average": 133.2,
+        "worst": 99.3,
+        "std_dev": 29.1
+    },
+    {
+        "generation": 735,
+        "best": 158.9,
+        "average": 131.4,
+        "worst": 87.5,
+        "std_dev": 26.4
+    },
+    {
+        "generation": 736,
+        "best": 163.1,
+        "average": 128.5,
+        "worst": 83.8,
+        "std_dev": 28.6
+    },
+    {
+        "generation": 737,
+        "best": 172.8,
+        "average": 134.7,
+        "worst": 94.5,
+        "std_dev": 21.7
+    },
+    {
+        "generation": 738,
+        "best": 160.0,
+        "average": 133.0,
+        "worst": 89.4,
+        "std_dev": 26.9
+    },
+    {
+        "generation": 739,
+        "best": 168.5,
+        "average": 134.8,
+        "worst": 79.2,
+        "std_dev": 24.2
+    },
+    {
+        "generation": 740,
+        "best": 155.5,
+        "average": 129.8,
+        "worst": 95.2,
+        "std_dev": 25.7
+    },
+    {
+        "generation": 741,
+        "best": 172.6,
+        "average": 133.6,
+        "worst": 100.2,
+        "std_dev": 25.1
+    },
+    {
+        "generation": 742,
+        "best": 167.1,
+        "average": 130.4,
+        "worst": 100.1,
+        "std_dev": 18.4
+    },
+    {
+        "generation": 743,
+        "best": 149.8,
+        "average": 128.3,
+        "worst": 74.4,
+        "std_dev": 23.0
+    },
+    {
+        "generation": 744,
+        "best": 149.3,
+        "average": 126.2,
+        "worst": 76.8,
+        "std_dev": 24.1
+    },
+    {
+        "generation": 745,
+        "best": 168.0,
+        "average": 131.4,
+        "worst": 86.5,
+        "std_dev": 29.6
+    },
+    {
+        "generation": 746,
+        "best": 164.8,
+        "average": 131.1,
+        "worst": 97.0,
+        "std_dev": 16.4
+    },
+    {
+        "generation": 747,
+        "best": 164.9,
+        "average": 132.8,
+        "worst": 94.5,
+        "std_dev": 20.7
+    },
+    {
+        "generation": 748,
+        "best": 152.8,
+        "average": 130.1,
+        "worst": 75.7,
+        "std_dev": 27.4
+    },
+    {
+        "generation": 749,
+        "best": 171.6,
+        "average": 134.8,
+        "worst": 103.3,
+        "std_dev": 23.7
+    },
+    {
+        "generation": 750,
+        "best": 162.5,
+        "average": 135.1,
+        "worst": 84.3,
+        "std_dev": 15.0
+    },
+    {
+        "generation": 751,
+        "best": 166.8,
+        "average": 128.3,
+        "worst": 78.9,
+        "std_dev": 18.1
+    },
+    {
+        "generation": 752,
+        "best": 168.0,
+        "average": 129.7,
+        "worst": 79.3,
+        "std_dev": 29.7
+    },
+    {
+        "generation": 753,
+        "best": 163.4,
+        "average": 127.1,
+        "worst": 92.4,
+        "std_dev": 15.4
+    },
+    {
+        "generation": 754,
+        "best": 160.5,
+        "average": 134.4,
+        "worst": 88.8,
+        "std_dev": 17.1
+    },
+    {
+        "generation": 755,
+        "best": 155.8,
+        "average": 126.5,
+        "worst": 74.9,
+        "std_dev": 17.0
+    },
+    {
+        "generation": 756,
+        "best": 172.7,
+        "average": 135.3,
+        "worst": 96.6,
+        "std_dev": 18.6
+    },
+    {
+        "generation": 757,
+        "best": 157.4,
+        "average": 126.6,
+        "worst": 83.6,
+        "std_dev": 21.7
+    },
+    {
+        "generation": 758,
+        "best": 158.5,
+        "average": 133.0,
+        "worst": 95.7,
+        "std_dev": 24.5
+    },
+    {
+        "generation": 759,
+        "best": 166.5,
+        "average": 131.3,
+        "worst": 100.9,
+        "std_dev": 22.8
+    },
+    {
+        "generation": 760,
+        "best": 158.7,
+        "average": 126.1,
+        "worst": 77.7,
+        "std_dev": 28.0
+    },
+    {
+        "generation": 761,
+        "best": 158.3,
+        "average": 135.6,
+        "worst": 91.7,
+        "std_dev": 26.6
+    },
+    {
+        "generation": 762,
+        "best": 160.8,
+        "average": 127.8,
+        "worst": 72.1,
+        "std_dev": 28.7
+    },
+    {
+        "generation": 763,
+        "best": 170.8,
+        "average": 131.4,
+        "worst": 89.2,
+        "std_dev": 21.0
+    },
+    {
+        "generation": 764,
+        "best": 159.2,
+        "average": 128.3,
+        "worst": 87.8,
+        "std_dev": 16.3
+    },
+    {
+        "generation": 765,
+        "best": 147.8,
+        "average": 127.3,
+        "worst": 89.2,
+        "std_dev": 20.9
+    },
+    {
+        "generation": 766,
+        "best": 149.8,
+        "average": 127.8,
+        "worst": 74.9,
+        "std_dev": 19.2
+    },
+    {
+        "generation": 767,
+        "best": 221.1,
+        "average": 134.9,
+        "worst": 92.2,
+        "std_dev": 29.4
+    },
+    {
+        "generation": 768,
+        "best": 156.1,
+        "average": 130.2,
+        "worst": 90.2,
+        "std_dev": 28.7
+    },
+    {
+        "generation": 769,
+        "best": 162.2,
+        "average": 131.1,
+        "worst": 78.9,
+        "std_dev": 26.5
+    },
+    {
+        "generation": 770,
+        "best": 164.9,
+        "average": 134.8,
+        "worst": 74.9,
+        "std_dev": 24.2
+    },
+    {
+        "generation": 771,
+        "best": 164.7,
+        "average": 134.9,
+        "worst": 77.4,
+        "std_dev": 16.4
+    },
+    {
+        "generation": 772,
+        "best": 158.4,
+        "average": 126.1,
+        "worst": 83.2,
+        "std_dev": 26.5
+    },
+    {
+        "generation": 773,
+        "best": 155.3,
+        "average": 126.9,
+        "worst": 69.4,
+        "std_dev": 23.9
+    },
+    {
+        "generation": 774,
+        "best": 173.4,
+        "average": 133.9,
+        "worst": 92.5,
+        "std_dev": 28.3
+    },
+    {
+        "generation": 775,
+        "best": 152.0,
+        "average": 128.9,
+        "worst": 85.7,
+        "std_dev": 21.7
+    },
+    {
+        "generation": 776,
+        "best": 159.1,
+        "average": 135.1,
+        "worst": 99.0,
+        "std_dev": 27.2
+    },
+    {
+        "generation": 777,
+        "best": 158.1,
+        "average": 134.4,
+        "worst": 96.1,
+        "std_dev": 29.3
+    },
+    {
+        "generation": 778,
+        "best": 174.5,
+        "average": 135.9,
+        "worst": 77.3,
+        "std_dev": 16.4
+    },
+    {
+        "generation": 779,
+        "best": 163.8,
+        "average": 133.5,
+        "worst": 96.9,
+        "std_dev": 28.3
+    },
+    {
+        "generation": 780,
+        "best": 157.9,
+        "average": 134.0,
+        "worst": 99.0,
+        "std_dev": 17.8
+    },
+    {
+        "generation": 781,
+        "best": 154.9,
+        "average": 133.4,
+        "worst": 92.7,
+        "std_dev": 21.4
+    },
+    {
+        "generation": 782,
+        "best": 157.0,
+        "average": 131.8,
+        "worst": 92.7,
+        "std_dev": 23.6
+    },
+    {
+        "generation": 783,
+        "best": 150.2,
+        "average": 127.8,
+        "worst": 87.3,
+        "std_dev": 25.1
+    },
+    {
+        "generation": 784,
+        "best": 209.1,
+        "average": 126.8,
+        "worst": 67.6,
+        "std_dev": 29.2
+    },
+    {
+        "generation": 785,
+        "best": 166.9,
+        "average": 127.9,
+        "worst": 90.9,
+        "std_dev": 22.9
+    },
+    {
+        "generation": 786,
+        "best": 149.1,
+        "average": 128.1,
+        "worst": 79.7,
+        "std_dev": 26.2
+    },
+    {
+        "generation": 787,
+        "best": 214.6,
+        "average": 134.5,
+        "worst": 98.6,
+        "std_dev": 24.3
+    },
+    {
+        "generation": 788,
+        "best": 168.2,
+        "average": 133.1,
+        "worst": 100.9,
+        "std_dev": 18.2
+    },
+    {
+        "generation": 789,
+        "best": 166.0,
+        "average": 128.6,
+        "worst": 79.3,
+        "std_dev": 23.2
+    },
+    {
+        "generation": 790,
+        "best": 150.6,
+        "average": 128.1,
+        "worst": 73.2,
+        "std_dev": 17.2
+    },
+    {
+        "generation": 791,
+        "best": 155.6,
+        "average": 129.9,
+        "worst": 87.6,
+        "std_dev": 27.9
+    },
+    {
+        "generation": 792,
+        "best": 158.7,
+        "average": 134.1,
+        "worst": 92.0,
+        "std_dev": 26.7
+    },
+    {
+        "generation": 793,
+        "best": 156.3,
+        "average": 132.3,
+        "worst": 94.3,
+        "std_dev": 23.0
+    },
+    {
+        "generation": 794,
+        "best": 151.6,
+        "average": 130.3,
+        "worst": 95.6,
+        "std_dev": 25.0
+    },
+    {
+        "generation": 795,
+        "best": 155.5,
+        "average": 128.4,
+        "worst": 88.2,
+        "std_dev": 17.5
+    },
+    {
+        "generation": 796,
+        "best": 161.5,
+        "average": 136.1,
+        "worst": 99.5,
+        "std_dev": 27.1
+    },
+    {
+        "generation": 797,
+        "best": 166.4,
+        "average": 131.0,
+        "worst": 89.6,
+        "std_dev": 24.3
+    },
+    {
+        "generation": 798,
+        "best": 162.1,
+        "average": 131.5,
+        "worst": 94.3,
+        "std_dev": 17.9
+    },
+    {
+        "generation": 799,
+        "best": 167.5,
+        "average": 134.9,
+        "worst": 102.2,
+        "std_dev": 24.2
+    },
+    {
+        "generation": 800,
+        "best": 148.6,
+        "average": 128.3,
+        "worst": 83.4,
+        "std_dev": 17.8
+    },
+    {
+        "generation": 801,
+        "best": 154.5,
+        "average": 129.7,
+        "worst": 79.6,
+        "std_dev": 25.7
+    },
+    {
+        "generation": 802,
+        "best": 211.9,
+        "average": 133.8,
+        "worst": 76.7,
+        "std_dev": 26.0
+    },
+    {
+        "generation": 803,
+        "best": 148.0,
+        "average": 126.4,
+        "worst": 67.9,
+        "std_dev": 23.1
+    },
+    {
+        "generation": 804,
+        "best": 201.7,
+        "average": 126.6,
+        "worst": 92.7,
+        "std_dev": 25.8
+    },
+    {
+        "generation": 805,
+        "best": 158.1,
+        "average": 131.9,
+        "worst": 78.0,
+        "std_dev": 25.1
+    },
+    {
+        "generation": 806,
+        "best": 174.7,
+        "average": 135.4,
+        "worst": 92.6,
+        "std_dev": 26.1
+    },
+    {
+        "generation": 807,
+        "best": 167.2,
+        "average": 130.2,
+        "worst": 82.4,
+        "std_dev": 26.3
+    },
+    {
+        "generation": 808,
+        "best": 163.8,
+        "average": 128.0,
+        "worst": 93.7,
+        "std_dev": 29.2
+    },
+    {
+        "generation": 809,
+        "best": 166.8,
+        "average": 135.8,
+        "worst": 105.4,
+        "std_dev": 27.1
+    },
+    {
+        "generation": 810,
+        "best": 158.1,
+        "average": 135.5,
+        "worst": 100.0,
+        "std_dev": 27.9
+    },
+    {
+        "generation": 811,
+        "best": 164.9,
+        "average": 128.3,
+        "worst": 79.3,
+        "std_dev": 15.4
+    },
+    {
+        "generation": 812,
+        "best": 163.5,
+        "average": 130.2,
+        "worst": 88.2,
+        "std_dev": 17.9
+    },
+    {
+        "generation": 813,
+        "best": 155.9,
+        "average": 135.8,
+        "worst": 78.4,
+        "std_dev": 17.6
+    },
+    {
+        "generation": 814,
+        "best": 168.2,
+        "average": 130.5,
+        "worst": 93.4,
+        "std_dev": 29.2
+    },
+    {
+        "generation": 815,
+        "best": 162.5,
+        "average": 132.9,
+        "worst": 81.6,
+        "std_dev": 16.4
+    },
+    {
+        "generation": 816,
+        "best": 156.5,
+        "average": 132.6,
+        "worst": 73.4,
+        "std_dev": 21.9
+    },
+    {
+        "generation": 817,
+        "best": 163.5,
+        "average": 130.2,
+        "worst": 80.4,
+        "std_dev": 28.1
+    },
+    {
+        "generation": 818,
+        "best": 165.1,
+        "average": 135.2,
+        "worst": 87.4,
+        "std_dev": 29.4
+    },
+    {
+        "generation": 819,
+        "best": 151.7,
+        "average": 131.5,
+        "worst": 95.0,
+        "std_dev": 27.9
+    },
+    {
+        "generation": 820,
+        "best": 167.3,
+        "average": 127.7,
+        "worst": 73.8,
+        "std_dev": 23.6
+    },
+    {
+        "generation": 821,
+        "best": 159.4,
+        "average": 127.6,
+        "worst": 89.1,
+        "std_dev": 21.5
+    },
+    {
+        "generation": 822,
+        "best": 160.9,
+        "average": 136.2,
+        "worst": 88.9,
+        "std_dev": 15.2
+    },
+    {
+        "generation": 823,
+        "best": 164.3,
+        "average": 129.0,
+        "worst": 89.2,
+        "std_dev": 28.0
+    },
+    {
+        "generation": 824,
+        "best": 149.9,
+        "average": 126.8,
+        "worst": 84.7,
+        "std_dev": 27.8
+    },
+    {
+        "generation": 825,
+        "best": 175.1,
+        "average": 136.1,
+        "worst": 78.2,
+        "std_dev": 16.0
+    },
+    {
+        "generation": 826,
+        "best": 156.6,
+        "average": 132.0,
+        "worst": 79.3,
+        "std_dev": 25.8
+    },
+    {
+        "generation": 827,
+        "best": 165.4,
+        "average": 128.3,
+        "worst": 68.9,
+        "std_dev": 25.2
+    },
+    {
+        "generation": 828,
+        "best": 167.0,
+        "average": 129.6,
+        "worst": 89.6,
+        "std_dev": 22.7
+    },
+    {
+        "generation": 829,
+        "best": 152.1,
+        "average": 130.4,
+        "worst": 78.0,
+        "std_dev": 21.2
+    },
+    {
+        "generation": 830,
+        "best": 170.8,
+        "average": 135.8,
+        "worst": 84.5,
+        "std_dev": 23.5
+    },
+    {
+        "generation": 831,
+        "best": 161.8,
+        "average": 127.7,
+        "worst": 89.1,
+        "std_dev": 25.5
+    },
+    {
+        "generation": 832,
+        "best": 162.2,
+        "average": 135.2,
+        "worst": 85.9,
+        "std_dev": 29.8
+    },
+    {
+        "generation": 833,
+        "best": 154.3,
+        "average": 129.1,
+        "worst": 77.8,
+        "std_dev": 24.7
+    },
+    {
+        "generation": 834,
+        "best": 166.2,
+        "average": 129.2,
+        "worst": 75.7,
+        "std_dev": 19.2
+    },
+    {
+        "generation": 835,
+        "best": 156.2,
+        "average": 133.9,
+        "worst": 97.9,
+        "std_dev": 21.0
+    },
+    {
+        "generation": 836,
+        "best": 155.2,
+        "average": 132.6,
+        "worst": 90.7,
+        "std_dev": 23.6
+    },
+    {
+        "generation": 837,
+        "best": 157.2,
+        "average": 128.0,
+        "worst": 72.2,
+        "std_dev": 20.6
+    },
+    {
+        "generation": 838,
+        "best": 155.5,
+        "average": 131.3,
+        "worst": 71.7,
+        "std_dev": 27.2
+    },
+    {
+        "generation": 839,
+        "best": 160.2,
+        "average": 127.5,
+        "worst": 72.3,
+        "std_dev": 27.5
+    },
+    {
+        "generation": 840,
+        "best": 159.1,
+        "average": 134.5,
+        "worst": 98.6,
+        "std_dev": 21.5
+    },
+    {
+        "generation": 841,
+        "best": 161.9,
+        "average": 130.0,
+        "worst": 76.7,
+        "std_dev": 15.5
+    },
+    {
+        "generation": 842,
+        "best": 163.3,
+        "average": 127.1,
+        "worst": 68.6,
+        "std_dev": 25.3
+    },
+    {
+        "generation": 843,
+        "best": 149.0,
+        "average": 128.0,
+        "worst": 93.4,
+        "std_dev": 22.2
+    },
+    {
+        "generation": 844,
+        "best": 168.6,
+        "average": 134.3,
+        "worst": 75.1,
+        "std_dev": 18.3
+    },
+    {
+        "generation": 845,
+        "best": 168.6,
+        "average": 135.3,
+        "worst": 84.8,
+        "std_dev": 18.5
+    },
+    {
+        "generation": 846,
+        "best": 168.2,
+        "average": 130.2,
+        "worst": 81.3,
+        "std_dev": 20.6
+    },
+    {
+        "generation": 847,
+        "best": 150.1,
+        "average": 129.0,
+        "worst": 91.8,
+        "std_dev": 25.0
+    },
+    {
+        "generation": 848,
+        "best": 157.7,
+        "average": 129.7,
+        "worst": 98.8,
+        "std_dev": 22.2
+    },
+    {
+        "generation": 849,
+        "best": 163.9,
+        "average": 129.1,
+        "worst": 78.3,
+        "std_dev": 18.3
+    },
+    {
+        "generation": 850,
+        "best": 164.4,
+        "average": 132.7,
+        "worst": 82.4,
+        "std_dev": 15.2
+    },
+    {
+        "generation": 851,
+        "best": 164.4,
+        "average": 134.8,
+        "worst": 97.3,
+        "std_dev": 16.0
+    },
+    {
+        "generation": 852,
+        "best": 166.4,
+        "average": 129.8,
+        "worst": 94.3,
+        "std_dev": 27.1
+    },
+    {
+        "generation": 853,
+        "best": 163.0,
+        "average": 127.6,
+        "worst": 96.8,
+        "std_dev": 16.6
+    },
+    {
+        "generation": 854,
+        "best": 160.7,
+        "average": 132.1,
+        "worst": 74.5,
+        "std_dev": 15.5
+    },
+    {
+        "generation": 855,
+        "best": 151.9,
+        "average": 131.6,
+        "worst": 79.5,
+        "std_dev": 27.2
+    },
+    {
+        "generation": 856,
+        "best": 171.1,
+        "average": 131.4,
+        "worst": 96.7,
+        "std_dev": 29.4
+    },
+    {
+        "generation": 857,
+        "best": 175.4,
+        "average": 136.9,
+        "worst": 95.1,
+        "std_dev": 22.1
+    },
+    {
+        "generation": 858,
+        "best": 174.1,
+        "average": 135.3,
+        "worst": 83.7,
+        "std_dev": 19.1
+    },
+    {
+        "generation": 859,
+        "best": 163.3,
+        "average": 135.3,
+        "worst": 101.2,
+        "std_dev": 26.4
+    },
+    {
+        "generation": 860,
+        "best": 158.6,
+        "average": 132.5,
+        "worst": 86.7,
+        "std_dev": 28.4
+    },
+    {
+        "generation": 861,
+        "best": 159.6,
+        "average": 130.3,
+        "worst": 94.9,
+        "std_dev": 17.4
+    },
+    {
+        "generation": 862,
+        "best": 159.0,
+        "average": 127.4,
+        "worst": 81.5,
+        "std_dev": 29.3
+    },
+    {
+        "generation": 863,
+        "best": 158.7,
+        "average": 129.6,
+        "worst": 93.1,
+        "std_dev": 19.6
+    },
+    {
+        "generation": 864,
+        "best": 161.3,
+        "average": 136.0,
+        "worst": 85.7,
+        "std_dev": 17.4
+    },
+    {
+        "generation": 865,
+        "best": 169.3,
+        "average": 136.8,
+        "worst": 91.9,
+        "std_dev": 26.2
+    },
+    {
+        "generation": 866,
+        "best": 158.3,
+        "average": 131.7,
+        "worst": 71.7,
+        "std_dev": 28.0
+    },
+    {
+        "generation": 867,
+        "best": 154.7,
+        "average": 129.5,
+        "worst": 95.0,
+        "std_dev": 25.0
+    },
+    {
+        "generation": 868,
+        "best": 162.1,
+        "average": 131.1,
+        "worst": 74.9,
+        "std_dev": 17.2
+    },
+    {
+        "generation": 869,
+        "best": 160.0,
+        "average": 133.9,
+        "worst": 89.3,
+        "std_dev": 17.2
+    },
+    {
+        "generation": 870,
+        "best": 174.5,
+        "average": 134.8,
+        "worst": 94.3,
+        "std_dev": 17.3
+    },
+    {
+        "generation": 871,
+        "best": 169.8,
+        "average": 135.8,
+        "worst": 95.7,
+        "std_dev": 28.5
+    },
+    {
+        "generation": 872,
+        "best": 154.8,
+        "average": 133.2,
+        "worst": 101.1,
+        "std_dev": 20.4
+    },
+    {
+        "generation": 873,
+        "best": 158.3,
+        "average": 132.1,
+        "worst": 86.7,
+        "std_dev": 20.2
+    },
+    {
+        "generation": 874,
+        "best": 166.8,
+        "average": 137.3,
+        "worst": 90.3,
+        "std_dev": 24.7
+    },
+    {
+        "generation": 875,
+        "best": 166.8,
+        "average": 134.0,
+        "worst": 80.6,
+        "std_dev": 18.6
+    },
+    {
+        "generation": 876,
+        "best": 161.9,
+        "average": 134.3,
+        "worst": 101.2,
+        "std_dev": 15.4
+    },
+    {
+        "generation": 877,
+        "best": 167.5,
+        "average": 133.6,
+        "worst": 76.6,
+        "std_dev": 26.9
+    },
+    {
+        "generation": 878,
+        "best": 167.1,
+        "average": 128.3,
+        "worst": 83.8,
+        "std_dev": 21.6
+    },
+    {
+        "generation": 879,
+        "best": 215.5,
+        "average": 131.8,
+        "worst": 78.2,
+        "std_dev": 29.3
+    },
+    {
+        "generation": 880,
+        "best": 164.0,
+        "average": 130.5,
+        "worst": 74.2,
+        "std_dev": 19.5
+    },
+    {
+        "generation": 881,
+        "best": 157.7,
+        "average": 137.0,
+        "worst": 82.9,
+        "std_dev": 24.9
+    },
+    {
+        "generation": 882,
+        "best": 170.6,
+        "average": 136.8,
+        "worst": 85.7,
+        "std_dev": 17.7
+    },
+    {
+        "generation": 883,
+        "best": 161.9,
+        "average": 134.5,
+        "worst": 101.0,
+        "std_dev": 20.2
+    },
+    {
+        "generation": 884,
+        "best": 154.7,
+        "average": 131.1,
+        "worst": 71.2,
+        "std_dev": 24.6
+    },
+    {
+        "generation": 885,
+        "best": 164.6,
+        "average": 129.8,
+        "worst": 69.9,
+        "std_dev": 18.7
+    },
+    {
+        "generation": 886,
+        "best": 161.7,
+        "average": 130.0,
+        "worst": 89.0,
+        "std_dev": 15.7
+    },
+    {
+        "generation": 887,
+        "best": 163.7,
+        "average": 127.8,
+        "worst": 71.9,
+        "std_dev": 15.4
+    },
+    {
+        "generation": 888,
+        "best": 155.6,
+        "average": 131.8,
+        "worst": 95.5,
+        "std_dev": 15.6
+    },
+    {
+        "generation": 889,
+        "best": 163.4,
+        "average": 127.5,
+        "worst": 70.7,
+        "std_dev": 27.5
+    },
+    {
+        "generation": 890,
+        "best": 173.0,
+        "average": 136.8,
+        "worst": 97.3,
+        "std_dev": 23.6
+    },
+    {
+        "generation": 891,
+        "best": 164.0,
+        "average": 134.4,
+        "worst": 104.4,
+        "std_dev": 28.2
+    },
+    {
+        "generation": 892,
+        "best": 149.2,
+        "average": 128.4,
+        "worst": 91.9,
+        "std_dev": 26.0
+    },
+    {
+        "generation": 893,
+        "best": 158.1,
+        "average": 135.1,
+        "worst": 82.0,
+        "std_dev": 19.8
+    },
+    {
+        "generation": 894,
+        "best": 168.5,
+        "average": 131.0,
+        "worst": 82.6,
+        "std_dev": 29.3
+    },
+    {
+        "generation": 895,
+        "best": 173.3,
+        "average": 133.5,
+        "worst": 84.1,
+        "std_dev": 17.9
+    },
+    {
+        "generation": 896,
+        "best": 200.7,
+        "average": 129.5,
+        "worst": 87.2,
+        "std_dev": 20.4
+    },
+    {
+        "generation": 897,
+        "best": 154.4,
+        "average": 132.1,
+        "worst": 72.9,
+        "std_dev": 21.2
+    },
+    {
+        "generation": 898,
+        "best": 164.2,
+        "average": 132.9,
+        "worst": 95.6,
+        "std_dev": 19.3
+    },
+    {
+        "generation": 899,
+        "best": 172.0,
+        "average": 136.6,
+        "worst": 88.8,
+        "std_dev": 18.3
+    },
+    {
+        "generation": 900,
+        "best": 155.2,
+        "average": 128.4,
+        "worst": 71.1,
+        "std_dev": 24.6
+    },
+    {
+        "generation": 901,
+        "best": 167.8,
+        "average": 129.0,
+        "worst": 76.9,
+        "std_dev": 17.6
+    },
+    {
+        "generation": 902,
+        "best": 158.7,
+        "average": 132.5,
+        "worst": 91.6,
+        "std_dev": 23.8
+    },
+    {
+        "generation": 903,
+        "best": 155.8,
+        "average": 134.6,
+        "worst": 95.6,
+        "std_dev": 25.4
+    },
+    {
+        "generation": 904,
+        "best": 164.7,
+        "average": 134.5,
+        "worst": 81.9,
+        "std_dev": 29.0
+    },
+    {
+        "generation": 905,
+        "best": 162.2,
+        "average": 133.0,
+        "worst": 101.2,
+        "std_dev": 25.3
+    },
+    {
+        "generation": 906,
+        "best": 168.6,
+        "average": 129.1,
+        "worst": 89.9,
+        "std_dev": 25.0
+    },
+    {
+        "generation": 907,
+        "best": 172.4,
+        "average": 134.4,
+        "worst": 75.5,
+        "std_dev": 15.3
+    },
+    {
+        "generation": 908,
+        "best": 216.3,
+        "average": 137.1,
+        "worst": 102.5,
+        "std_dev": 29.2
+    },
+    {
+        "generation": 909,
+        "best": 154.1,
+        "average": 129.1,
+        "worst": 86.0,
+        "std_dev": 18.3
+    },
+    {
+        "generation": 910,
+        "best": 160.9,
+        "average": 128.1,
+        "worst": 68.6,
+        "std_dev": 18.7
+    },
+    {
+        "generation": 911,
+        "best": 166.9,
+        "average": 137.6,
+        "worst": 102.6,
+        "std_dev": 22.5
+    },
+    {
+        "generation": 912,
+        "best": 161.2,
+        "average": 132.7,
+        "worst": 80.4,
+        "std_dev": 20.0
+    },
+    {
+        "generation": 913,
+        "best": 159.4,
+        "average": 132.4,
+        "worst": 74.5,
+        "std_dev": 25.0
+    },
+    {
+        "generation": 914,
+        "best": 165.2,
+        "average": 129.0,
+        "worst": 90.3,
+        "std_dev": 21.8
+    },
+    {
+        "generation": 915,
+        "best": 170.1,
+        "average": 136.8,
+        "worst": 88.6,
+        "std_dev": 18.2
+    },
+    {
+        "generation": 916,
+        "best": 171.1,
+        "average": 135.6,
+        "worst": 78.8,
+        "std_dev": 26.5
+    },
+    {
+        "generation": 917,
+        "best": 172.6,
+        "average": 134.7,
+        "worst": 90.9,
+        "std_dev": 26.9
+    },
+    {
+        "generation": 918,
+        "best": 168.0,
+        "average": 132.0,
+        "worst": 100.0,
+        "std_dev": 18.1
+    },
+    {
+        "generation": 919,
+        "best": 173.2,
+        "average": 136.3,
+        "worst": 86.0,
+        "std_dev": 19.3
+    },
+    {
+        "generation": 920,
+        "best": 153.0,
+        "average": 128.4,
+        "worst": 93.3,
+        "std_dev": 26.9
+    },
+    {
+        "generation": 921,
+        "best": 166.8,
+        "average": 136.4,
+        "worst": 97.2,
+        "std_dev": 18.8
+    },
+    {
+        "generation": 922,
+        "best": 167.5,
+        "average": 136.1,
+        "worst": 80.9,
+        "std_dev": 15.2
+    },
+    {
+        "generation": 923,
+        "best": 157.4,
+        "average": 129.3,
+        "worst": 89.7,
+        "std_dev": 15.9
+    },
+    {
+        "generation": 924,
+        "best": 165.6,
+        "average": 131.1,
+        "worst": 71.6,
+        "std_dev": 18.6
+    },
+    {
+        "generation": 925,
+        "best": 151.4,
+        "average": 128.9,
+        "worst": 82.4,
+        "std_dev": 22.3
+    },
+    {
+        "generation": 926,
+        "best": 166.2,
+        "average": 130.4,
+        "worst": 80.6,
+        "std_dev": 20.6
+    },
+    {
+        "generation": 927,
+        "best": 154.8,
+        "average": 130.4,
+        "worst": 74.3,
+        "std_dev": 25.4
+    },
+    {
+        "generation": 928,
+        "best": 159.0,
+        "average": 135.0,
+        "worst": 98.8,
+        "std_dev": 22.7
+    },
+    {
+        "generation": 929,
+        "best": 165.8,
+        "average": 137.3,
+        "worst": 95.6,
+        "std_dev": 17.3
+    },
+    {
+        "generation": 930,
+        "best": 167.0,
+        "average": 136.6,
+        "worst": 91.1,
+        "std_dev": 29.0
+    },
+    {
+        "generation": 931,
+        "best": 153.2,
+        "average": 132.9,
+        "worst": 78.6,
+        "std_dev": 22.7
+    },
+    {
+        "generation": 932,
+        "best": 154.9,
+        "average": 133.3,
+        "worst": 91.4,
+        "std_dev": 27.5
+    },
+    {
+        "generation": 933,
+        "best": 156.8,
+        "average": 130.3,
+        "worst": 93.4,
+        "std_dev": 25.5
+    },
+    {
+        "generation": 934,
+        "best": 154.7,
+        "average": 133.7,
+        "worst": 82.4,
+        "std_dev": 26.7
+    },
+    {
+        "generation": 935,
+        "best": 153.6,
+        "average": 131.8,
+        "worst": 98.9,
+        "std_dev": 16.1
+    },
+    {
+        "generation": 936,
+        "best": 162.1,
+        "average": 132.6,
+        "worst": 75.9,
+        "std_dev": 29.2
+    },
+    {
+        "generation": 937,
+        "best": 157.9,
+        "average": 136.9,
+        "worst": 89.7,
+        "std_dev": 20.2
+    },
+    {
+        "generation": 938,
+        "best": 160.4,
+        "average": 136.8,
+        "worst": 79.2,
+        "std_dev": 19.7
+    },
+    {
+        "generation": 939,
+        "best": 168.1,
+        "average": 132.3,
+        "worst": 94.2,
+        "std_dev": 15.5
+    },
+    {
+        "generation": 940,
+        "best": 162.9,
+        "average": 137.3,
+        "worst": 91.3,
+        "std_dev": 19.8
+    },
+    {
+        "generation": 941,
+        "best": 155.3,
+        "average": 131.7,
+        "worst": 74.2,
+        "std_dev": 27.0
+    },
+    {
+        "generation": 942,
+        "best": 153.3,
+        "average": 129.8,
+        "worst": 76.6,
+        "std_dev": 21.6
+    },
+    {
+        "generation": 943,
+        "best": 171.5,
+        "average": 137.6,
+        "worst": 95.1,
+        "std_dev": 28.8
+    },
+    {
+        "generation": 944,
+        "best": 161.5,
+        "average": 128.8,
+        "worst": 91.3,
+        "std_dev": 18.4
+    },
+    {
+        "generation": 945,
+        "best": 167.3,
+        "average": 132.3,
+        "worst": 77.0,
+        "std_dev": 29.6
+    },
+    {
+        "generation": 946,
+        "best": 169.6,
+        "average": 137.4,
+        "worst": 103.7,
+        "std_dev": 25.5
+    },
+    {
+        "generation": 947,
+        "best": 150.4,
+        "average": 129.2,
+        "worst": 84.5,
+        "std_dev": 27.9
+    },
+    {
+        "generation": 948,
+        "best": 159.3,
+        "average": 134.2,
+        "worst": 100.4,
+        "std_dev": 27.8
+    },
+    {
+        "generation": 949,
+        "best": 159.3,
+        "average": 131.1,
+        "worst": 80.4,
+        "std_dev": 18.3
+    },
+    {
+        "generation": 950,
+        "best": 158.4,
+        "average": 137.7,
+        "worst": 88.6,
+        "std_dev": 22.3
+    },
+    {
+        "generation": 951,
+        "best": 161.9,
+        "average": 134.4,
+        "worst": 76.8,
+        "std_dev": 27.3
+    },
+    {
+        "generation": 952,
+        "best": 161.9,
+        "average": 129.9,
+        "worst": 91.4,
+        "std_dev": 27.0
+    },
+    {
+        "generation": 953,
+        "best": 172.2,
+        "average": 133.5,
+        "worst": 90.7,
+        "std_dev": 25.4
+    },
+    {
+        "generation": 954,
+        "best": 169.6,
+        "average": 135.3,
+        "worst": 94.6,
+        "std_dev": 27.3
+    },
+    {
+        "generation": 955,
+        "best": 156.7,
+        "average": 133.6,
+        "worst": 76.6,
+        "std_dev": 19.0
+    },
+    {
+        "generation": 956,
+        "best": 162.7,
+        "average": 136.6,
+        "worst": 92.6,
+        "std_dev": 18.3
+    },
+    {
+        "generation": 957,
+        "best": 156.8,
+        "average": 135.2,
+        "worst": 81.6,
+        "std_dev": 19.2
+    },
+    {
+        "generation": 958,
+        "best": 172.3,
+        "average": 136.3,
+        "worst": 95.0,
+        "std_dev": 21.5
+    },
+    {
+        "generation": 959,
+        "best": 152.8,
+        "average": 128.6,
+        "worst": 90.0,
+        "std_dev": 19.6
+    },
+    {
+        "generation": 960,
+        "best": 164.8,
+        "average": 129.1,
+        "worst": 84.9,
+        "std_dev": 21.8
+    },
+    {
+        "generation": 961,
+        "best": 154.0,
+        "average": 132.2,
+        "worst": 98.2,
+        "std_dev": 16.7
+    },
+    {
+        "generation": 962,
+        "best": 211.4,
+        "average": 130.0,
+        "worst": 86.2,
+        "std_dev": 19.7
+    },
+    {
+        "generation": 963,
+        "best": 156.8,
+        "average": 131.1,
+        "worst": 76.0,
+        "std_dev": 26.1
+    },
+    {
+        "generation": 964,
+        "best": 162.5,
+        "average": 132.5,
+        "worst": 80.4,
+        "std_dev": 23.0
+    },
+    {
+        "generation": 965,
+        "best": 171.2,
+        "average": 135.4,
+        "worst": 76.6,
+        "std_dev": 29.1
+    },
+    {
+        "generation": 966,
+        "best": 169.3,
+        "average": 129.5,
+        "worst": 78.4,
+        "std_dev": 24.6
+    },
+    {
+        "generation": 967,
+        "best": 174.3,
+        "average": 135.8,
+        "worst": 104.1,
+        "std_dev": 21.9
+    },
+    {
+        "generation": 968,
+        "best": 171.8,
+        "average": 135.4,
+        "worst": 79.8,
+        "std_dev": 29.5
+    },
+    {
+        "generation": 969,
+        "best": 173.9,
+        "average": 137.4,
+        "worst": 77.9,
+        "std_dev": 27.3
+    },
+    {
+        "generation": 970,
+        "best": 161.6,
+        "average": 134.6,
+        "worst": 83.5,
+        "std_dev": 26.0
+    },
+    {
+        "generation": 971,
+        "best": 152.9,
+        "average": 130.3,
+        "worst": 82.9,
+        "std_dev": 22.9
+    },
+    {
+        "generation": 972,
+        "best": 155.6,
+        "average": 132.6,
+        "worst": 99.1,
+        "std_dev": 21.5
+    },
+    {
+        "generation": 973,
+        "best": 165.4,
+        "average": 134.0,
+        "worst": 98.7,
+        "std_dev": 21.9
+    },
+    {
+        "generation": 974,
+        "best": 173.3,
+        "average": 134.9,
+        "worst": 89.5,
+        "std_dev": 16.0
+    },
+    {
+        "generation": 975,
+        "best": 151.4,
+        "average": 129.5,
+        "worst": 86.1,
+        "std_dev": 16.4
+    },
+    {
+        "generation": 976,
+        "best": 166.2,
+        "average": 137.0,
+        "worst": 82.0,
+        "std_dev": 16.3
+    },
+    {
+        "generation": 977,
+        "best": 167.9,
+        "average": 134.0,
+        "worst": 91.4,
+        "std_dev": 29.6
+    },
+    {
+        "generation": 978,
+        "best": 169.6,
+        "average": 130.7,
+        "worst": 72.3,
+        "std_dev": 22.4
+    },
+    {
+        "generation": 979,
+        "best": 161.4,
+        "average": 132.5,
+        "worst": 73.1,
+        "std_dev": 29.6
+    },
+    {
+        "generation": 980,
+        "best": 162.3,
+        "average": 133.3,
+        "worst": 76.1,
+        "std_dev": 22.6
+    },
+    {
+        "generation": 981,
+        "best": 155.0,
+        "average": 130.1,
+        "worst": 87.1,
+        "std_dev": 18.6
+    },
+    {
+        "generation": 982,
+        "best": 160.2,
+        "average": 133.8,
+        "worst": 76.8,
+        "std_dev": 28.9
+    },
+    {
+        "generation": 983,
+        "best": 160.6,
+        "average": 132.3,
+        "worst": 98.4,
+        "std_dev": 26.4
+    },
+    {
+        "generation": 984,
+        "best": 163.5,
+        "average": 132.0,
+        "worst": 81.6,
+        "std_dev": 28.2
+    },
+    {
+        "generation": 985,
+        "best": 153.8,
+        "average": 131.0,
+        "worst": 97.2,
+        "std_dev": 23.6
+    },
+    {
+        "generation": 986,
+        "best": 173.0,
+        "average": 136.7,
+        "worst": 88.2,
+        "std_dev": 20.1
+    },
+    {
+        "generation": 987,
+        "best": 154.5,
+        "average": 129.9,
+        "worst": 74.6,
+        "std_dev": 25.7
+    },
+    {
+        "generation": 988,
+        "best": 162.0,
+        "average": 135.7,
+        "worst": 88.9,
+        "std_dev": 20.6
+    },
+    {
+        "generation": 989,
+        "best": 161.8,
+        "average": 138.2,
+        "worst": 105.7,
+        "std_dev": 17.2
+    },
+    {
+        "generation": 990,
+        "best": 173.5,
+        "average": 134.4,
+        "worst": 87.3,
+        "std_dev": 28.2
+    },
+    {
+        "generation": 991,
+        "best": 162.7,
+        "average": 136.5,
+        "worst": 92.0,
+        "std_dev": 26.7
+    },
+    {
+        "generation": 992,
+        "best": 166.6,
+        "average": 136.3,
+        "worst": 99.6,
+        "std_dev": 19.6
+    },
+    {
+        "generation": 993,
+        "best": 159.5,
+        "average": 132.6,
+        "worst": 99.5,
+        "std_dev": 16.4
+    },
+    {
+        "generation": 994,
+        "best": 153.5,
+        "average": 132.2,
+        "worst": 95.8,
+        "std_dev": 15.3
+    },
+    {
+        "generation": 995,
+        "best": 155.9,
+        "average": 130.8,
+        "worst": 87.3,
+        "std_dev": 15.2
+    },
+    {
+        "generation": 996,
+        "best": 150.7,
+        "average": 129.1,
+        "worst": 84.7,
+        "std_dev": 18.0
+    },
+    {
+        "generation": 997,
+        "best": 157.4,
+        "average": 134.9,
+        "worst": 93.7,
+        "std_dev": 27.6
+    },
+    {
+        "generation": 998,
+        "best": 167.6,
+        "average": 131.4,
+        "worst": 90.8,
+        "std_dev": 22.7
+    },
+    {
+        "generation": 999,
+        "best": 170.5,
+        "average": 133.3,
+        "worst": 98.0,
+        "std_dev": 17.5
+    },
+    {
+        "generation": 1000,
+        "best": 160.7,
+        "average": 137.8,
+        "worst": 78.0,
+        "std_dev": 26.0
+    }
+]
