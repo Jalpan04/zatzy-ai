@@ -5,6 +5,7 @@ import time
 from src.game.engine import GameEngine
 # Imports for Agents will be passed or imported here
 
+def run_arena_view(load_agent_func, load_dqn_agent_func, ExpectimaxAgent):
     st.subheader("⚔️ AI Battle Arena")
     
     col1, col2 = st.columns(2)
