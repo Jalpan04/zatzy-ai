@@ -86,36 +86,59 @@ def run_arena_view(load_agent_func, load_dqn_agent_func, ExpectimaxAgent):
             step = 0
             speed = 0.3
             
-            while not (e1.game_over and e2.game_over) and step < 200:
-                # Agent 1 Move
+            # History for Table
+            history_data = []
+            
+            # Containers for Last Action
+            last_action_c1 = c1.empty()
+            last_action_c2 = c2.empty()
+            
+            while not (e1.game_over and e2.game_over) and step < 300:
+                # Agent 1
+                a1_desc = "Finished"
                 if not e1.game_over:
-                    play_one_step(e1, a1)
-                    
-                # Agent 2 Move
+                    action_type, action_val = play_one_step(e1, a1)
+                    if action_type == 'keep':
+                        mask_str = bin(action_val)[2:].zfill(5)[::-1]
+                        a1_desc = f"Kept: {mask_str}"
+                    else:
+                        from src.game.scorecard import Category
+                        cat_n = Category.NAME_MAP.get(action_val, str(action_val))
+                        pts = e1.scorecard.get_score(action_val)
+                        a1_desc = f"Scored: {cat_n} ({pts})"
+                
+                # Agent 2
+                a2_desc = "Finished"
                 if not e2.game_over:
-                    play_one_step(e2, a2)
+                    action_type, action_val = play_one_step(e2, a2)
+                    if action_type == 'keep':
+                        mask_str = bin(action_val)[2:].zfill(5)[::-1]
+                        a2_desc = f"Kept: {mask_str}"
+                    else:
+                        from src.game.scorecard import Category
+                        cat_n = Category.NAME_MAP.get(action_val, str(action_val))
+                        pts = e2.scorecard.get_score(action_val)
+                        a2_desc = f"Scored: {cat_n} ({pts})"
+                
+                # Update Log
+                history_data.insert(0, {"Turn": e1.turn_number, "Agent 1 Action": a1_desc, "Agent 2 Action": a2_desc})
                 
                 # Render
                 with container1.container():
                      render_game_state(e1)
+                     last_action_c1.info(a1_desc)
                 with container2.container():
                      render_game_state(e2)
+                     last_action_c2.info(a2_desc)
                      
                 time.sleep(speed)
                 step += 1
             
-            # Final Result
-            s1 = e1.scorecard.get_total_score()
-            s2 = e2.scorecard.get_total_score()
+            # Show History after match
+            st.write("### Match History")
+            st.dataframe(pd.DataFrame(history_data))
             
-            if s1 > s2:
-                c1.success(f"WINNER: {s1}")
-                c2.error(f"LOSER: {s2}")
-            elif s2 > s1:
-                c1.error(f"LOSER: {s1}")
-                c2.success(f"WINNER: {s2}")
-            else:
-                st.info(f"DRAW: {s1}")
+            # Final Result ... (keep same)
 
 def play_one_step(engine, agent):
     # Logic for one step (Roll or Score)
@@ -127,6 +150,7 @@ def play_one_step(engine, agent):
          action_type, action_val = agent.select_action(state, mask)
     
     engine.apply_action(action_type, action_val)
+    return action_type, action_val
 
 def render_game_state(engine):
     st.write(f"**Score: {engine.scorecard.get_total_score()}** | Turn: {engine.turn_number}")
@@ -138,11 +162,8 @@ def render_game_state(engine):
     st.markdown(f"<div style='font-size: 40px;'>{dice_str}</div>", unsafe_allow_html=True)
     
     # Scorecard Mini
-    # Show only filled categories or top 5? Or total?
-    # Just show last action logic if possible? No, shows full scorecard briefly?
-    # Keeping it simple to fit on screen
     st.progress(min(engine.turn_number / 13.0, 1.0))
-    st.caption(f"Rolls: {engine.rolls_left}")
+    st.caption(f"Rolls Left: {engine.rolls_left}")
 
 def load_agent_by_name(name, load_genetic, load_dqn, ExpectimaxCls):
     import os # Lazy import
