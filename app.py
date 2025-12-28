@@ -368,63 +368,98 @@ elif mode == "Watch AI Play":
                     render_scorecard(engine.scorecard)
 
 elif mode == "Training Dashboard":
-    st.subheader("Training Progress (Interactive)")
+    st.title("🧠 AI Brain Analytics")
+    st.markdown("Analyze the training performance of our Artificial Intelligence models.")
+    
+    # Tabs for Different Models
+    tab_gen, tab_dqn = st.tabs(["🧬 Genetic Algorithm", "🤖 Deep Q-Network"])
     
     import json
     import pandas as pd
     import altair as alt
-    
-    if not os.path.exists("training_log.json"):
-        st.warning("No training log found. Run training first to generate stats.")
-    else:
-        with open("training_log.json", "r") as f:
-            history = json.load(f)
+
+    # --- GENETIC TAB ---
+    with tab_gen:
+        if not os.path.exists("training_log.json"):
+            st.warning("No Genetic training log found.")
+        else:
+            with open("training_log.json", "r") as f:
+                history_gen = json.load(f)
+            df_gen = pd.DataFrame(history_gen)
             
-        df = pd.DataFrame(history)
-        
-        # KPIS
-        col1, col2, col3 = st.columns(3)
-        col1.metric("Highest AI Score", f"{df['best'].max()}", delta=f"{df['best'].max() - df['best'].iloc[0]:.0f}")
-        col2.metric("Current Avg Score", f"{df['average'].iloc[-1]}", delta=f"{df['average'].iloc[-1] - df['average'].iloc[-0]:.0f}")
-        col3.metric("Generations Trained", f"{len(df)}")
-        
-        st.write("---")
-        
-        # MELT dataframe for Altair (Long Format)
-        df_melted = df.melt('generation', var_name='Metric', value_name='Score')
-        # Filter to keep only interesting lines
-        df_melted = df_melted[df_melted['Metric'].isin(['best', 'average', 'worst'])]
+            # Metrics
+            cols = st.columns(4)
+            best_all_time = df_gen['best'].max()
+            current_avg = df_gen['average'].iloc[-1]
+            improvement = current_avg - df_gen['average'].iloc[0]
+            total_gens = len(df_gen)
+            
+            cols[0].metric("All-Time Best Score", f"{best_all_time}")
+            cols[1].metric("Latest Avg Score", f"{current_avg:.1f}")
+            cols[2].metric("Total Improvement", f"{improvement:+.1f}")
+            cols[3].metric("Generations", f"{total_gens}")
+            
+            st.write("### 📈 Evolutionary Progress")
+            
+            # Main Chart: Area (Range) + Line (Best/Avg)
+            base = alt.Chart(df_gen).encode(x=alt.X('generation', title='Generation'))
+            
+            line_avg = base.mark_line(color='#4c78a8', size=3).encode(
+                y=alt.Y('average', title='Score'),
+                tooltip=['generation', 'average', 'best', 'worst']
+            )
+            line_best = base.mark_line(color='#f58518', size=2).encode(y='best')
+            area_range = base.mark_area(opacity=0.3, color='#72b7b2').encode(y='worst', y2='best')
+            
+            chart_gen = (area_range + line_avg + line_best).properties(height=400).interactive()
+            st.altair_chart(chart_gen, use_container_width=True)
+            
+            st.caption("Orange: Best | Blue: Average | Green Area: Population Range")
 
-        # Altair Chart
-        st.write("### AI Learning Curve")
-        
-        base = alt.Chart(df).encode(x=alt.X('generation', title='Generation'))
-
-        # Line for Average
-        line_avg = base.mark_line(color='#1f77b4', size=3).encode(
-            y=alt.Y('average', title='Score'),
-            tooltip=['generation', 'average', 'best']
-        )
-        
-        # Line for Best
-        line_best = base.mark_line(color='#ff7f0e', size=2).encode(
-            y='best'
-        )
-        
-        # Area for Range (Worst to Best)
-        band = base.mark_area(opacity=0.2, color='#1f77b4').encode(
-            y='worst',
-            y2='best'
-        )
-        
-        chart = (band + line_avg + line_best).properties(
-            height=400
-        ).interactive()
-
-        st.altair_chart(chart, use_container_width=True)
-        
-        st.caption("Orange: Best Performer | Blue: Population Average | Shaded: Full Range")
-
-        # 3. Stats Table
-        with st.expander("View Raw Training Data"):
-            st.dataframe(df)
+    # --- DQN TAB ---
+    with tab_dqn:
+        if not os.path.exists("dqn_training_log.json"):
+            st.info("No DQN training log found.")
+        else:
+            with open("dqn_training_log.json", "r") as f:
+                history_dqn = json.load(f)
+            df_dqn = pd.DataFrame(history_dqn)
+            
+            # Calculate Rolling Average (Trends)
+            df_dqn['rolling_avg'] = df_dqn['score'].rolling(window=20).mean()
+            
+            # Metrics
+            d_cols = st.columns(4)
+            dqn_best = df_dqn['score'].max()
+            dqn_curr_eps = df_dqn['epsilon'].iloc[-1] if 'epsilon' in df_dqn else 0
+            dqn_last_10_avg = df_dqn['score'].tail(10).mean()
+            dqn_episodes = len(df_dqn)
+            
+            d_cols[0].metric("Best Episode Score", f"{dqn_best}")
+            d_cols[1].metric("Recent Avg (Last 10)", f"{dqn_last_10_avg:.1f}")
+            d_cols[2].metric("Exploration Rate", f"{dqn_curr_eps:.2f}")
+            d_cols[3].metric("Total Episodes", f"{dqn_episodes}")
+            
+            st.write("### 🚀 Reinforcement Learning Curve")
+            
+            # Chart 1: Score vs Episode
+            base_dqn = alt.Chart(df_dqn).encode(x=alt.X('episode', title='Episode'))
+            
+            points = base_dqn.mark_circle(opacity=0.3, size=30, color='gray').encode(
+                y=alt.Y('score', title='Score'),
+                tooltip=['episode', 'score', 'epsilon']
+            )
+            trend = base_dqn.mark_line(color='#e45756', size=3).encode(
+                y=alt.Y('rolling_avg', title='20-Ep Rolling Avg')
+            )
+            
+            chart_dqn = (points + trend).properties(height=400).interactive()
+            st.altair_chart(chart_dqn, use_container_width=True)
+            
+            st.write("### 🧠 Exploration Decay")
+            chart_eps = alt.Chart(df_dqn).mark_line(color='purple').encode(
+                x='episode',
+                y='epsilon',
+                tooltip=['episode', 'epsilon']
+            ).properties(height=200).interactive()
+            st.altair_chart(chart_eps, use_container_width=True)
