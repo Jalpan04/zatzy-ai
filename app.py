@@ -84,7 +84,7 @@ def render_scorecard(scorecard):
     for cat in Category.ALL:
         name = Category.NAME_MAP[cat]
         score = scorecard.get_score(cat)
-        data.append({"Category": name, "Score": score if score is not None else "-"})
+        data.append({"Category": name, "Score": str(score) if score is not None else "-"})
     
     st.table(pd.DataFrame(data))
     st.metric("Total Score", scorecard.get_total_score())
