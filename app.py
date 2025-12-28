@@ -15,6 +15,7 @@ import src.config as config
 import src.ai.model as model_module
 import src.ai.agent as agent_module
 import src.game.engine as engine_module
+import src.game.scorecard as scorecard_module
 import src.ai.expectimax as expectimax_module
 import src.ai.dqn as dqn_module
 import importlib
