@@ -34,7 +34,7 @@ st.set_page_config(page_title="Zatzy AI", layout="wide")
 
 import src.config as config
 
-st.title("🧬 Zatzy AI: Genetic Evolution")
+st.title("Zatzy AI: Genetic Evolution")
 
 def load_agent(checkpoint_path):
     # Use Global Config for robust dimensions
@@ -82,9 +82,9 @@ def init_vs_game():
              st.error("No AI Agent found!")
 
 if mode == "Play vs AI":
-    st.subheader("⚔️ Human vs AI")
+    st.subheader("Human vs AI")
     
-    with st.expander("ℹ️ How to Play", expanded=True):
+    with st.expander("How to Play", expanded=True):
         st.markdown("""
         1. **Roll Dice**: You have 3 rolls per turn.
         2. **Keep Dice**: Check the box under the dice you want to SAVE.
@@ -107,7 +107,7 @@ if mode == "Play vs AI":
     ai = st.session_state.vs_ai_engine
     
     # Restart Button
-    if st.button("🔄 Restart New Game"):
+    if st.button("Restart New Game"):
         del st.session_state.vs_human_engine
         del st.session_state.vs_ai_engine
         st.rerun()
@@ -116,7 +116,7 @@ if mode == "Play vs AI":
     
     # --- HUMAN COLUMN ---
     with col1:
-        st.markdown(f"### 👤 You (Score: {human.scorecard.get_total_score()})")
+        st.markdown(f"### You (Score: {human.scorecard.get_total_score()})")
         st.caption(f"Round {human.turn_number} / 13 | Rolls Left: {human.rolls_left}")
         
         # --- DICE & KEEP UI ---
@@ -133,7 +133,7 @@ if mode == "Play vs AI":
         
         for i, val in enumerate(current_dice):
             with d_cols[i]:
-                # Big Dice Emoji
+                # Big Dice Emoji - REPLACED WITH UNICODE SYMBOL ONLY, NO EMOJIS
                 st.markdown(f"<div style='font-size: 50px; line-height: 1; text-align: center;'>{unicode_map.get(val, '?')}</div>", unsafe_allow_html=True)
                 
                 # Checkbox
@@ -151,16 +151,16 @@ if mode == "Play vs AI":
         if not human.game_over:
             # 1. ROLL BUTTON
             if human.rolls_left > 0:
-                roll_btn = st.button("🎲 Roll Dice", use_container_width=True, type="primary")
+                roll_btn = st.button("Roll Dice", use_container_width=True, type="primary")
                 if roll_btn:
                     human.dice.roll(set(keep_indices))
                     human.rolls_left -= 1
                     st.rerun()
             else:
-                st.warning("⚠️ No rolls left! You must score.")
+                st.warning("No rolls left! You must score.")
             
             # 2. SCORE BUTTONS
-            st.write("#### 👇 Choose Category to Score")
+            st.write("#### Choose Category to Score")
             available_cats = [c for c in Category.ALL if human.scorecard.get_score(c) is None]
             
             # Group into columns for compactness
@@ -198,13 +198,13 @@ if mode == "Play vs AI":
                         
                         st.rerun()
         else:
-            st.success("✅ Your Game Finished!")
+            st.success("Your Game Finished!")
 
         render_scorecard(human.scorecard)
 
     # --- AI COLUMN ---
     with col2:
-        st.markdown(f"### 🤖 AI (Score: {ai.scorecard.get_total_score()})")
+        st.markdown(f"### AI (Score: {ai.scorecard.get_total_score()})")
         st.caption(f"Round {ai.turn_number} / 13 | AI plays automatically")
         
         render_dice(ai.dice.values)
@@ -222,12 +222,12 @@ if mode == "Play vs AI":
         st.write("---")
         if h_score > a_score:
             st.balloons()
-            st.title(f"🏆 YOU WIN! ({h_score} vs {a_score})")
+            st.title(f"YOU WIN! ({h_score} vs {a_score})")
         else:
-            st.error(f"💀 AI WINS! ({a_score} vs {h_score})")
+            st.error(f"AI WINS! ({a_score} vs {h_score})")
 
 elif mode == "Watch AI Play":
-    st.subheader("🤖 AI Gameplay Viewer")
+    st.subheader("AI Gameplay Viewer")
     
     # Checkpoints
     if not os.path.exists("checkpoints"):
@@ -239,7 +239,7 @@ elif mode == "Watch AI Play":
         else:
              selected_cp = st.sidebar.selectbox("Load Agent", checkpoints, index=len(checkpoints)-1)
              
-             if st.button("▶️ Run Game"):
+             if st.button("Run Game"):
                  agent = load_agent(os.path.join("checkpoints", selected_cp))
                  engine = GameEngine()
                  
@@ -284,7 +284,7 @@ elif mode == "Watch AI Play":
                  render_scorecard(engine.scorecard)
 
 elif mode == "Training Dashboard":
-    st.subheader("📈 Training Progress (Interactive)")
+    st.subheader("Training Progress (Interactive)")
     
     import json
     import pandas as pd
@@ -312,7 +312,7 @@ elif mode == "Training Dashboard":
         df_melted = df_melted[df_melted['Metric'].isin(['best', 'average', 'worst'])]
 
         # Altair Chart
-        st.write("### 🧠 AI Learning Curve")
+        st.write("### AI Learning Curve")
         
         base = alt.Chart(df).encode(x=alt.X('generation', title='Generation'))
 
@@ -342,5 +342,5 @@ elif mode == "Training Dashboard":
         st.caption("Orange: Best Performer | Blue: Population Average | Shaded: Full Range")
 
         # 3. Stats Table
-        with st.expander("🔍 View Raw Training Data"):
+        with st.expander("View Raw Training Data"):
             st.dataframe(df)
