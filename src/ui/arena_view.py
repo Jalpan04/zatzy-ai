@@ -134,11 +134,26 @@ def run_arena_view(load_agent_func, load_dqn_agent_func, ExpectimaxAgent):
                 time.sleep(speed)
                 step += 1
             
-            # Show History after match
-            st.write("### Match History")
-            st.dataframe(pd.DataFrame(history_data))
+            # Final Result
+            s1 = e1.scorecard.get_total_score()
+            s2 = e2.scorecard.get_total_score()
             
-            # Final Result ... (keep same)
+            st.markdown("---")
+            st.markdown(f"### 🏆 WINNER: {agent1_name if s1 > s2 else agent2_name} 🏆")
+            
+            if s1 > s2:
+                c1.success(f"**WINNER** ({s1})")
+                c2.error(f"LOSER ({s2})")
+            elif s2 > s1:
+                c1.error(f"LOSER ({s1})")
+                c2.success(f"**WINNER** ({s2})")
+            else:
+                st.info(f"DRAW ({s1})")
+
+            # Show History after match
+            st.write("### 📜 Match History")
+            # Highlight winner in history? No, straightforward table is fine.
+            st.dataframe(pd.DataFrame(history_data), use_container_width=True)
 
 def play_one_step(engine, agent):
     # Logic for one step (Roll or Score)

@@ -19,6 +19,7 @@ class GameEngine:
             self.game_over = True
             return
 
+        self.turn_number = len(self.scorecard.scores) + 1
         self.rolls_left = 3
         self.dice.reset()
         # Auto-roll the first time to give the AI something to look at
