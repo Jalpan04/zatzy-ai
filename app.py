@@ -8,8 +8,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Add project root to path
-# (Not needed at root level)
-# sys.path.append(os.getcwd())
+sys.path.append(os.getcwd())
 
 import src.config as config
 import src.ai.model as model_module
@@ -368,11 +367,11 @@ elif mode == "Watch AI Play":
                     render_scorecard(engine.scorecard)
 
 elif mode == "Training Dashboard":
-    st.title("🧠 AI Brain Analytics")
+    st.title("AI Brain Analytics")
     st.markdown("Analyze the training performance of our Artificial Intelligence models.")
     
     # Tabs for Different Models
-    tab_gen, tab_dqn = st.tabs(["🧬 Genetic Algorithm", "🤖 Deep Q-Network"])
+    tab_gen, tab_dqn = st.tabs(["Genetic Algorithm", "Deep Q-Network"])
     
     import json
     import pandas as pd
@@ -399,7 +398,7 @@ elif mode == "Training Dashboard":
             cols[2].metric("Total Improvement", f"{improvement:+.1f}")
             cols[3].metric("Generations", f"{total_gens}")
             
-            st.write("### 📈 Evolutionary Progress")
+            st.write("### Evolutionary Progress")
             
             # Main Chart: Area (Range) + Line (Best/Avg)
             base = alt.Chart(df_gen).encode(x=alt.X('generation', title='Generation'))
@@ -440,7 +439,7 @@ elif mode == "Training Dashboard":
             d_cols[2].metric("Exploration Rate", f"{dqn_curr_eps:.2f}")
             d_cols[3].metric("Total Episodes", f"{dqn_episodes}")
             
-            st.write("### 🚀 Reinforcement Learning Curve")
+            st.write("### Reinforcement Learning Curve")
             
             # Chart 1: Score vs Episode
             base_dqn = alt.Chart(df_dqn).encode(x=alt.X('episode', title='Episode'))
@@ -456,7 +455,7 @@ elif mode == "Training Dashboard":
             chart_dqn = (points + trend).properties(height=400).interactive()
             st.altair_chart(chart_dqn, use_container_width=True)
             
-            st.write("### 🧠 Exploration Decay")
+            st.write("### Exploration Decay")
             chart_eps = alt.Chart(df_dqn).mark_line(color='purple').encode(
                 x='episode',
                 y='epsilon',

@@ -6,7 +6,7 @@ from src.game.engine import GameEngine
 # Imports for Agents will be passed or imported here
 
 def run_arena_view(load_agent_func, load_dqn_agent_func, ExpectimaxAgent):
-    st.subheader("⚔️ AI Battle Arena")
+    st.subheader("AI Battle Arena")
     
     col1, col2 = st.columns(2)
     with col1:
@@ -96,6 +96,7 @@ def run_arena_view(load_agent_func, load_dqn_agent_func, ExpectimaxAgent):
             while not (e1.game_over and e2.game_over) and step < 300:
                 # Agent 1
                 a1_desc = "Finished"
+                a1_performed_score = False
                 if not e1.game_over:
                     action_type, action_val = play_one_step(e1, a1)
                     if action_type == 'keep':
@@ -106,9 +107,11 @@ def run_arena_view(load_agent_func, load_dqn_agent_func, ExpectimaxAgent):
                         cat_n = Category.NAME_MAP.get(action_val, str(action_val))
                         pts = e1.scorecard.get_score(action_val)
                         a1_desc = f"Scored: {cat_n} ({pts})"
+                        a1_performed_score = True
                 
                 # Agent 2
                 a2_desc = "Finished"
+                a2_performed_score = False
                 if not e2.game_over:
                     action_type, action_val = play_one_step(e2, a2)
                     if action_type == 'keep':
@@ -119,10 +122,22 @@ def run_arena_view(load_agent_func, load_dqn_agent_func, ExpectimaxAgent):
                         cat_n = Category.NAME_MAP.get(action_val, str(action_val))
                         pts = e2.scorecard.get_score(action_val)
                         a2_desc = f"Scored: {cat_n} ({pts})"
+                        a2_performed_score = True
                 
-                # Update Log
-                history_data.insert(0, {"Turn": e1.turn_number, "Agent 1 Action": a1_desc, "Agent 2 Action": a2_desc})
-                
+                # Update Log - ONLY IF SCORED or Game Over (optional, but user said 'remove kept')
+                # Actually, simply filter by checking if desc starts with 'Scored'
+                if a1_performed_score or a2_performed_score:
+                     # If one scored and other kept, do we show?
+                     # User wants history of "turns" effectively.
+                     # Let's show row if AT LEAST ONE scored.
+                     # If only keeping, skip.
+                     a1_log = a1_desc if a1_performed_score else "" # Empty if kept?
+                     a2_log = a2_desc if a2_performed_score else ""
+                     # Better: Show what happened this step, but filter out pure keep steps from the *Table*
+                     # But for visual feedback (last_action_c1), show everything.
+                     
+                     history_data.insert(0, {"Turn": e1.turn_number, "Agent 1 Action": a1_desc, "Agent 2 Action": a2_desc})
+
                 # Render
                 with container1.container():
                      render_game_state(e1)
@@ -139,19 +154,19 @@ def run_arena_view(load_agent_func, load_dqn_agent_func, ExpectimaxAgent):
             s2 = e2.scorecard.get_total_score()
             
             st.markdown("---")
-            st.markdown(f"### 🏆 WINNER: {agent1_name if s1 > s2 else agent2_name} 🏆")
+            st.markdown(f"### WINNER: {agent1_name if s1 > s2 else agent2_name}")
             
             if s1 > s2:
-                c1.success(f"**WINNER** ({s1})")
+                c1.success(f"WINNER ({s1})")
                 c2.error(f"LOSER ({s2})")
             elif s2 > s1:
                 c1.error(f"LOSER ({s1})")
-                c2.success(f"**WINNER** ({s2})")
+                c2.success(f"WINNER ({s2})")
             else:
                 st.info(f"DRAW ({s1})")
 
             # Show History after match
-            st.write("### 📜 Match History")
+            st.write("### Match History")
             # Highlight winner in history? No, straightforward table is fine.
             st.dataframe(pd.DataFrame(history_data), use_container_width=True)
 
