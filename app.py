@@ -16,6 +16,7 @@ import src.ai.model as model_module
 import src.ai.agent as agent_module
 import src.game.engine as engine_module
 import src.ai.expectimax as expectimax_module
+import src.ai.dqn as dqn_module
 import importlib
 
 # Force Reload All Modules in Dependency Order
@@ -25,10 +26,12 @@ importlib.reload(agent_module)
 importlib.reload(engine_module)
 importlib.reload(scorecard_module)
 importlib.reload(expectimax_module)
+importlib.reload(dqn_module)
 
 from src.ai.model import YahtzeeNetwork
 from src.ai.agent import Agent
 from src.ai.expectimax import ExpectimaxAgent
+from src.ai.dqn import DQNAgent
 from src.game.engine import GameEngine
 from src.game.scorecard import Category, Scorecard
 
@@ -45,6 +48,22 @@ def load_agent(checkpoint_path):
     state_dict = torch.load(checkpoint_path, map_location=torch.device('cpu'))
     model.load_state_dict(state_dict)
     return Agent(model)
+
+def load_dqn_agent():
+    # Find best DQN checkpoint
+    if not os.path.exists("checkpoints_dqn"):
+        return None
+    checkpoints = sorted([f for f in os.listdir("checkpoints_dqn") if f.endswith(".pth")], key=lambda x: int(x.split('_')[-1].split('.')[0]))
+    if not checkpoints:
+        return None
+        
+    latest_cp = checkpoints[-1]
+    cp_path = os.path.join("checkpoints_dqn", latest_cp)
+    
+    agent = DQNAgent()
+    agent.policy_net.load_state_dict(torch.load(cp_path, map_location=torch.device('cpu')))
+    agent.epsilon = 0.0 # Force Exploitation
+    return agent
 
 def render_dice(dice_values):
     cols = st.columns(5)
@@ -68,7 +87,7 @@ def render_scorecard(scorecard):
 
 # Sidebar
 st.sidebar.header("Control Panel")
-mode = st.sidebar.radio("Mode", ["Watch AI Play", "Training Dashboard", "Play vs AI"])
+mode = st.sidebar.radio("Mode", ["Watch AI Play", "Training Dashboard", "Play vs AI", "Arena: Agent Showdown"])
 
 def init_vs_game():
     if "vs_human_engine" not in st.session_state:
@@ -83,7 +102,10 @@ def init_vs_game():
         else:
              st.error("No AI Agent found!")
 
-if mode == "Play vs AI":
+if mode == "Arena: Agent Showdown":
+    run_arena_view(load_agent, load_dqn_agent, ExpectimaxAgent)
+
+elif mode == "Play vs AI":
     st.subheader("Human vs AI")
     
     with st.expander("How to Play", expanded=True):
@@ -95,7 +117,7 @@ if mode == "Play vs AI":
         """)
 
     # AI Selector
-    ai_type = st.selectbox("Choose Opponent", ["Genetic AI (Best)", "Expectimax (Math)"])
+    ai_type = st.selectbox("Choose Opponent", ["Genetic AI (Best)", "Expectimax (Math)", "DQN (Reinforcement)"])
 
     # Initialization
     if "vs_human_engine" not in st.session_state:
@@ -106,6 +128,13 @@ if mode == "Play vs AI":
         # Load Agent based on selection
         if ai_type == "Expectimax (Math)":
             st.session_state.vs_ai_agent = ExpectimaxAgent()
+        elif ai_type == "DQN (Reinforcement)":
+            dqn = load_dqn_agent()
+            if dqn:
+                st.session_state.vs_ai_agent = dqn
+            else:
+                 st.error("No DQN Checkpoints found! Train it first.")
+                 st.session_state.vs_ai_agent = ExpectimaxAgent() # Fallback
         else:
             checkpoints = sorted([f for f in os.listdir("checkpoints") if f.endswith(".pkl")])
             if checkpoints:
@@ -241,11 +270,18 @@ elif mode == "Watch AI Play":
     st.subheader("AI Gameplay Viewer")
     
     # Select Agent Type
-    agent_type = st.sidebar.radio("Agent Type", ["Genetic AI", "Expectimax (Math)"])
+    agent_type = st.sidebar.radio("Agent Type", ["Genetic AI", "Expectimax (Math)", "DQN (Reinforcement)"])
     
-    if agent_type == "Expectimax (Math)":
+    if agent_type == "Expectimax (Math)" or agent_type == "DQN (Reinforcement)":
         if st.button("Run Game"):
-            agent = ExpectimaxAgent()
+            if agent_type == "Expectimax (Math)":
+                agent = ExpectimaxAgent()
+            else:
+                agent = load_dqn_agent()
+                if not agent:
+                    st.error("No DQN Checkpoint found!")
+                    st.stop()
+            
             engine = GameEngine()
             
             # ... Copy paste loop logic ...

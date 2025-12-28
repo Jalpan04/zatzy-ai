@@ -1,84 +1,146 @@
-import os
 import torch
+import torch.nn as nn
 import numpy as np
-from src.game.engine import GameEngine
+import random
+import os
+import sys
+import json
+from collections import deque
+
+# Add root to path for imports
+sys.path.append(os.getcwd())
+
 from src.ai.dqn import DQNAgent
+from src.game.engine import GameEngine
 from src.game.scorecard import Category
 
-def train_dqn(episodes=1000, save_interval=100):
-    env = GameEngine()
+def train_dqn(episodes=1000):
     agent = DQNAgent()
     
-    # Ensure checkpoints dir exists
-    os.makedirs("checkpoints_dqn", exist_ok=True)
+    # Replay Buffer: deque(maxlen=10000)
+    # Using simple list with manual pop for now or deque
+    memory = deque(maxlen=10000)
+    
+    optimizer = agent.optimizer
+    criterion = nn.MSELoss()
+    
+    best_score = 0
+    history = {"episode": [], "score": [], "epsilon": []}
     
     print(f"Starting DQN Training for {episodes} episodes...")
     
-    scores = []
-    
-    for episode in range(1, episodes + 1):
-        env = GameEngine() # Reset environment
-        state = env.get_state_vector()
-        mask = env.get_mask()
+    for episode in range(episodes):
+        engine = GameEngine()
+        state = engine.get_state_vector()
+        mask = engine.get_mask()
         total_score = 0
         done = False
         
-        while not done:
-            # Select Action
-            action_idx = agent.select_action(state, mask)
+        prev_score = 0
+        steps = 0
+        max_steps = 100 # Safety limit
+        
+        while not done and steps < max_steps:
+            steps += 1
+            # 1. Select Action
+            action_type, action_val = agent.select_action(state, mask)
             
-            # Decode Action
-            # 0-31: Keep Masks
-            # 32-44: Categories
-            if action_idx < 32:
-                action_type = "keep"
-                action_val = action_idx
+            # Map action back to index for training
+            if action_type == 'keep':
+                action_idx = action_val
             else:
-                action_type = "score"
-                action_val = action_idx - 32
+                # Score Actions: Cat 1..13 -> Index 32..44
+                # Index = Cat + 31
+                action_idx = action_val + 31
                 
-            # Step
-            # We need to capture reward. 
-            # In Yahtzee, reward = points gained this turn.
-            prev_score = env.scorecard.get_total_score()
-            env.apply_action(action_type, action_val)
-            new_score = env.scorecard.get_total_score()
+            # 2. Step
+            reward_score, valid, game_over = engine.apply_action(action_type, action_val)
+            next_state = engine.get_state_vector()
+            next_mask = engine.get_mask()
             
-            reward = new_score - prev_score
+            current_game_score = engine.scorecard.get_total_score()
+            done = engine.game_over
             
-            # Custom Rewards (Shaping)
-            # Encouraging Yahtzee?
-            if action_type == "score" and action_val == Category.YAHTZEE and reward == 50:
-                reward += 50 # Bonus
+            # 3. Calculate Reward
+            # Base Reward: Points gained this turn
+            if valid:
+                reward = current_game_score - prev_score
+                prev_score = current_game_score
+                reward = reward / 10.0 # Normalize
+            else:
+                # Penalty for invalid action (though mask should prevent this)
+                reward = -1.0 
             
-            # Normalize Reward for stability? (Optional, /10 or /50)
-            reward /= 10.0 
-            
-            next_state = env.get_state_vector()
-            next_mask = env.get_mask()
-            done = env.game_over
-            
-            # Store transition
-            agent.memory.push(state, action_idx, reward, next_state, done, mask, next_mask)
-            
-            # Learn
-            agent.update()
+            # 4. Store Experience
+            memory.append((state, action_idx, reward, next_state, done, next_mask))
             
             state = next_state
             mask = next_mask
             
-        scores.append(env.scorecard.get_total_score())
-        agent.decay_epsilon()
+            # 5. Review / Train (Mini-batch)
+            if len(memory) > agent.batch_size:
+                batch = random.sample(memory, agent.batch_size)
+                
+                # Unzip batch
+                b_states, b_actions, b_rewards, b_next_states, b_dones, b_next_masks = zip(*batch)
+                
+                b_states = torch.FloatTensor(np.array(b_states)).to(agent.device)
+                b_actions = torch.LongTensor(b_actions).unsqueeze(1).to(agent.device)
+                b_rewards = torch.FloatTensor(b_rewards).unsqueeze(1).to(agent.device)
+                b_next_states = torch.FloatTensor(np.array(b_next_states)).to(agent.device)
+                b_dones = torch.FloatTensor(b_dones).unsqueeze(1).to(agent.device)
+                b_next_masks = torch.FloatTensor(np.array(b_next_masks)).to(agent.device)
+                
+                # Q(s, a)
+                q_values = agent.policy_net(b_states).gather(1, b_actions)
+                
+                # Target: r + gamma * max(Q(s', a'))
+                # We must apply mask to next state Q-values so we don't accidentally pick invalid moves as max
+                with torch.no_grad():
+                    next_q_values = agent.target_net(b_next_states)
+                    
+                    # Masking next Q values
+                    min_val = -1e9
+                    masked_next_q = next_q_values * b_next_masks + (1 - b_next_masks) * min_val
+                    
+                    max_next_q = masked_next_q.max(1)[0].unsqueeze(1)
+                    target_q = b_rewards + (agent.gamma * max_next_q * (1 - b_dones))
+                
+                loss = criterion(q_values, target_q)
+                
+                optimizer.zero_grad()
+                loss.backward()
+                optimizer.step()
         
+        if steps >= max_steps:
+             print(f"Warning: Episode {episode} hit max steps!")
+             
+        # End of Episode
+        if agent.epsilon > agent.epsilon_min:
+            agent.epsilon *= agent.epsilon_decay
+            
+        # Target Net Update (Soft or Hard)
         if episode % 10 == 0:
             agent.target_net.load_state_dict(agent.policy_net.state_dict())
-            avg_score = np.mean(scores[-10:])
-            print(f"Episode {episode} | Avg Score: {avg_score:.1f} | Epsilon: {agent.epsilon:.2f}")
             
-        if episode % save_interval == 0:
-             path = f"checkpoints_dqn/dqn_ep_{episode}_score_{int(avg_score)}.pkl"
-             torch.save(agent.policy_net.state_dict(), path)
-             print(f"Saved checkpoint: {path}")
+        # Logging
+        if episode % 20 == 0:
+            print(f"Episode {episode}: Score {current_game_score}, Epsilon {agent.epsilon:.2f}, Memory {len(memory)}")
+            
+        history["episode"].append(episode)
+        history["score"].append(current_game_score)
+        history["epsilon"].append(agent.epsilon)
+        
+        if current_game_score > best_score:
+            best_score = current_game_score
+            # Save Checkpoint
+            if not os.path.exists("checkpoints_dqn"):
+                os.makedirs("checkpoints_dqn")
+            torch.save(agent.policy_net.state_dict(), f"checkpoints_dqn/dqn_best_{best_score}.pth")
 
+    # Save Log
+    with open("dqn_training_log.json", "w") as f:
+        json.dump(history, f)
+        
 if __name__ == "__main__":
-    train_dqn()
+    train_dqn(episodes=200) # Reduce to 200 for speed

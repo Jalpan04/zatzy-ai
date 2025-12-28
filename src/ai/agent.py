@@ -6,12 +6,12 @@ class Agent:
         self.model = model
         self.model.eval() # Always eval mode, no dropout/batchnorm training logic needed
 
-    def select_action(self, state_vector: np.ndarray, mask_vector: np.ndarray):
+    def select_action(self, state, mask, **kwargs):
         """
         Selects the best valid action using the model.
         """
         with torch.no_grad():
-            x = torch.tensor(state_vector, dtype=torch.float32)
+            x = torch.tensor(state, dtype=torch.float32)
             logits = self.model(x)
             
             # Apply Mask
