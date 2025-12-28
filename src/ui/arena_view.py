@@ -86,19 +86,23 @@ def run_arena_view(load_agent_func, load_dqn_agent_func, ExpectimaxAgent):
             step = 0
             speed = 0.3
             
-            # History for Table
-            history_data = []
+            # History Log (Turn-based)
+            match_log = {} # {turn_num: {"Agent 1": "...", "Agent 2": "..."}}
             
-            # Containers for Last Action
+            # Containers for Last Action (Visual feedback still shows Keeps)
             last_action_c1 = c1.empty()
             last_action_c2 = c2.empty()
             
-            while not (e1.game_over and e2.game_over) and step < 300:
+            while not (e1.game_over and e2.game_over) and step < 400:
                 # Agent 1
-                a1_desc = "Finished"
-                a1_performed_score = False
+                a1_desc = ""
                 if not e1.game_over:
+                    # Capturing turn before move to know where to log? 
+                    # Actually apply_action increments turn.
+                    # So if we score, the move belongs to 'turn_before_move'.
+                    current_turn_1 = e1.turn_number
                     action_type, action_val = play_one_step(e1, a1)
+                    
                     if action_type == 'keep':
                         mask_str = bin(action_val)[2:].zfill(5)[::-1]
                         a1_desc = f"Kept: {mask_str}"
@@ -107,13 +111,17 @@ def run_arena_view(load_agent_func, load_dqn_agent_func, ExpectimaxAgent):
                         cat_n = Category.NAME_MAP.get(action_val, str(action_val))
                         pts = e1.scorecard.get_score(action_val)
                         a1_desc = f"Scored: {cat_n} ({pts})"
-                        a1_performed_score = True
+                        # Log to History
+                        if current_turn_1 not in match_log: match_log[current_turn_1] = {}
+                        match_log[current_turn_1]["Turn"] = current_turn_1
+                        match_log[current_turn_1]["Player 1"] = f"{cat_n} ({pts})"
                 
                 # Agent 2
-                a2_desc = "Finished"
-                a2_performed_score = False
+                a2_desc = ""
                 if not e2.game_over:
+                    current_turn_2 = e2.turn_number
                     action_type, action_val = play_one_step(e2, a2)
+                    
                     if action_type == 'keep':
                         mask_str = bin(action_val)[2:].zfill(5)[::-1]
                         a2_desc = f"Kept: {mask_str}"
@@ -122,29 +130,18 @@ def run_arena_view(load_agent_func, load_dqn_agent_func, ExpectimaxAgent):
                         cat_n = Category.NAME_MAP.get(action_val, str(action_val))
                         pts = e2.scorecard.get_score(action_val)
                         a2_desc = f"Scored: {cat_n} ({pts})"
-                        a2_performed_score = True
+                        # Log to History
+                        if current_turn_2 not in match_log: match_log[current_turn_2] = {}
+                        match_log[current_turn_2]["Turn"] = current_turn_2
+                        match_log[current_turn_2]["Player 2"] = f"{cat_n} ({pts})"
                 
-                # Update Log - ONLY IF SCORED or Game Over (optional, but user said 'remove kept')
-                # Actually, simply filter by checking if desc starts with 'Scored'
-                if a1_performed_score or a2_performed_score:
-                     # If one scored and other kept, do we show?
-                     # User wants history of "turns" effectively.
-                     # Let's show row if AT LEAST ONE scored.
-                     # If only keeping, skip.
-                     a1_log = a1_desc if a1_performed_score else "" # Empty if kept?
-                     a2_log = a2_desc if a2_performed_score else ""
-                     # Better: Show what happened this step, but filter out pure keep steps from the *Table*
-                     # But for visual feedback (last_action_c1), show everything.
-                     
-                     history_data.insert(0, {"Turn": e1.turn_number, "Agent 1 Action": a1_desc, "Agent 2 Action": a2_desc})
-
-                # Render
+                # Render Visuals
                 with container1.container():
                      render_game_state(e1)
-                     last_action_c1.info(a1_desc)
+                     if a1_desc: last_action_c1.info(a1_desc)
                 with container2.container():
                      render_game_state(e2)
-                     last_action_c2.info(a2_desc)
+                     if a2_desc: last_action_c2.info(a2_desc)
                      
                 time.sleep(speed)
                 step += 1
@@ -164,6 +161,11 @@ def run_arena_view(load_agent_func, load_dqn_agent_func, ExpectimaxAgent):
                 c2.success(f"WINNER ({s2})")
             else:
                 st.info(f"DRAW ({s1})")
+            
+            # Build DataFrame from Match Log
+            # Sort by Turn
+            sorted_turns = sorted(match_log.keys())
+            history_data = [match_log[t] for t in sorted_turns]
 
             # Show History after match
             st.write("### Match History")
