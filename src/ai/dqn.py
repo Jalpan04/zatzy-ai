@@ -20,13 +20,14 @@ class DQN(nn.Module):
         return self.output(x)
 
 class DQNAgent:
-    def __init__(self, input_size=48, output_size=45, device='cpu'):
-        self.input_size = input_size
+    def __init__(self, input_size=None, output_size=45, device='cpu'):
+        import src.config as config
+        self.input_size = input_size or config.INPUT_SIZE
         self.output_size = output_size
-        self.device = device
+        self.device = torch.device(device) if isinstance(device, str) else device
         
-        self.policy_net = DQN(input_size, output_size).to(device)
-        self.target_net = DQN(input_size, output_size).to(device)
+        self.policy_net = DQN(self.input_size, output_size).to(self.device)
+        self.target_net = DQN(self.input_size, output_size).to(self.device)
         self.target_net.load_state_dict(self.policy_net.state_dict())
         
         self.optimizer = torch.optim.Adam(self.policy_net.parameters(), lr=1e-3)
@@ -38,6 +39,10 @@ class DQNAgent:
         self.epsilon_decay = 0.995
         
     def select_action(self, state, mask, engine=None):
+        # Slice state if it exceeds model's input size
+        if len(state) > self.input_size:
+            state = state[:self.input_size]
+
         # state is np array
         if random.random() < self.epsilon:
             # Random valid action

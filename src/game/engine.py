@@ -137,9 +137,19 @@ class GameEngine:
         # 5. Rolls Left
         rolls_norm = self.rolls_left / 2.0 
 
+        # 8. Actual Scores (Normalized by 50) - NEW FEATURE
+        # This helps the AI see exactly how much it has in each box
+        actual_scores = []
+        for cat in Category.ALL:
+            s = self.scorecard.get_score(cat)
+            if s is None:
+                actual_scores.append(0.0)
+            else:
+                actual_scores.append(min(s / 50.0, 1.0))
+
         # Total Size breakdown:
-        # Dice(5) + Hist(6) + Flags(13) + Potentials(13) + Patterns(8) + Context(3) = 48
-        return np.array(dice_vec + hist_vec + scorecard_flags + potential_scores + pattern_flags + [upper_norm, yahtzee_secured, rolls_norm], dtype=np.float32)
+        # Dice(5) + Hist(6) + Flags(13) + Potentials(13) + Patterns(8) + Context(3) + Scores(13) = 61
+        return np.array(dice_vec + hist_vec + scorecard_flags + potential_scores + pattern_flags + [upper_norm, yahtzee_secured, rolls_norm] + actual_scores, dtype=np.float32)
 
     def get_mask(self) -> np.ndarray:
         """

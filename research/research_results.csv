@@ -1,0 +1,601 @@
+Agent,GameID,Score,Time,Yahtzee_Count,Bonus_Achieved
+Random (Baseline),0,43,0.010399818420410156,False,False
+Random (Baseline),1,43,0.008445978164672852,False,False
+Random (Baseline),2,66,0.005898714065551758,False,False
+Random (Baseline),3,42,0.0043790340423583984,False,False
+Random (Baseline),4,46,0.006273746490478516,False,False
+Random (Baseline),5,35,0.00435185432434082,False,False
+Random (Baseline),6,66,0.0034058094024658203,False,False
+Random (Baseline),7,45,0.003416299819946289,False,False
+Random (Baseline),8,57,0.00484013557434082,False,False
+Random (Baseline),9,25,0.0038650035858154297,False,False
+Random (Baseline),10,26,0.004286289215087891,False,False
+Random (Baseline),11,44,0.004263162612915039,False,False
+Random (Baseline),12,35,0.00507044792175293,False,False
+Random (Baseline),13,66,0.0039403438568115234,False,False
+Random (Baseline),14,52,0.0038270950317382812,False,False
+Random (Baseline),15,81,0.0051116943359375,False,False
+Random (Baseline),16,24,0.0031812191009521484,False,False
+Random (Baseline),17,37,0.0035622119903564453,False,False
+Random (Baseline),18,32,0.004328012466430664,False,False
+Random (Baseline),19,79,0.003926515579223633,False,False
+Random (Baseline),20,38,0.003950595855712891,False,False
+Random (Baseline),21,62,0.0036067962646484375,False,False
+Random (Baseline),22,33,0.003477811813354492,False,False
+Random (Baseline),23,58,0.004091978073120117,False,False
+Random (Baseline),24,37,0.004298210144042969,False,False
+Random (Baseline),25,27,0.003823995590209961,False,False
+Random (Baseline),26,22,0.004486799240112305,False,False
+Random (Baseline),27,20,0.004113674163818359,False,False
+Random (Baseline),28,34,0.0036056041717529297,False,False
+Random (Baseline),29,58,0.003924369812011719,False,False
+Random (Baseline),30,25,0.004090785980224609,False,False
+Random (Baseline),31,69,0.0034873485565185547,False,False
+Random (Baseline),32,30,0.0035247802734375,False,False
+Random (Baseline),33,36,0.004872798919677734,False,False
+Random (Baseline),34,73,0.0052013397216796875,False,False
+Random (Baseline),35,50,0.0042531490325927734,False,False
+Random (Baseline),36,30,0.003452777862548828,False,False
+Random (Baseline),37,30,0.004579305648803711,False,False
+Random (Baseline),38,38,0.0033140182495117188,False,False
+Random (Baseline),39,44,0.003537893295288086,False,False
+Random (Baseline),40,42,0.0032901763916015625,False,False
+Random (Baseline),41,101,0.0035305023193359375,False,False
+Random (Baseline),42,48,0.004206657409667969,False,False
+Random (Baseline),43,23,0.0056896209716796875,False,False
+Random (Baseline),44,35,0.007770538330078125,False,False
+Random (Baseline),45,36,0.006113290786743164,False,False
+Random (Baseline),46,39,0.006381511688232422,False,False
+Random (Baseline),47,28,0.0071561336517333984,False,False
+Random (Baseline),48,68,0.010468482971191406,False,False
+Random (Baseline),49,59,0.00855875015258789,False,False
+Random (Baseline),50,52,0.008576631546020508,False,False
+Random (Baseline),51,61,0.01019740104675293,False,False
+Random (Baseline),52,66,0.005592823028564453,False,False
+Random (Baseline),53,30,0.006876707077026367,False,False
+Random (Baseline),54,50,0.007191658020019531,False,False
+Random (Baseline),55,30,0.005377054214477539,False,False
+Random (Baseline),56,36,0.004426240921020508,False,False
+Random (Baseline),57,39,0.004067420959472656,False,False
+Random (Baseline),58,46,0.003648042678833008,False,False
+Random (Baseline),59,24,0.003471851348876953,False,False
+Random (Baseline),60,75,0.0033936500549316406,False,False
+Random (Baseline),61,68,0.00457763671875,False,False
+Random (Baseline),62,27,0.005214691162109375,False,False
+Random (Baseline),63,45,0.006390810012817383,False,False
+Random (Baseline),64,41,0.006957530975341797,False,False
+Random (Baseline),65,61,0.005059957504272461,False,False
+Random (Baseline),66,38,0.007845878601074219,False,False
+Random (Baseline),67,90,0.008574724197387695,False,False
+Random (Baseline),68,77,0.010500192642211914,False,False
+Random (Baseline),69,51,0.01079416275024414,False,False
+Random (Baseline),70,51,0.011297941207885742,False,False
+Random (Baseline),71,33,0.013653039932250977,False,False
+Random (Baseline),72,43,0.011127710342407227,False,False
+Random (Baseline),73,64,0.012920141220092773,False,False
+Random (Baseline),74,25,0.01036691665649414,False,False
+Random (Baseline),75,41,0.016027450561523438,False,False
+Random (Baseline),76,24,0.011719942092895508,False,False
+Random (Baseline),77,49,0.007744550704956055,False,False
+Random (Baseline),78,39,0.009500265121459961,False,False
+Random (Baseline),79,30,0.0058269500732421875,False,False
+Random (Baseline),80,30,0.004753589630126953,False,False
+Random (Baseline),81,72,0.003730297088623047,False,False
+Random (Baseline),82,53,0.00444340705871582,False,False
+Random (Baseline),83,36,0.0039196014404296875,False,False
+Random (Baseline),84,64,0.00438690185546875,False,False
+Random (Baseline),85,25,0.003640890121459961,False,False
+Random (Baseline),86,38,0.004514455795288086,False,False
+Random (Baseline),87,30,0.004016399383544922,False,False
+Random (Baseline),88,50,0.0036182403564453125,False,False
+Random (Baseline),89,22,0.004388093948364258,False,False
+Random (Baseline),90,68,0.0036411285400390625,False,False
+Random (Baseline),91,30,0.004179239273071289,False,False
+Random (Baseline),92,62,0.0034737586975097656,False,False
+Random (Baseline),93,23,0.004571437835693359,False,False
+Random (Baseline),94,40,0.003304719924926758,False,False
+Random (Baseline),95,57,0.0035643577575683594,False,False
+Random (Baseline),96,29,0.005084991455078125,False,False
+Random (Baseline),97,33,0.0042438507080078125,False,False
+Random (Baseline),98,48,0.005508899688720703,False,False
+Random (Baseline),99,40,0.006096839904785156,False,False
+Greedy (Naive),0,72,0.004659891128540039,False,False
+Greedy (Naive),1,115,0.004084348678588867,False,False
+Greedy (Naive),2,151,0.0047605037689208984,False,False
+Greedy (Naive),3,65,0.0060346126556396484,False,False
+Greedy (Naive),4,148,0.004501819610595703,False,False
+Greedy (Naive),5,155,0.004445314407348633,False,False
+Greedy (Naive),6,71,0.004850149154663086,False,False
+Greedy (Naive),7,171,0.0043299198150634766,False,False
+Greedy (Naive),8,87,0.004633426666259766,False,False
+Greedy (Naive),9,60,0.0035445690155029297,False,False
+Greedy (Naive),10,83,0.004472017288208008,False,False
+Greedy (Naive),11,77,0.0038068294525146484,False,False
+Greedy (Naive),12,101,0.004207134246826172,False,False
+Greedy (Naive),13,167,0.003537893295288086,False,False
+Greedy (Naive),14,121,0.004481315612792969,False,False
+Greedy (Naive),15,104,0.004448413848876953,False,False
+Greedy (Naive),16,85,0.004515171051025391,False,False
+Greedy (Naive),17,123,0.003652334213256836,False,False
+Greedy (Naive),18,112,0.003767728805541992,False,False
+Greedy (Naive),19,101,0.004196643829345703,False,False
+Greedy (Naive),20,95,0.003542661666870117,False,False
+Greedy (Naive),21,122,0.003782510757446289,False,False
+Greedy (Naive),22,107,0.004630565643310547,False,False
+Greedy (Naive),23,122,0.0042951107025146484,False,False
+Greedy (Naive),24,133,0.004058122634887695,False,False
+Greedy (Naive),25,143,0.0036568641662597656,False,False
+Greedy (Naive),26,124,0.004258394241333008,False,False
+Greedy (Naive),27,104,0.003854990005493164,False,False
+Greedy (Naive),28,83,0.003881216049194336,False,False
+Greedy (Naive),29,93,0.003677845001220703,False,False
+Greedy (Naive),30,168,0.003684520721435547,False,False
+Greedy (Naive),31,126,0.004534482955932617,False,False
+Greedy (Naive),32,81,0.00413203239440918,False,False
+Greedy (Naive),33,151,0.003868579864501953,False,False
+Greedy (Naive),34,114,0.004994392395019531,False,False
+Greedy (Naive),35,131,0.005124330520629883,False,False
+Greedy (Naive),36,118,0.0054225921630859375,False,False
+Greedy (Naive),37,123,0.004641532897949219,False,False
+Greedy (Naive),38,154,0.005718231201171875,False,False
+Greedy (Naive),39,173,0.00469517707824707,False,False
+Greedy (Naive),40,143,0.004488468170166016,False,False
+Greedy (Naive),41,97,0.00498652458190918,False,False
+Greedy (Naive),42,71,0.0038034915924072266,False,False
+Greedy (Naive),43,57,0.0046710968017578125,False,False
+Greedy (Naive),44,143,0.005143404006958008,False,False
+Greedy (Naive),45,112,0.003897428512573242,False,False
+Greedy (Naive),46,125,0.0043294429779052734,False,False
+Greedy (Naive),47,111,0.0042002201080322266,False,False
+Greedy (Naive),48,127,0.003937482833862305,False,False
+Greedy (Naive),49,94,0.004734516143798828,False,False
+Greedy (Naive),50,128,0.0044596195220947266,False,False
+Greedy (Naive),51,164,0.0041964054107666016,False,False
+Greedy (Naive),52,108,0.0036246776580810547,False,False
+Greedy (Naive),53,111,0.004136800765991211,False,False
+Greedy (Naive),54,75,0.004744768142700195,False,False
+Greedy (Naive),55,148,0.004082918167114258,False,False
+Greedy (Naive),56,116,0.004306793212890625,False,False
+Greedy (Naive),57,132,0.004345417022705078,False,False
+Greedy (Naive),58,126,0.003769397735595703,False,False
+Greedy (Naive),59,83,0.004059314727783203,False,False
+Greedy (Naive),60,110,0.004462480545043945,False,False
+Greedy (Naive),61,131,0.004430532455444336,False,False
+Greedy (Naive),62,95,0.003439188003540039,False,False
+Greedy (Naive),63,146,0.0038030147552490234,False,False
+Greedy (Naive),64,77,0.004115581512451172,False,False
+Greedy (Naive),65,129,0.0041408538818359375,False,False
+Greedy (Naive),66,99,0.0043714046478271484,False,False
+Greedy (Naive),67,162,0.0037589073181152344,False,False
+Greedy (Naive),68,142,0.0052258968353271484,False,False
+Greedy (Naive),69,96,0.006219148635864258,False,False
+Greedy (Naive),70,79,0.005763530731201172,False,False
+Greedy (Naive),71,110,0.004936933517456055,False,False
+Greedy (Naive),72,151,0.004462480545043945,False,False
+Greedy (Naive),73,48,0.004335880279541016,False,False
+Greedy (Naive),74,101,0.0038557052612304688,False,False
+Greedy (Naive),75,124,0.003565549850463867,False,False
+Greedy (Naive),76,160,0.003690481185913086,False,False
+Greedy (Naive),77,130,0.0033211708068847656,False,False
+Greedy (Naive),78,133,0.0034074783325195312,False,False
+Greedy (Naive),79,133,0.003710031509399414,False,False
+Greedy (Naive),80,80,0.0037665367126464844,False,False
+Greedy (Naive),81,133,0.003645181655883789,False,False
+Greedy (Naive),82,120,0.0039517879486083984,False,False
+Greedy (Naive),83,114,0.00422358512878418,False,False
+Greedy (Naive),84,115,0.0041463375091552734,False,False
+Greedy (Naive),85,107,0.003996610641479492,False,False
+Greedy (Naive),86,170,0.004275798797607422,False,False
+Greedy (Naive),87,136,0.0036940574645996094,False,False
+Greedy (Naive),88,122,0.004343748092651367,False,False
+Greedy (Naive),89,164,0.004997968673706055,False,False
+Greedy (Naive),90,131,0.0046803951263427734,False,False
+Greedy (Naive),91,144,0.004202365875244141,False,False
+Greedy (Naive),92,94,0.004157304763793945,False,False
+Greedy (Naive),93,131,0.005186319351196289,False,False
+Greedy (Naive),94,97,0.004628181457519531,False,False
+Greedy (Naive),95,109,0.0043680667877197266,False,False
+Greedy (Naive),96,84,0.004205226898193359,False,False
+Greedy (Naive),97,79,0.004975318908691406,False,False
+Greedy (Naive),98,73,0.004400968551635742,False,False
+Greedy (Naive),99,99,0.004662036895751953,False,False
+Rule-Based (Expert),0,110,0.006124019622802734,False,False
+Rule-Based (Expert),1,155,0.005421161651611328,False,False
+Rule-Based (Expert),2,141,0.00515294075012207,False,False
+Rule-Based (Expert),3,134,0.004567861557006836,False,False
+Rule-Based (Expert),4,180,0.0039179325103759766,True,False
+Rule-Based (Expert),5,56,0.004141569137573242,False,False
+Rule-Based (Expert),6,181,0.004741191864013672,True,False
+Rule-Based (Expert),7,126,0.0043981075286865234,False,False
+Rule-Based (Expert),8,449,0.004076957702636719,True,True
+Rule-Based (Expert),9,121,0.00482177734375,False,False
+Rule-Based (Expert),10,129,0.0046732425689697266,False,False
+Rule-Based (Expert),11,106,0.004174709320068359,False,False
+Rule-Based (Expert),12,159,0.005277872085571289,True,False
+Rule-Based (Expert),13,192,0.003778696060180664,True,False
+Rule-Based (Expert),14,176,0.005188703536987305,False,False
+Rule-Based (Expert),15,147,0.00491023063659668,True,False
+Rule-Based (Expert),16,323,0.005216836929321289,True,True
+Rule-Based (Expert),17,165,0.004772186279296875,False,False
+Rule-Based (Expert),18,129,0.004900217056274414,False,True
+Rule-Based (Expert),19,214,0.003693819046020508,True,False
+Rule-Based (Expert),20,276,0.004737138748168945,True,True
+Rule-Based (Expert),21,139,0.0044820308685302734,False,False
+Rule-Based (Expert),22,139,0.004269599914550781,False,False
+Rule-Based (Expert),23,163,0.0037758350372314453,False,False
+Rule-Based (Expert),24,161,0.004660844802856445,True,False
+Rule-Based (Expert),25,163,0.0050699710845947266,True,False
+Rule-Based (Expert),26,134,0.004385948181152344,False,False
+Rule-Based (Expert),27,120,0.004137277603149414,False,False
+Rule-Based (Expert),28,165,0.0046617984771728516,True,False
+Rule-Based (Expert),29,143,0.004619121551513672,False,False
+Rule-Based (Expert),30,113,0.0047206878662109375,False,False
+Rule-Based (Expert),31,356,0.003519296646118164,True,True
+Rule-Based (Expert),32,144,0.005226850509643555,False,False
+Rule-Based (Expert),33,158,0.004628419876098633,False,False
+Rule-Based (Expert),34,313,0.004555702209472656,True,True
+Rule-Based (Expert),35,290,0.004231691360473633,True,True
+Rule-Based (Expert),36,154,0.004662990570068359,False,False
+Rule-Based (Expert),37,94,0.004824638366699219,False,False
+Rule-Based (Expert),38,313,0.0035288333892822266,True,True
+Rule-Based (Expert),39,150,0.0045928955078125,False,False
+Rule-Based (Expert),40,162,0.006234407424926758,False,False
+Rule-Based (Expert),41,122,0.009171247482299805,False,False
+Rule-Based (Expert),42,115,0.008145570755004883,False,False
+Rule-Based (Expert),43,112,0.007920980453491211,False,False
+Rule-Based (Expert),44,131,0.004923820495605469,False,False
+Rule-Based (Expert),45,235,0.004793882369995117,True,False
+Rule-Based (Expert),46,151,0.004407405853271484,False,False
+Rule-Based (Expert),47,146,0.004853963851928711,False,False
+Rule-Based (Expert),48,81,0.00482487678527832,False,False
+Rule-Based (Expert),49,128,0.005483865737915039,False,False
+Rule-Based (Expert),50,118,0.004143476486206055,False,False
+Rule-Based (Expert),51,103,0.0045087337493896484,False,False
+Rule-Based (Expert),52,123,0.005460977554321289,False,False
+Rule-Based (Expert),53,150,0.004871845245361328,False,False
+Rule-Based (Expert),54,320,0.0043087005615234375,True,True
+Rule-Based (Expert),55,185,0.004030942916870117,True,False
+Rule-Based (Expert),56,163,0.0040569305419921875,False,False
+Rule-Based (Expert),57,119,0.004693508148193359,False,False
+Rule-Based (Expert),58,133,0.005014181137084961,False,False
+Rule-Based (Expert),59,232,0.003505229949951172,True,False
+Rule-Based (Expert),60,153,0.004517555236816406,True,False
+Rule-Based (Expert),61,198,0.005545616149902344,True,False
+Rule-Based (Expert),62,106,0.004799604415893555,False,False
+Rule-Based (Expert),63,114,0.0046613216400146484,False,False
+Rule-Based (Expert),64,123,0.004378080368041992,False,False
+Rule-Based (Expert),65,138,0.00500035285949707,False,False
+Rule-Based (Expert),66,155,0.004422187805175781,False,False
+Rule-Based (Expert),67,140,0.006834983825683594,False,False
+Rule-Based (Expert),68,163,0.007560014724731445,False,False
+Rule-Based (Expert),69,150,0.0063173770904541016,False,False
+Rule-Based (Expert),70,370,0.004708766937255859,True,True
+Rule-Based (Expert),71,155,0.004145145416259766,False,False
+Rule-Based (Expert),72,157,0.00599217414855957,False,False
+Rule-Based (Expert),73,102,0.005425453186035156,False,False
+Rule-Based (Expert),74,146,0.014831781387329102,False,False
+Rule-Based (Expert),75,128,0.0055446624755859375,False,False
+Rule-Based (Expert),76,152,0.0045969486236572266,False,False
+Rule-Based (Expert),77,181,0.00626683235168457,True,False
+Rule-Based (Expert),78,115,0.004881858825683594,False,False
+Rule-Based (Expert),79,171,0.006066799163818359,True,False
+Rule-Based (Expert),80,92,0.006368875503540039,False,False
+Rule-Based (Expert),81,135,0.005447864532470703,False,False
+Rule-Based (Expert),82,175,0.008470773696899414,False,False
+Rule-Based (Expert),83,134,0.007497072219848633,False,False
+Rule-Based (Expert),84,334,0.00875544548034668,True,True
+Rule-Based (Expert),85,170,0.006620883941650391,True,False
+Rule-Based (Expert),86,94,0.0054090023040771484,False,False
+Rule-Based (Expert),87,144,0.004786491394042969,False,False
+Rule-Based (Expert),88,137,0.00825047492980957,False,False
+Rule-Based (Expert),89,139,0.005644559860229492,False,False
+Rule-Based (Expert),90,187,0.005398750305175781,True,False
+Rule-Based (Expert),91,200,0.004751920700073242,True,False
+Rule-Based (Expert),92,148,0.0054454803466796875,False,False
+Rule-Based (Expert),93,163,0.004689693450927734,True,False
+Rule-Based (Expert),94,203,0.005743503570556641,True,False
+Rule-Based (Expert),95,168,0.004275083541870117,False,False
+Rule-Based (Expert),96,130,0.004976987838745117,False,False
+Rule-Based (Expert),97,136,0.004853487014770508,False,False
+Rule-Based (Expert),98,112,0.004642963409423828,False,False
+Rule-Based (Expert),99,71,0.004019975662231445,False,False
+MCTS (Simulation),0,129,3.317570924758911,False,False
+MCTS (Simulation),1,193,4.034213066101074,False,False
+MCTS (Simulation),2,147,4.782681703567505,False,False
+MCTS (Simulation),3,186,4.9947216510772705,False,False
+MCTS (Simulation),4,147,5.4447760581970215,False,False
+MCTS (Simulation),5,120,4.472000360488892,False,False
+MCTS (Simulation),6,125,5.067325592041016,False,False
+MCTS (Simulation),7,139,5.181897401809692,False,False
+MCTS (Simulation),8,176,5.204633712768555,False,False
+MCTS (Simulation),9,143,6.293421506881714,False,False
+MCTS (Simulation),10,139,4.5176122188568115,False,False
+MCTS (Simulation),11,156,4.264763355255127,False,False
+MCTS (Simulation),12,127,4.459697008132935,False,False
+MCTS (Simulation),13,85,5.3634302616119385,False,False
+MCTS (Simulation),14,100,7.70042610168457,False,False
+MCTS (Simulation),15,89,3.982163190841675,False,False
+MCTS (Simulation),16,98,3.936203718185425,False,False
+MCTS (Simulation),17,121,4.480077028274536,False,False
+MCTS (Simulation),18,100,3.7622158527374268,False,False
+MCTS (Simulation),19,69,4.67401123046875,False,False
+MCTS (Simulation),20,69,3.326521396636963,False,False
+MCTS (Simulation),21,118,4.557204008102417,False,False
+MCTS (Simulation),22,186,5.619920253753662,False,False
+MCTS (Simulation),23,147,5.513456106185913,False,False
+MCTS (Simulation),24,156,3.606523275375366,False,False
+MCTS (Simulation),25,149,3.666447162628174,False,False
+MCTS (Simulation),26,116,6.213019847869873,False,False
+MCTS (Simulation),27,100,5.051229476928711,False,False
+MCTS (Simulation),28,83,7.428162336349487,False,False
+MCTS (Simulation),29,154,7.47569727897644,False,False
+MCTS (Simulation),30,149,9.09832215309143,False,False
+MCTS (Simulation),31,150,5.15229058265686,False,False
+MCTS (Simulation),32,75,4.344139337539673,False,False
+MCTS (Simulation),33,124,3.915848970413208,False,False
+MCTS (Simulation),34,72,4.564812183380127,False,False
+MCTS (Simulation),35,135,4.0518481731414795,False,False
+MCTS (Simulation),36,141,4.423139810562134,False,False
+MCTS (Simulation),37,89,5.061302185058594,False,False
+MCTS (Simulation),38,108,5.04728627204895,False,False
+MCTS (Simulation),39,102,3.8049826622009277,False,False
+MCTS (Simulation),40,160,4.773515701293945,False,False
+MCTS (Simulation),41,130,5.1399102210998535,False,False
+MCTS (Simulation),42,101,4.693127632141113,False,False
+MCTS (Simulation),43,135,3.9840197563171387,True,False
+MCTS (Simulation),44,73,4.189363479614258,False,False
+MCTS (Simulation),45,110,4.7687952518463135,False,False
+MCTS (Simulation),46,136,4.91727614402771,False,False
+MCTS (Simulation),47,76,5.1539306640625,False,False
+MCTS (Simulation),48,113,5.12959885597229,False,False
+MCTS (Simulation),49,114,5.080309629440308,False,False
+MCTS (Simulation),50,152,5.214276075363159,False,False
+MCTS (Simulation),51,97,5.413230895996094,False,False
+MCTS (Simulation),52,101,5.0754711627960205,False,False
+MCTS (Simulation),53,179,3.635939836502075,False,False
+MCTS (Simulation),54,145,4.428077936172485,False,False
+MCTS (Simulation),55,157,4.471818208694458,False,False
+MCTS (Simulation),56,129,5.193297386169434,False,False
+MCTS (Simulation),57,124,3.776759386062622,False,False
+MCTS (Simulation),58,136,4.178661346435547,False,False
+MCTS (Simulation),59,93,4.600195407867432,False,False
+MCTS (Simulation),60,146,3.7518255710601807,False,False
+MCTS (Simulation),61,178,5.125950813293457,False,False
+MCTS (Simulation),62,109,4.906371593475342,False,False
+MCTS (Simulation),63,104,5.25527286529541,False,False
+MCTS (Simulation),64,126,4.788238048553467,False,False
+MCTS (Simulation),65,175,4.9301841259002686,False,False
+MCTS (Simulation),66,95,5.290460586547852,False,False
+MCTS (Simulation),67,112,3.543860912322998,False,False
+MCTS (Simulation),68,90,4.074671983718872,False,False
+MCTS (Simulation),69,128,4.695727825164795,False,False
+MCTS (Simulation),70,156,4.723910808563232,False,False
+MCTS (Simulation),71,150,4.781074285507202,False,False
+MCTS (Simulation),72,106,3.9618234634399414,False,False
+MCTS (Simulation),73,115,3.945009469985962,False,False
+MCTS (Simulation),74,106,5.063939332962036,False,False
+MCTS (Simulation),75,161,5.363787412643433,False,False
+MCTS (Simulation),76,124,5.335741758346558,False,False
+MCTS (Simulation),77,182,5.695467472076416,True,False
+MCTS (Simulation),78,128,5.378825426101685,False,False
+MCTS (Simulation),79,129,5.65669322013855,False,False
+MCTS (Simulation),80,168,4.5755157470703125,False,False
+MCTS (Simulation),81,136,3.417804718017578,False,False
+MCTS (Simulation),82,140,4.45895791053772,False,False
+MCTS (Simulation),83,179,5.36028790473938,False,False
+MCTS (Simulation),84,127,5.728302001953125,False,False
+MCTS (Simulation),85,168,4.349877834320068,False,False
+MCTS (Simulation),86,128,4.304200887680054,False,False
+MCTS (Simulation),87,158,4.270962238311768,False,False
+MCTS (Simulation),88,146,4.213606119155884,False,False
+MCTS (Simulation),89,109,4.462630987167358,False,False
+MCTS (Simulation),90,64,5.193476915359497,False,False
+MCTS (Simulation),91,78,5.489843845367432,False,False
+MCTS (Simulation),92,163,4.927016973495483,False,False
+MCTS (Simulation),93,108,5.3798418045043945,False,False
+MCTS (Simulation),94,153,8.06217646598816,False,False
+MCTS (Simulation),95,97,7.202937126159668,False,False
+MCTS (Simulation),96,160,8.326762676239014,False,False
+MCTS (Simulation),97,62,5.30551552772522,False,False
+MCTS (Simulation),98,174,4.057783365249634,False,False
+MCTS (Simulation),99,99,4.361241579055786,False,False
+DQN (Reinforcement Learning),0,192,0.0564875602722168,False,False
+DQN (Reinforcement Learning),1,152,0.031208515167236328,False,False
+DQN (Reinforcement Learning),2,179,0.032772064208984375,False,False
+DQN (Reinforcement Learning),3,170,0.031103849411010742,False,False
+DQN (Reinforcement Learning),4,163,0.052640438079833984,False,False
+DQN (Reinforcement Learning),5,142,0.07867932319641113,False,False
+DQN (Reinforcement Learning),6,160,0.049799442291259766,False,False
+DQN (Reinforcement Learning),7,89,0.04135870933532715,False,False
+DQN (Reinforcement Learning),8,159,0.028035402297973633,False,False
+DQN (Reinforcement Learning),9,164,0.05060172080993652,False,False
+DQN (Reinforcement Learning),10,107,0.03666043281555176,False,False
+DQN (Reinforcement Learning),11,185,0.03313088417053223,False,False
+DQN (Reinforcement Learning),12,79,0.04010486602783203,False,False
+DQN (Reinforcement Learning),13,109,0.04123544692993164,False,False
+DQN (Reinforcement Learning),14,79,0.03985452651977539,False,False
+DQN (Reinforcement Learning),15,138,0.043413639068603516,False,False
+DQN (Reinforcement Learning),16,126,0.04422497749328613,False,False
+DQN (Reinforcement Learning),17,171,0.038172245025634766,False,False
+DQN (Reinforcement Learning),18,157,0.03944802284240723,False,False
+DQN (Reinforcement Learning),19,163,0.041077613830566406,False,False
+DQN (Reinforcement Learning),20,109,0.03311586380004883,False,False
+DQN (Reinforcement Learning),21,170,0.045072317123413086,False,False
+DQN (Reinforcement Learning),22,145,0.054186105728149414,False,False
+DQN (Reinforcement Learning),23,116,0.050446510314941406,False,False
+DQN (Reinforcement Learning),24,140,0.04326033592224121,False,False
+DQN (Reinforcement Learning),25,135,0.038996219635009766,False,False
+DQN (Reinforcement Learning),26,144,0.04745936393737793,False,False
+DQN (Reinforcement Learning),27,200,0.03831958770751953,False,False
+DQN (Reinforcement Learning),28,154,0.04350137710571289,False,False
+DQN (Reinforcement Learning),29,127,0.039601802825927734,False,False
+DQN (Reinforcement Learning),30,136,0.04705452919006348,False,False
+DQN (Reinforcement Learning),31,182,0.0402219295501709,False,False
+DQN (Reinforcement Learning),32,174,0.04951286315917969,False,False
+DQN (Reinforcement Learning),33,133,0.046766042709350586,False,False
+DQN (Reinforcement Learning),34,162,0.04936790466308594,False,False
+DQN (Reinforcement Learning),35,102,0.04422283172607422,False,False
+DQN (Reinforcement Learning),36,157,0.04713606834411621,False,False
+DQN (Reinforcement Learning),37,120,0.04544186592102051,False,False
+DQN (Reinforcement Learning),38,131,0.04230022430419922,False,False
+DQN (Reinforcement Learning),39,135,0.03463101387023926,False,False
+DQN (Reinforcement Learning),40,178,0.04762411117553711,False,False
+DQN (Reinforcement Learning),41,167,0.03876996040344238,False,False
+DQN (Reinforcement Learning),42,145,0.05077838897705078,False,False
+DQN (Reinforcement Learning),43,127,0.08578729629516602,False,False
+DQN (Reinforcement Learning),44,107,0.05805492401123047,False,False
+DQN (Reinforcement Learning),45,129,0.04557442665100098,False,False
+DQN (Reinforcement Learning),46,94,0.03513765335083008,False,False
+DQN (Reinforcement Learning),47,142,0.03486180305480957,False,False
+DQN (Reinforcement Learning),48,107,0.038191795349121094,False,False
+DQN (Reinforcement Learning),49,141,0.03622698783874512,False,False
+DQN (Reinforcement Learning),50,108,0.03170061111450195,False,False
+DQN (Reinforcement Learning),51,133,0.04305624961853027,False,False
+DQN (Reinforcement Learning),52,93,0.053388357162475586,False,False
+DQN (Reinforcement Learning),53,157,0.04951047897338867,False,False
+DQN (Reinforcement Learning),54,121,0.0396885871887207,False,False
+DQN (Reinforcement Learning),55,147,0.04608893394470215,False,False
+DQN (Reinforcement Learning),56,140,0.06000089645385742,False,False
+DQN (Reinforcement Learning),57,118,0.03841137886047363,False,False
+DQN (Reinforcement Learning),58,171,0.050173044204711914,False,False
+DQN (Reinforcement Learning),59,93,0.06772041320800781,False,False
+DQN (Reinforcement Learning),60,130,0.040392160415649414,False,False
+DQN (Reinforcement Learning),61,87,0.05941939353942871,False,False
+DQN (Reinforcement Learning),62,186,0.06071901321411133,False,False
+DQN (Reinforcement Learning),63,151,0.05876493453979492,False,False
+DQN (Reinforcement Learning),64,78,0.07899832725524902,False,False
+DQN (Reinforcement Learning),65,135,0.07948899269104004,False,False
+DQN (Reinforcement Learning),66,159,0.07193922996520996,False,False
+DQN (Reinforcement Learning),67,111,0.056577444076538086,False,False
+DQN (Reinforcement Learning),68,171,0.05386757850646973,False,False
+DQN (Reinforcement Learning),69,158,0.04319477081298828,False,False
+DQN (Reinforcement Learning),70,153,0.04660439491271973,False,False
+DQN (Reinforcement Learning),71,150,0.039754390716552734,False,False
+DQN (Reinforcement Learning),72,120,0.06481266021728516,False,False
+DQN (Reinforcement Learning),73,133,0.09033346176147461,False,False
+DQN (Reinforcement Learning),74,101,0.050714969635009766,False,False
+DQN (Reinforcement Learning),75,121,0.06098175048828125,False,False
+DQN (Reinforcement Learning),76,126,0.0831453800201416,False,False
+DQN (Reinforcement Learning),77,156,0.0448153018951416,False,False
+DQN (Reinforcement Learning),78,179,0.053124427795410156,False,False
+DQN (Reinforcement Learning),79,129,0.04084014892578125,False,False
+DQN (Reinforcement Learning),80,80,0.04919838905334473,False,False
+DQN (Reinforcement Learning),81,124,0.04879426956176758,False,False
+DQN (Reinforcement Learning),82,153,0.040595293045043945,False,False
+DQN (Reinforcement Learning),83,138,0.05283164978027344,False,False
+DQN (Reinforcement Learning),84,157,0.05043959617614746,False,False
+DQN (Reinforcement Learning),85,102,0.04436135292053223,False,False
+DQN (Reinforcement Learning),86,116,0.06098341941833496,False,False
+DQN (Reinforcement Learning),87,153,0.04536128044128418,False,False
+DQN (Reinforcement Learning),88,169,0.054637908935546875,False,False
+DQN (Reinforcement Learning),89,157,0.06929874420166016,False,False
+DQN (Reinforcement Learning),90,128,0.03437471389770508,False,False
+DQN (Reinforcement Learning),91,151,0.05185961723327637,False,False
+DQN (Reinforcement Learning),92,124,0.04112601280212402,False,False
+DQN (Reinforcement Learning),93,110,0.04293656349182129,False,False
+DQN (Reinforcement Learning),94,140,0.04440927505493164,False,False
+DQN (Reinforcement Learning),95,146,0.030666828155517578,False,False
+DQN (Reinforcement Learning),96,128,0.06694626808166504,False,False
+DQN (Reinforcement Learning),97,120,0.05435681343078613,False,False
+DQN (Reinforcement Learning),98,126,0.03414011001586914,False,False
+DQN (Reinforcement Learning),99,121,0.038574934005737305,False,False
+Expectimax (Math),0,134,1.5303318500518799,False,False
+Expectimax (Math),1,279,2.213078022003174,True,True
+Expectimax (Math),2,325,1.4394493103027344,True,True
+Expectimax (Math),3,210,2.211909055709839,False,False
+Expectimax (Math),4,251,2.4630868434906006,True,False
+Expectimax (Math),5,234,2.051746368408203,True,False
+Expectimax (Math),6,162,2.1916921138763428,False,False
+Expectimax (Math),7,234,2.3185484409332275,True,False
+Expectimax (Math),8,174,1.66395902633667,False,False
+Expectimax (Math),9,185,2.055727005004883,False,False
+Expectimax (Math),10,281,2.2634735107421875,True,True
+Expectimax (Math),11,227,2.071790933609009,False,True
+Expectimax (Math),12,224,2.38262677192688,True,False
+Expectimax (Math),13,184,2.0470380783081055,True,False
+Expectimax (Math),14,140,1.5577976703643799,False,False
+Expectimax (Math),15,160,1.6410160064697266,False,False
+Expectimax (Math),16,146,1.917353630065918,False,False
+Expectimax (Math),17,184,1.9616596698760986,False,False
+Expectimax (Math),18,189,1.7394979000091553,False,False
+Expectimax (Math),19,234,2.342241048812866,True,False
+Expectimax (Math),20,261,1.9424326419830322,True,True
+Expectimax (Math),21,236,1.409641981124878,True,False
+Expectimax (Math),22,213,1.6427741050720215,False,False
+Expectimax (Math),23,235,1.229095458984375,True,False
+Expectimax (Math),24,236,1.5416243076324463,True,False
+Expectimax (Math),25,173,1.718959093093872,False,False
+Expectimax (Math),26,185,1.643725872039795,False,True
+Expectimax (Math),27,246,0.721332311630249,True,False
+Expectimax (Math),28,220,0.7186763286590576,True,False
+Expectimax (Math),29,119,0.7909865379333496,False,False
+Expectimax (Math),30,251,0.5723521709442139,True,False
+Expectimax (Math),31,177,0.7885189056396484,True,False
+Expectimax (Math),32,338,0.6463639736175537,True,True
+Expectimax (Math),33,156,0.7524092197418213,False,False
+Expectimax (Math),34,258,0.7413389682769775,True,True
+Expectimax (Math),35,181,0.7485625743865967,False,False
+Expectimax (Math),36,176,0.7700552940368652,False,False
+Expectimax (Math),37,228,0.7853920459747314,True,True
+Expectimax (Math),38,138,0.678534746170044,False,False
+Expectimax (Math),39,244,0.728583812713623,False,True
+Expectimax (Math),40,237,0.6962814331054688,False,True
+Expectimax (Math),41,178,0.7147774696350098,False,False
+Expectimax (Math),42,283,0.7190806865692139,True,True
+Expectimax (Math),43,218,0.8027553558349609,False,True
+Expectimax (Math),44,359,0.6574110984802246,True,True
+Expectimax (Math),45,244,0.702770471572876,True,False
+Expectimax (Math),46,234,0.7550904750823975,True,False
+Expectimax (Math),47,184,0.7405152320861816,False,False
+Expectimax (Math),48,137,0.7257683277130127,False,False
+Expectimax (Math),49,153,0.7650761604309082,False,False
+Expectimax (Math),50,171,0.7079896926879883,False,False
+Expectimax (Math),51,239,0.7498011589050293,True,False
+Expectimax (Math),52,177,0.745161771774292,False,False
+Expectimax (Math),53,294,0.6044216156005859,True,True
+Expectimax (Math),54,230,0.7511210441589355,False,True
+Expectimax (Math),55,196,0.8126752376556396,False,True
+Expectimax (Math),56,257,0.6711757183074951,False,True
+Expectimax (Math),57,225,0.7185163497924805,False,True
+Expectimax (Math),58,223,0.5845029354095459,False,True
+Expectimax (Math),59,254,0.6690249443054199,True,False
+Expectimax (Math),60,242,1.054671049118042,False,True
+Expectimax (Math),61,173,1.6428470611572266,True,False
+Expectimax (Math),62,247,1.7594871520996094,False,True
+Expectimax (Math),63,207,2.9407026767730713,True,False
+Expectimax (Math),64,203,2.864809274673462,False,False
+Expectimax (Math),65,166,2.258460521697998,False,False
+Expectimax (Math),66,367,2.226548433303833,True,True
+Expectimax (Math),67,211,2.4148082733154297,False,False
+Expectimax (Math),68,305,2.2404894828796387,True,True
+Expectimax (Math),69,241,1.6913301944732666,True,False
+Expectimax (Math),70,205,1.472383975982666,False,False
+Expectimax (Math),71,210,1.5304052829742432,False,True
+Expectimax (Math),72,172,2.632714033126831,True,False
+Expectimax (Math),73,199,2.7554497718811035,False,False
+Expectimax (Math),74,172,3.581284761428833,True,False
+Expectimax (Math),75,257,3.880064010620117,True,True
+Expectimax (Math),76,184,3.17118763923645,False,False
+Expectimax (Math),77,169,2.872934341430664,False,False
+Expectimax (Math),78,192,3.6927521228790283,False,False
+Expectimax (Math),79,196,3.246744155883789,False,False
+Expectimax (Math),80,160,3.212207317352295,True,False
+Expectimax (Math),81,155,3.30727219581604,False,False
+Expectimax (Math),82,231,3.5264623165130615,False,True
+Expectimax (Math),83,208,3.6863834857940674,False,False
+Expectimax (Math),84,130,1.8229413032531738,False,False
+Expectimax (Math),85,248,1.8637046813964844,True,True
+Expectimax (Math),86,134,1.9976258277893066,False,False
+Expectimax (Math),87,207,1.869584321975708,True,False
+Expectimax (Math),88,228,2.4332330226898193,False,True
+Expectimax (Math),89,217,3.3302695751190186,False,False
+Expectimax (Math),90,237,3.1864500045776367,True,False
+Expectimax (Math),91,292,3.3196628093719482,True,True
+Expectimax (Math),92,217,2.6761035919189453,False,True
+Expectimax (Math),93,251,2.0517947673797607,True,False
+Expectimax (Math),94,211,2.3779714107513428,True,False
+Expectimax (Math),95,245,2.855971574783325,True,False
+Expectimax (Math),96,172,2.920227527618408,False,False
+Expectimax (Math),97,149,2.78987193107605,False,False
+Expectimax (Math),98,257,2.4511232376098633,True,False
+Expectimax (Math),99,216,2.435647487640381,True,False

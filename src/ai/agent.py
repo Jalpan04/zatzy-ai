@@ -10,6 +10,11 @@ class Agent:
         """
         Selects the best valid action using the model.
         """
+        # Dynamic slicing for legacy models (48 features) vs new (61 features)
+        in_features = self.model.network[0].in_features
+        if len(state) > in_features:
+            state = state[:in_features]
+
         with torch.no_grad():
             x = torch.tensor(state, dtype=torch.float32)
             logits = self.model(x)

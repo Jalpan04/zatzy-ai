@@ -1,61 +1,52 @@
-# Zatzy AI: Genetically Evolved Yahtzee Player
+# Zatzy AI: Superhuman Yahtzee Suite
 
-**Zatzy AI** is a Python-based project that uses **Genetic Algorithms (Neuroevolution)** to train a Neural Network to play the game of Yahtzee at a superhuman level. 
+**Zatzy AI** is a comprehensive AI research laboratory for Yahtzee, featuring multiple state-of-the-art agents ranging from Evolutionary Algorithms to Deep Reinforcement Learning and Neuro-Expectimax search.
 
-Starting from complete randomness, the AI evolved over **1000 Generations** to learn complex strategies like maximizing the Upper Bonus, hunting for Yahtzees, and recognizing Straights—without ever being explicitly told the rules of the game.
+## 🤖 Available Agents
 
-## Features
+* **🏆 Neuro-Expectimax (Cemax-Pro)**: Our flagship agent. Combines the mathematical precision of Expectimax with a Deep Value Network (48-dim input) to estimate long-term returns. **Consistently achieves 300+ points.**
+* **🧠 Cemax (Neural)**: A high-speed neural network trained via Behavioral Cloning (Imitation Learning) to mimic the decisions of an optimized Expectimax solver.
+* **⚖️ Expectimax (Math)**: An optimized recursive solver that calculates the exact probability of every dice combination for perfect decision-making in the short term.
+* **🤖 DQN (Deep Q-Network)**: Trained via Reinforcement Learning (DQN + Reward Shaping). Learns through trial and error to maximize scorecard efficiency.
+* **🧬 Genetic AI**: The original champion, evolved over 1000 generations using Neuroevolution.
 
-*   **Human vs AI Mode**: Challenge the best evolved agent to a 13-round match.
-*   **Watch AI Play**: visualize the AI's decision-making process in real-time.
-*   **Interactive Dashboard**: Explore the training history with scientific learning curves (Altair).
-*   **God View Engine**: The AI uses a "God View" input vector (48 features) including potential score lookaheads and pattern recognition flags.
+## ✨ Features
 
-## Tech Stack
+* **Arena Agent Showdown**: Battle different AI architectures against each other or run batch simulations (50+ games) to compare win rates and score distributions.
+* **Human vs AI**: Challenge any of the neural or mathematical agents.
+* **Training Dashboard**: Real-time analytics for Genetic Evolution (Fitness curves), DQN (Reward/Epsilon decay), and Behavioral Cloning (Accuracy/Loss).
+* **Optimized Engine**: Features precomputed probability distributions for 30x faster Expectimax search.
 
-*   **Python 3.10+**
-*   **PyTorch**: Neural Network architecture.
-*   **Streamlit**: Interactive Web UI.
-*   **Altair**: Data Visualization.
+## 🛠️ Tech Stack
 
-## Installation
+* **Python 3.10+**
+* **PyTorch**: Neural Network training and inference.
+* **Streamlit**: Modern interactive Web Interface.
+* **Altair**: Scientific data visualization.
+* **Numpy/Pandas**: High-performance data processing.
 
-1.  Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/zatzy-ai.git
-    cd zatzy-ai
-    ```
+## 🚀 How to Run
 
-2.  Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+1. **Install dependencies**:
 
-## How to Run
+```bash
+pip install -r requirements.txt
+```
 
-Run the Streamlit app:
+2. **Launch the Arena**:
+
 ```bash
 streamlit run app.py
 ```
 
-## Training the AI
+## 🏋️ Training Lab
 
-If you want to re-train the AI from scratch:
-```bash
-python -c "from src.trainer.train import train; train(generations=1000, pop_size=200)"
-```
-*Note: This generates `training_log.json` and saves checkpoints to `checkpoints/`.*
-
-## Deployment (Streamlit Cloud)
-
-This project is ready for **Streamlit Community Cloud**!
-
-1.  Push this code to a **GitHub Repository**.
-2.  Go to [share.streamlit.io](https://share.streamlit.io/).
-3.  Click **"New App"**.
-4.  Select your GitHub Repo.
-5.  Set Main File path: `app.py`
-6.  Click **Deploy**!
+* **Genetic**: `python -c "from src.trainer.train import train; train(generations=1000)"`
+* **DQN**: `python src/trainer/train_dqn_pro.py --episodes 1000`
+* **Cemax (SL)**: `python src/trainer/train_sl.py --epochs 200`
+* **Value Net**: `python src/trainer/train_value_net.py --epochs 500`
 
 ---
-*Created by [Your Name] & Antigravity Agent*
+
+*Created by Jalpan04 & Antigravity Agent*
+

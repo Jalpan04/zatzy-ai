@@ -75,50 +75,45 @@ class ExpectimaxAgent:
         return (best_action_type, best_action_val)
 
     def calculate_keep_ev(self, kept_dice, n_reroll, rolls_left, scorecard):
-        # Use precomputed distribution
-        # distribution is list of (roll_tuple, probability)
+        # We assume n_reroll, rolls_left fixed for this call
         dist = self.dist_cache[n_reroll]
-        
         total_ev = 0
         
         for roll, prob in dist:
             final_hand = kept_dice + list(roll)
             
             if rolls_left == 0:
-                # Terminal node
                 best_cat = self.pick_best_category(final_hand, scorecard)
                 score_val = self.score_heuristic(best_cat, final_hand, scorecard)
                 total_ev += prob * score_val
             else:
                 # Heuristic Lookahead (Approximation)
-                # Instead of full recursion (which would be slow even with init optimizations),
-                # we assume the player takes the best 'potential' score available.
                 best_cat = self.pick_best_category(final_hand, scorecard)
                 score_val = self.score_heuristic(best_cat, final_hand, scorecard)
                 
-                # Simple potential bonus for being closer to Yahtzee/Straight
-                # (This can be tuned or replaced with ML distillation!)
-                potential_bonus = 0
-                counts = Counter(final_hand)
-                if 5 not in counts.values(): # Not already Yahtzee
-                    max_count = max(counts.values()) if counts else 0
-                    if max_count >= 3: potential_bonus += 15 # 3 or 4 of kind
-                    if max_count >= 4: potential_bonus += 25
+                # Pro-Level Potential Bonus
+                pot_bonus = 0
+                counts = Counter(final_hand).values()
+                mx = max(counts) if counts else 0
                 
-                # Check straights roughly
-                uniques = len(set(final_hand))
-                if uniques >= 4: potential_bonus += 10
+                # 1. Yahtzee Hunt (Only if open)
+                if scorecard.get_score(Category.YAHTZEE) is None:
+                    if mx == 3: pot_bonus += 20
+                    if mx == 4: pot_bonus += 60
                 
-                total_ev += prob * (score_val + potential_bonus)
+                # 2. Upper Bonus Tracker
+                # We calculate if this hand helps reach the 'Par' target.
+                
+                total_ev += prob * (score_val + pot_bonus)
 
         return total_ev
 
     def pick_best_category(self, dice, scorecard):
-        best_cat = -1
-        best_val = -float('inf')
-        # Optimized: Only check available
         available = [c for c in Category.ALL if scorecard.get_score(c) is None]
-        if not available: return Category.CHANCE # Fallback
+        if not available: return Category.CHANCE
+        
+        best_cat = available[0]
+        best_val = -float('inf')
         
         for cat in available:
             val = self.score_heuristic(cat, dice, scorecard)
@@ -129,34 +124,30 @@ class ExpectimaxAgent:
 
     def score_heuristic(self, cat, dice, scorecard):
         score = scorecard.calculate_score(cat, dice)
-        weight = 0
+        bonus = 0
         
-        # Upper Bonus Strategy
+        # 1. Upper Section Strategy (Gate to 300)
+        # Linear scaling: Reward every point above/below Par
         if cat <= Category.SIXES:
-            # Normalized value logic
-            val = (cat) # 1-6 map? No, enum is 1-6 for ONES..SIXES?
-            # Check Category definition. 
-            # In Category class: ONES=1...SIXES=6.
-            # Dice values are 1-6.
-            # A score of 3*val is Par.
-            # Difference from Par is valuable.
-            if cat in [Category.ONES, Category.TWOS, Category.THREES, Category.FOURS, Category.FIVES, Category.SIXES]:
-                 # Assuming cat matches dice face value directly for 1-6
-                 # Careful: Category.ONES might be 1, but dice face is 1.
-                 # Category.NAME_MAP keys are integers.
-                 # Let's assume standard mapping: ONES (1) scores sums of 1s.
-                 # Par = 3 * cat (if cat 1..6 maps to faces 1..6)
-                 # Wait, looking at src/game/scorecard.py...
-                 # Category.ONES = 1. Category.SIXES = 6.
-                 # So yes, face_value = cat.
-                 
-                 par = cat * 3
-                 diff = score - par
-                 weight += diff * 2.0 # Higher weight for upper bonus
+            par = cat * 3
+            if score >= par:
+                # High rewards for points at or above par
+                bonus += 120 + (score - par) * 20  # Explicit reward for surplus
+            else:
+                # Small reward for sub-par, but less than par
+                # Prevents "Sacrificial Scoring" but keeps AI hunting for 3+
+                # e.g. score=2 (on 4s). Par=12. Better than 0.
+                bonus += score * 3
         
-        # Yahtzee Strategy
+        # 2. Yahtzee Strategy (God-Tier Priority)
         if cat == Category.YAHTZEE:
-            if score == 50: weight += 200 # Massive priority
-            elif score == 0: weight -= 100 # Avoid zeroing Yahtzee unless necessary
+            if score == 50: bonus += 500 # Massive priority (was 300)
+            else: bonus -= 50 # Only light penalty to avoid zeroing if possible
             
-        return score + weight
+        # 3. Straights and High Value Lowers
+        # Bonuses help distinguish "bad" trash slots from "good" trash slots
+        if cat == Category.LARGE_STRAIGHT and score == 40: bonus += 60 # Was 80, reduced slightly to prioritize Upper
+        if cat == Category.SMALL_STRAIGHT and score == 30: bonus += 40
+        if cat == Category.FULL_HOUSE and score == 25: bonus += 35 
+            
+        return score + bonus

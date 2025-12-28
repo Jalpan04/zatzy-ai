@@ -45,10 +45,19 @@ import src.config as config
 st.title("Zatzy AI: Genetic Evolution")
 
 def load_agent(checkpoint_path):
-    # Use Global Config for robust dimensions
-    model = YahtzeeNetwork(input_size=config.INPUT_SIZE, hidden_size=config.HIDDEN_SIZE)
-    # Handle if CPU/CUDA
+    # Dynamic Loading based on Checkpoint Size
     state_dict = torch.load(checkpoint_path, map_location=torch.device('cpu'))
+    
+    # Infer sizes from state_dict
+    # First layer 'network.0.weight' shape is [hidden, input]
+    hidden_size = config.HIDDEN_SIZE
+    input_size = config.INPUT_SIZE
+    
+    if 'network.0.weight' in state_dict:
+        hidden_size = state_dict['network.0.weight'].shape[0]
+        input_size = state_dict['network.0.weight'].shape[1]
+        
+    model = YahtzeeNetwork(input_size=input_size, hidden_size=hidden_size)
     model.load_state_dict(state_dict)
     return Agent(model)
 
@@ -63,10 +72,68 @@ def load_dqn_agent():
     latest_cp = checkpoints[-1]
     cp_path = os.path.join("checkpoints_dqn", latest_cp)
     
-    agent = DQNAgent()
-    agent.policy_net.load_state_dict(torch.load(cp_path, map_location=torch.device('cpu')))
+    # Load Dict first to check size
+    state_dict = torch.load(cp_path, map_location=torch.device('cpu'))
+    
+    # Infer Hidden Size and Input Size from policy net
+    hidden_size = config.HIDDEN_SIZE
+    input_size = config.INPUT_SIZE
+    is_native_dqn = False
+    
+    if 'network.0.weight' in state_dict:
+        hidden_size = state_dict['network.0.weight'].shape[0]
+        input_size = state_dict['network.0.weight'].shape[1]
+    elif 'fc1.weight' in state_dict:
+        hidden_size = state_dict['fc1.weight'].shape[0]
+        input_size = state_dict['fc1.weight'].shape[1]
+        is_native_dqn = True
+    
+    agent = DQNAgent() 
+    
+    # If the checkpoint size doesn't match the current config, we need to rebuild the nets
+    if input_size != config.INPUT_SIZE or hidden_size != agent.policy_net.network[0].out_features if not is_native_dqn else True:
+         from src.ai.dqn import DQN
+         # Note: Native DQN class in src/ai/dqn.py might need input_size too if it's hardcoded.
+         # Assuming YahtzeeNetwork is used for non-native.
+         if not is_native_dqn:
+            agent.policy_net = YahtzeeNetwork(input_size=input_size, hidden_size=hidden_size)
+            agent.target_net = YahtzeeNetwork(input_size=input_size, hidden_size=hidden_size)
+    
+    try:
+        agent.policy_net.load_state_dict(state_dict)
+    except RuntimeError:
+        # Fallback or detailed error log
+        st.error(f"DQN Load Failed: Checkpoint input={input_size}, expected={config.INPUT_SIZE}")
+        pass
+
     agent.epsilon = 0.0 # Force Exploitation
     return agent
+
+def load_sl_agent():
+    # Cemax Agent (Neural)
+    cp_path = "checkpoints_sl/sl_model_final.pth"
+    if not os.path.exists(cp_path):
+        return None
+    
+    from src.trainer.train_sl import YahtzeeNetwork
+    # Infer hidden size and input size
+    state_dict = torch.load(cp_path, map_location=torch.device('cpu'))
+    hidden_size = state_dict['network.0.weight'].shape[0]
+    input_size = state_dict['network.0.weight'].shape[1]
+    
+    model = YahtzeeNetwork(input_size=input_size, hidden_size=hidden_size)
+    model.load_state_dict(state_dict)
+    model.eval()
+    
+    from src.ai.agent import GeneticAgent
+    return GeneticAgent(model)
+
+def load_neuro_agent():
+    # Superhuman Neuro-Expectimax Agent
+    from src.ai.neuro_expectimax import NeuroExpectimaxAgent
+    cp_path = "checkpoints_value/value_net_final.pth"
+    # Even if CP doesn't exist, the agent handles it (untrained net)
+    return NeuroExpectimaxAgent(cp_path)
 
 def render_dice(dice_values):
     cols = st.columns(5)
@@ -120,7 +187,19 @@ elif mode == "Play vs AI":
         """)
 
     # AI Selector
-    ai_type = st.selectbox("Choose Opponent", ["Genetic AI (Best)", "Expectimax (Math)", "DQN (Reinforcement)"])
+    ai_type = st.selectbox("Choose Opponent", ["Genetic AI (Best)", "Expectimax (Math)", "DQN (Reinforcement)", "Cemax (Neural)", "Neuro-Expectimax (300+)"])
+
+    # Reset game if AI type changes
+    if "vs_ai_type" not in st.session_state:
+        st.session_state.vs_ai_type = ai_type
+    
+    if st.session_state.vs_ai_type != ai_type:
+        st.session_state.vs_ai_type = ai_type
+        if "vs_human_engine" in st.session_state:
+            del st.session_state.vs_human_engine
+            del st.session_state.vs_ai_engine
+            # Force reload
+            st.rerun()
 
     # Initialization
     if "vs_human_engine" not in st.session_state:
@@ -131,6 +210,15 @@ elif mode == "Play vs AI":
         # Load Agent based on selection
         if ai_type == "Expectimax (Math)":
             st.session_state.vs_ai_agent = ExpectimaxAgent()
+        elif ai_type == "Cemax (Neural)":
+             sl = load_sl_agent()
+             if sl:
+                 st.session_state.vs_ai_agent = sl
+             else:
+                 st.error("No Cemax Model found! Train it first.")
+                 st.session_state.vs_ai_agent = ExpectimaxAgent()
+        elif "Neuro-Expectimax" in ai_type:
+             st.session_state.vs_ai_agent = load_neuro_agent()
         elif ai_type == "DQN (Reinforcement)":
             dqn = load_dqn_agent()
             if dqn:
@@ -273,12 +361,19 @@ elif mode == "Watch AI Play":
     st.subheader("AI Gameplay Viewer")
     
     # Select Agent Type
-    agent_type = st.sidebar.radio("Agent Type", ["Genetic AI", "Expectimax (Math)", "DQN (Reinforcement)"])
+    agent_type = st.sidebar.radio("Agent Type", ["Genetic AI", "Expectimax (Math)", "DQN (Reinforcement)", "Cemax (Neural)", "Neuro-Expectimax (300+)"])
     
-    if agent_type == "Expectimax (Math)" or agent_type == "DQN (Reinforcement)":
+    if agent_type == "Expectimax (Math)" or agent_type == "DQN (Reinforcement)" or "Cemax" in agent_type or "Neuro" in agent_type:
         if st.button("Run Game"):
             if agent_type == "Expectimax (Math)":
                 agent = ExpectimaxAgent()
+            elif agent_type == "Cemax (Neural)":
+                agent = load_sl_agent()
+                if not agent:
+                    st.error("No Cemax Model found! Run training.")
+                    st.stop()
+            elif "Neuro" in agent_type:
+                agent = load_neuro_agent()
             else:
                 agent = load_dqn_agent()
                 if not agent:
@@ -371,7 +466,7 @@ elif mode == "Training Dashboard":
     st.markdown("Analyze the training performance of our Artificial Intelligence models.")
     
     # Tabs for Different Models
-    tab_gen, tab_dqn = st.tabs(["Genetic Algorithm", "Deep Q-Network"])
+    tab_gen, tab_dqn, tab_sl = st.tabs(["Genetic Algorithm", "Deep Q-Network", "Cemax (SL)"])
     
     import json
     import pandas as pd
@@ -462,3 +557,34 @@ elif mode == "Training Dashboard":
                 tooltip=['episode', 'epsilon']
             ).properties(height=200).interactive()
             st.altair_chart(chart_eps, use_container_width=True)
+            
+    with tab_sl:
+        if not os.path.exists("checkpoints_sl/training_log.json"):
+            st.info("No Cemax logs found. Run training script.")
+        else:
+            with open("checkpoints_sl/training_log.json", "r") as f:
+                 history_sl = json.load(f)
+            df_sl = pd.DataFrame(history_sl)
+            
+            c1, c2 = st.columns(2)
+            c1.metric("Final Accuracy", f"{df_sl['accuracy'].iloc[-1]:.2f}%")
+            c2.metric("Final Loss", f"{df_sl['loss'].iloc[-1]:.4f}")
+            
+            st.write("### Accuracy Curve")
+            chart_sl = alt.Chart(df_sl).mark_line(point=True).encode(
+                x='epoch',
+                y=alt.Y('accuracy', scale=alt.Scale(domain=[0, 100])),
+                tooltip=['epoch', 'accuracy', 'loss']
+            ).interactive()
+            st.altair_chart(chart_sl, use_container_width=True)
+            
+            st.write("### Loss Curve")
+            chart_loss = alt.Chart(df_sl).mark_line(color='red').encode(
+                x='epoch',
+                y='loss',
+                 tooltip=['epoch', 'accuracy', 'loss']
+            ).interactive()
+            st.altair_chart(chart_loss, use_container_width=True)
+
+elif mode == "Arena: Agent Showdown":
+    run_arena_view(load_agent, load_dqn_agent, ExpectimaxAgent, load_sl_agent, load_neuro_agent)

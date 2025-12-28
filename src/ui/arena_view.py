@@ -5,14 +5,18 @@ import time
 from src.game.engine import GameEngine
 # Imports for Agents will be passed or imported here
 
-def run_arena_view(load_agent_func, load_dqn_agent_func, ExpectimaxAgent):
+def run_arena_view(load_agent_func, load_dqn_agent_func, ExpectimaxAgent, load_sl_agent_func=None, load_neuro_agent_func=None):
     st.subheader("AI Battle Arena")
+    
+    # Dynamic Options
+    options = ["Expectimax (Math)", "Genetic AI (Best)", "DQN (Reinforcement)", "Cemax (Neural)", "Neuro-Expectimax (300+)"]
     
     col1, col2 = st.columns(2)
     with col1:
-        agent1_name = st.selectbox("Player 1 (Left)", ["Expectimax (Math)", "Genetic AI (Best)", "DQN (Reinforcement)"], index=0)
+        agent1_name = st.selectbox("Player 1 (Left)", options, index=0)
     with col2:
-        agent2_name = st.selectbox("Player 2 (Right)", ["Expectimax (Math)", "Genetic AI (Best)", "DQN (Reinforcement)"], index=2)
+        idx2 = 2 if len(options) > 2 else 0
+        agent2_name = st.selectbox("Player 2 (Right)", options, index=idx2)
 
     battle_mode = st.radio("Battle Mode", ["Visual Face-Off (Watch 1 Match)", "Batch Simulation (Stats Only)"])
     
@@ -21,8 +25,8 @@ def run_arena_view(load_agent_func, load_dqn_agent_func, ExpectimaxAgent):
         
         if st.button("Start Batch Simulation"):
             # Load Agents
-            a1 = load_agent_by_name(agent1_name, load_agent_func, load_dqn_agent_func, ExpectimaxAgent)
-            a2 = load_agent_by_name(agent2_name, load_agent_func, load_dqn_agent_func, ExpectimaxAgent)
+            a1 = load_agent_by_name(agent1_name, load_agent_func, load_dqn_agent_func, ExpectimaxAgent, load_sl_agent_func, load_neuro_agent_func)
+            a2 = load_agent_by_name(agent2_name, load_agent_func, load_dqn_agent_func, ExpectimaxAgent, load_sl_agent_func, load_neuro_agent_func)
             
             if not a1 or not a2: return
 
@@ -67,8 +71,8 @@ def run_arena_view(load_agent_func, load_dqn_agent_func, ExpectimaxAgent):
     else:
         # VISUAL FACE-OFF
         if st.button("Start LIVE Match"):
-            a1 = load_agent_by_name(agent1_name, load_agent_func, load_dqn_agent_func, ExpectimaxAgent)
-            a2 = load_agent_by_name(agent2_name, load_agent_func, load_dqn_agent_func, ExpectimaxAgent)
+            a1 = load_agent_by_name(agent1_name, load_agent_func, load_dqn_agent_func, ExpectimaxAgent, load_sl_agent_func, load_neuro_agent_func)
+            a2 = load_agent_by_name(agent2_name, load_agent_func, load_dqn_agent_func, ExpectimaxAgent, load_sl_agent_func, load_neuro_agent_func)
             
             if not a1 or not a2: return
             
@@ -186,8 +190,8 @@ def run_arena_view(load_agent_func, load_dqn_agent_func, ExpectimaxAgent):
                 
                 # Determine Round Winner
                 r_win = "-"
-                if p1_pts > p2_pts: r_win = "Player 1 🟢"
-                elif p2_pts > p1_pts: r_win = "Player 2 🔵"
+                if p1_pts > p2_pts: r_win = "Player 1"
+                elif p2_pts > p1_pts: r_win = "Player 2"
                 
                 final_data.append({
                     "Turn": t, 
@@ -198,8 +202,8 @@ def run_arena_view(load_agent_func, load_dqn_agent_func, ExpectimaxAgent):
             
             # Add TOTAL Row
             final_winner = "DRAW"
-            if s1 > s2: final_winner = "PLAYER 1 🏆"
-            elif s2 > s1: final_winner = "PLAYER 2 🏆"
+            if s1 > s2: final_winner = "PLAYER 1"
+            elif s2 > s1: final_winner = "PLAYER 2"
             
             final_data.append({
                 "Turn": "TOTAL",
@@ -238,14 +242,19 @@ def render_game_state(engine):
     st.progress(min(engine.turn_number / 13.0, 1.0))
     st.caption(f"Rolls Left: {engine.rolls_left}")
 
-def load_agent_by_name(name, load_genetic, load_dqn, ExpectimaxCls):
+def load_agent_by_name(name, load_genetic, load_dqn, ExpectimaxCls, load_sl=None, load_neuro=None):
     import os # Lazy import
     if name == "Expectimax (Math)":
         return ExpectimaxCls()
     elif name == "DQN (Reinforcement)":
         return load_dqn()
+    elif name == "Cemax (Neural)" and load_sl:
+        return load_sl()
+    elif name == "Neuro-Expectimax (300+)" and load_neuro:
+        return load_neuro()
     else:
         # Genetic
+        if not os.path.exists("checkpoints"): return None
         checkpoints = sorted([f for f in os.listdir("checkpoints") if f.endswith(".pkl")])
         if checkpoints:
             return load_genetic(os.path.join("checkpoints", checkpoints[-1]))
