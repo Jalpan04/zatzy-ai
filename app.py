@@ -15,7 +15,7 @@ import src.config as config
 import src.ai.model as model_module
 import src.ai.agent as agent_module
 import src.game.engine as engine_module
-import src.game.scorecard as scorecard_module
+import src.ai.expectimax as expectimax_module
 import importlib
 
 # Force Reload All Modules in Dependency Order
@@ -24,9 +24,11 @@ importlib.reload(model_module)
 importlib.reload(agent_module)
 importlib.reload(engine_module)
 importlib.reload(scorecard_module)
+importlib.reload(expectimax_module)
 
 from src.ai.model import YahtzeeNetwork
 from src.ai.agent import Agent
+from src.ai.expectimax import ExpectimaxAgent
 from src.game.engine import GameEngine
 from src.game.scorecard import Category, Scorecard
 
@@ -92,16 +94,24 @@ if mode == "Play vs AI":
         4. **Goal**: Get the highest total score after 13 rounds!
         """)
 
+    # AI Selector
+    ai_type = st.selectbox("Choose Opponent", ["Genetic AI (Best)", "Expectimax (Math)"])
+
     # Initialization
     if "vs_human_engine" not in st.session_state:
         st.session_state.vs_human_engine = GameEngine()
         st.session_state.vs_ai_engine = GameEngine()
         st.session_state.vs_logs = []
         
-        # Load best agent
-        checkpoints = sorted([f for f in os.listdir("checkpoints") if f.endswith(".pkl")])
-        if checkpoints:
-            st.session_state.vs_ai_agent = load_agent(os.path.join("checkpoints", checkpoints[-1]))
+        # Load Agent based on selection
+        if ai_type == "Expectimax (Math)":
+            st.session_state.vs_ai_agent = ExpectimaxAgent()
+        else:
+            checkpoints = sorted([f for f in os.listdir("checkpoints") if f.endswith(".pkl")])
+            if checkpoints:
+                st.session_state.vs_ai_agent = load_agent(os.path.join("checkpoints", checkpoints[-1]))
+            else:
+                st.session_state.vs_ai_agent = ExpectimaxAgent() # Fallback
 
     human = st.session_state.vs_human_engine
     ai = st.session_state.vs_ai_engine
@@ -186,7 +196,8 @@ if mode == "Play vs AI":
                                 
                                 state = ai.get_state_vector()
                                 mask = ai.get_mask()
-                                action_type, action_val = st.session_state.vs_ai_agent.select_action(state, mask)
+                                # Pass 'engine=ai' for Expectimax lookups
+                                action_type, action_val = st.session_state.vs_ai_agent.select_action(state, mask, engine=ai)
                                 
                                 engine_module.GameEngine.apply_action(ai, action_type, action_val)
                                 
@@ -229,59 +240,92 @@ if mode == "Play vs AI":
 elif mode == "Watch AI Play":
     st.subheader("AI Gameplay Viewer")
     
-    # Checkpoints
-    if not os.path.exists("checkpoints"):
-        st.error("No checkpoints found. Run training first.")
-    else:
-        checkpoints = sorted([f for f in os.listdir("checkpoints") if f.endswith(".pkl")])
-        if not checkpoints:
-             st.warning("No .pkl checkpoints in checkpoints/")
-        else:
-             selected_cp = st.sidebar.selectbox("Load Agent", checkpoints, index=len(checkpoints)-1)
+    # Select Agent Type
+    agent_type = st.sidebar.radio("Agent Type", ["Genetic AI", "Expectimax (Math)"])
+    
+    if agent_type == "Expectimax (Math)":
+        if st.button("Run Game"):
+            agent = ExpectimaxAgent()
+            engine = GameEngine()
+            
+            # ... Copy paste loop logic ...
+            game_container = st.empty()
+            max_steps = 100
+            step = 0
+            
+            while not engine.game_over and step < max_steps:
+                 state = engine.get_state_vector()
+                 mask = engine.get_mask()
+                 action_type, action_val = agent.select_action(state, mask, engine=engine)
+                 
+                 # Render State
+                 with game_container.container():
+                     st.write(f"**Turn {engine.turn_number}** | Rolls Left: {engine.rolls_left}")
+                     render_dice(engine.dice.values)
+                     
+                     if action_type == 'keep':
+                        keep_str = bin(action_val)[2:].zfill(5)[::-1] 
+                        st.info(f"AI Decision: **KEEP** (Mask: {keep_str})")
+                     else:
+                        cat_n = Category.NAME_MAP[action_val]
+                        st.success(f"AI Decision: **SCORE** {cat_n}")
+                     
+                     render_scorecard(engine.scorecard)
+                 
+                 time.sleep(1.0 if engine.rolls_left == 3 else 0.2) # Faster for Math bot
+                 
+                 # Apply
+                 engine.apply_action(action_type, action_val)
+                 step += 1
              
-             if st.button("Run Game"):
-                 agent = load_agent(os.path.join("checkpoints", selected_cp))
-                 engine = GameEngine()
-                 
-                 # Visualization Loop
-                 game_container = st.empty()
-                 
-                 max_steps = 100
-                 step = 0
-                 
-                 # We need to capture the game flow.
-                 # Since Streamlit reruns script on interaction, 'animation' is done via time.sleep inside a loop
-                 # and updating a single container.
-                 
-                 logs = []
-                 
-                 while not engine.game_over and step < max_steps:
-                     state = engine.get_state_vector()
-                     mask = engine.get_mask()
-                     action_type, action_val = agent.select_action(state, mask)
-                     
-                     # Render before action? Or after?
-                     # Render State
-                     with game_container.container():
-                         st.write(f"**Turn {engine.turn_number}** | Rolls Left: {engine.rolls_left}")
-                         render_dice(engine.dice.values)
-                         
-                         if action_type == 'keep':
-                            keep_str = bin(action_val)[2:].zfill(5)[::-1] # Binary string (visual debug)
-                            st.info(f"AI Decision: **KEEP** (Mask: {keep_str})")
-                         else:
-                            st.success(f"AI Decision: **SCORE** Category {action_val}")
-                         
-                         render_scorecard(engine.scorecard)
-                     
-                     time.sleep(1.0 if engine.rolls_left == 3 else 0.5) # Slow down for viewing
-                     
-                     # Apply
-                     engine.apply_action(action_type, action_val)
-                     step += 1
-                 
-                 st.success(f"Game Over! Final Score: {engine.scorecard.get_total_score()}")
-                 render_scorecard(engine.scorecard)
+            st.success(f"Game Over! Final Score: {engine.scorecard.get_total_score()}")
+            render_scorecard(engine.scorecard)
+    
+    else:
+        # Checkpoints logic for Genetic
+        if not os.path.exists("checkpoints"):
+            st.error("No checkpoints found. Run training first.")
+        else:
+            checkpoints = sorted([f for f in os.listdir("checkpoints") if f.endswith(".pkl")])
+            if not checkpoints:
+                st.warning("No .pkl checkpoints in checkpoints/")
+            else:
+                selected_cp = st.sidebar.selectbox("Load Agent", checkpoints, index=len(checkpoints)-1)
+                
+                if st.button("Run Game"):
+                    agent = load_agent(os.path.join("checkpoints", selected_cp))
+                    engine = GameEngine()
+                    # Visualization Loop - REPEATED LOGIC (Refactor later?)
+                    game_container = st.empty()
+                    max_steps = 100
+                    step = 0
+                    
+                    while not engine.game_over and step < max_steps:
+                        state = engine.get_state_vector()
+                        mask = engine.get_mask()
+                        action_type, action_val = agent.select_action(state, mask) # Genetic doesn't need engine
+                        
+                        # Render State
+                        with game_container.container():
+                            st.write(f"**Turn {engine.turn_number}** | Rolls Left: {engine.rolls_left}")
+                            render_dice(engine.dice.values)
+                            
+                            if action_type == 'keep':
+                                keep_str = bin(action_val)[2:].zfill(5)[::-1]
+                                st.info(f"AI Decision: **KEEP** (Mask: {keep_str})")
+                            else:
+                                st.success(f"AI Decision: **SCORE** Category {action_val}")
+                            
+                            render_scorecard(engine.scorecard)
+                        
+                        time.sleep(1.0 if engine.rolls_left == 3 else 0.5)
+                        
+                        # Apply
+                        engine.apply_action(action_type, action_val)
+                        step += 1
+                    
+                    st.success(f"Game Over! Final Score: {engine.scorecard.get_total_score()}")
+                    render_scorecard(engine.scorecard)
 
 elif mode == "Training Dashboard":
     st.subheader("Training Progress (Interactive)")
