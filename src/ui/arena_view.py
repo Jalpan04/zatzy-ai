@@ -115,6 +115,7 @@ def run_arena_view(load_agent_func, load_dqn_agent_func, ExpectimaxAgent):
                         if current_turn_1 not in match_log: match_log[current_turn_1] = {}
                         match_log[current_turn_1]["Turn"] = current_turn_1
                         match_log[current_turn_1]["Player 1"] = f"{cat_n} ({pts})"
+                        match_log[current_turn_1]["p1_pts"] = pts
                 
                 # Agent 2
                 a2_desc = ""
@@ -134,6 +135,7 @@ def run_arena_view(load_agent_func, load_dqn_agent_func, ExpectimaxAgent):
                         if current_turn_2 not in match_log: match_log[current_turn_2] = {}
                         match_log[current_turn_2]["Turn"] = current_turn_2
                         match_log[current_turn_2]["Player 2"] = f"{cat_n} ({pts})"
+                        match_log[current_turn_2]["p2_pts"] = pts
                 
                 # Render Visuals
                 with container1.container():
@@ -165,12 +167,51 @@ def run_arena_view(load_agent_func, load_dqn_agent_func, ExpectimaxAgent):
             # Build DataFrame from Match Log
             # Sort by Turn
             sorted_turns = sorted(match_log.keys())
-            history_data = [match_log[t] for t in sorted_turns]
+            final_data = []
+            
+            p1_total_manual = 0
+            p2_total_manual = 0
+            
+            for t in sorted_turns:
+                row = match_log[t]
+                p1_txt = row.get("Player 1", "-")
+                p2_txt = row.get("Player 2", "-")
+                
+                # Extract points roughly or use stored
+                p1_pts = row.get("p1_pts", 0)
+                p2_pts = row.get("p2_pts", 0)
+                
+                p1_total_manual += p1_pts
+                p2_total_manual += p2_pts
+                
+                # Determine Round Winner
+                r_win = "-"
+                if p1_pts > p2_pts: r_win = "Player 1 🟢"
+                elif p2_pts > p1_pts: r_win = "Player 2 🔵"
+                
+                final_data.append({
+                    "Turn": t, 
+                    "Player 1": p1_txt, 
+                    "Player 2": p2_txt,
+                    "Round Winner": r_win
+                })
+            
+            # Add TOTAL Row
+            final_winner = "DRAW"
+            if s1 > s2: final_winner = "PLAYER 1 🏆"
+            elif s2 > s1: final_winner = "PLAYER 2 🏆"
+            
+            final_data.append({
+                "Turn": "TOTAL",
+                "Player 1": f"**{s1}**",
+                "Player 2": f"**{s2}**",
+                "Round Winner": final_winner
+            })
 
             # Show History after match
             st.write("### Match History")
             # Highlight winner in history? No, straightforward table is fine.
-            st.dataframe(pd.DataFrame(history_data), use_container_width=True)
+            st.dataframe(pd.DataFrame(final_data), use_container_width=True)
 
 def play_one_step(engine, agent):
     # Logic for one step (Roll or Score)
