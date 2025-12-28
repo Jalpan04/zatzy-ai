@@ -15,12 +15,13 @@ class Agent:
             logits = self.model(x)
             
             # Apply Mask
-            # mask_vector is 1.0 for valid, 0.0 for invalid
-            mask = torch.tensor(mask_vector, dtype=torch.float32)
+            # Apply Mask
+            # mask is 1.0 for valid, 0.0 for invalid
+            mask_t = torch.tensor(mask, dtype=torch.float32)
             
             # Set invalid actions to a very large negative number
             # We use -1e9 instead of -inf to avoid NaN issues if everything is masked (shouldnt happen)
-            masked_logits = logits + (mask - 1.0) * 1e9
+            masked_logits = logits + (mask_t - 1.0) * 1e9
             
             action_idx = torch.argmax(masked_logits).item()
             
