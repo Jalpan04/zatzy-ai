@@ -18,6 +18,7 @@ import src.game.engine as engine_module
 import src.game.scorecard as scorecard_module
 import src.ai.expectimax as expectimax_module
 import src.ai.dqn as dqn_module
+import src.ui.arena_view as arena_view_module
 import importlib
 
 # Force Reload All Modules in Dependency Order
@@ -28,11 +29,13 @@ importlib.reload(engine_module)
 importlib.reload(scorecard_module)
 importlib.reload(expectimax_module)
 importlib.reload(dqn_module)
+importlib.reload(arena_view_module)
 
 from src.ai.model import YahtzeeNetwork
 from src.ai.agent import Agent
 from src.ai.expectimax import ExpectimaxAgent
 from src.ai.dqn import DQNAgent
+from src.ui.arena_view import run_arena_view
 from src.game.engine import GameEngine
 from src.game.scorecard import Category, Scorecard
 
