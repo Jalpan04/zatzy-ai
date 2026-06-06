@@ -1,5 +1,7 @@
 # Zatzy AI: Superhuman Yahtzee Suite
 
+![GitHub top language](https://img.shields.io/github/languages/top/Jalpan04/zatzy-ai) ![GitHub repo size](https://img.shields.io/github/repo-size/Jalpan04/zatzy-ai) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
+
 **Zatzy AI** is a comprehensive AI research laboratory for Yahtzee, featuring multiple state-of-the-art agents ranging from Evolutionary Algorithms to Deep Reinforcement Learning and Neuro-Expectimax search.
 
 ## 🤖 Available Agents
