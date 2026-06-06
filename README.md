@@ -50,3 +50,6 @@ streamlit run app.py
 
 *Created by Jalpan04 & Antigravity Agent*
 
+## License
+
+This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.
